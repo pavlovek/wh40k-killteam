@@ -175,9 +175,9 @@
     <categoryEntry id="0401-e784-9d03-afda" name="Archon" hidden="false"/>
     <categoryEntry id="8d24-2cad-5741-9ba8" name="Succubus" hidden="false"/>
     <categoryEntry id="3d50-5395-7c2d-1a2b" name="Haemonculus" hidden="false"/>
-    <categoryEntry id="84f1-4be2-e1c7-0203" name="Troupe Master" hidden="false"/>
+    <categoryEntry id="434e-4abf-b172-a691" name="Great Harlequin" hidden="false"/>
+    <categoryEntry id="2202-431d-a2a1-b04b" name="Solitaire" hidden="false"/>
     <categoryEntry id="1cea-84d8-4f34-c43d" name="Shadowseer" hidden="false"/>
-    <categoryEntry id="e7f2-ba07-2cfb-003b" name="Death Jester" hidden="false"/>
     <categoryEntry id="41b9-12a8-1b73-50bb" name="Tyranid Prime" hidden="false"/>
     <categoryEntry id="29ba-40fb-5c78-92f6" name="Broodlord" hidden="false"/>
     <categoryEntry id="c428-0f7e-2cae-7633" name="Magus" hidden="false"/>

@@ -20,6 +20,8 @@
     <categoryEntry id="1084-11fe-cd1c-c6d2" name="Incubus" hidden="false"/>
     <categoryEntry id="3367-575b-5239-4548" name="Kabalite Warrior" hidden="false"/>
     <categoryEntry id="208c-38b5-80d9-dabb" name="Wych" page="" hidden="false"/>
+    <categoryEntry id="e7f2-ba07-2cfb-003b" name="Death Jester" hidden="false"/>
+    <categoryEntry id="84f1-4be2-e1c7-0203" name="Troupe Master" hidden="false"/>
     <categoryEntry id="b17f-971b-0711-f8e8" name="Player" hidden="false"/>
   </categoryEntries>
   <entryLinks>
@@ -4461,6 +4463,10 @@ Each time you make a wound roll of 6+ for ranged attack, that hit is resolved wi
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="fa57-9992-bc58-4f58" name="Shrieker cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9edd-298e-3ffe-e96d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2746-35bd-935f-ddbb" type="max"/>
+          </constraints>
           <profiles>
             <profile id="00e6-8e37-dd27-a007" name="Shrieker" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
               <characteristics>

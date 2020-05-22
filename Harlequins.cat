@@ -2,6 +2,8 @@
 <catalogue id="8f3b-d6fd-0ad8-06f2" name="Harlequins" revision="11" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="a467-5f42-d24c-6e5b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="cb52-a195-44b4-d87b" name="Player" hidden="false"/>
+    <categoryEntry id="84f1-4be2-e1c7-0203" name="Troupe Master" hidden="false"/>
+    <categoryEntry id="e7f2-ba07-2cfb-003b" name="Death Jester" hidden="false"/>
     <categoryEntry id="7c3b-dea4-d6e2-f559" name="Dreaming Shadow" hidden="false"/>
     <categoryEntry id="155f-1e62-fbee-e25b" name="Frozen Stars" hidden="false"/>
     <categoryEntry id="261b-dc11-00ed-4c22" name="Midnight Sorrow" hidden="false"/>
