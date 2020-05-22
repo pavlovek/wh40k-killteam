@@ -426,6 +426,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d880-cf1d-86f9-095f" name="Plasma grenades" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc81-8211-d49f-d933" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e15-c4e2-c5c8-f4ec" type="min"/>
+      </constraints>
       <profiles>
         <profile id="b5df-57eb-551e-bcc1" name="Plasma grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -488,10 +492,10 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6896-7c94-1512-9790" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="eeb8-8e9d-9535-bef0" name="Harlequin&apos;s Kiss" hidden="false" collective="false" import="true" targetId="a811-9e26-4b1b-3cd9" type="selectionEntry"/>
-            <entryLink id="f243-1680-ee1d-cef1" name="Harlequin&apos;s Embrace" hidden="false" collective="false" import="true" targetId="d5f1-2c61-a5cb-737b" type="selectionEntry"/>
-            <entryLink id="0ca0-2d72-a941-d414" name="Harlequin&apos;s Caress" hidden="false" collective="false" import="true" targetId="1904-ff84-354d-da8d" type="selectionEntry"/>
-            <entryLink id="c315-1ec6-cd2f-de35" name="Harlequin&apos;s Blade" hidden="false" collective="false" import="true" targetId="2181-0a67-7fcc-b114" type="selectionEntry"/>
+            <entryLink id="eeb8-8e9d-9535-bef0" name="Harlequin&apos;s kiss" hidden="false" collective="false" import="true" targetId="a811-9e26-4b1b-3cd9" type="selectionEntry"/>
+            <entryLink id="f243-1680-ee1d-cef1" name="Harlequin&apos;s embrace" hidden="false" collective="false" import="true" targetId="d5f1-2c61-a5cb-737b" type="selectionEntry"/>
+            <entryLink id="0ca0-2d72-a941-d414" name="Harlequin&apos;s caress" hidden="false" collective="false" import="true" targetId="1904-ff84-354d-da8d" type="selectionEntry"/>
+            <entryLink id="c315-1ec6-cd2f-de35" name="Harlequin&apos;s blade" hidden="false" collective="false" import="true" targetId="2181-0a67-7fcc-b114" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="dcd1-32a2-e79e-a347" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1710-dfb4-45b7-a224">
@@ -500,20 +504,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1eb-eafb-140a-83d3" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1710-dfb4-45b7-a224" name="Shuriken Pistol" hidden="false" collective="false" import="true" targetId="3c0f-7ba5-fe68-e0ea" type="selectionEntry"/>
-            <entryLink id="8033-5ff3-4349-28fd" name="Fusion Pistol" hidden="false" collective="false" import="true" targetId="69ca-e2bd-a3a1-aae3" type="selectionEntry"/>
-            <entryLink id="5f07-93f9-ff8d-5c76" name="Neuro Disruptor" hidden="false" collective="false" import="true" targetId="b5a9-4c89-1e04-85e3" type="selectionEntry"/>
+            <entryLink id="1710-dfb4-45b7-a224" name="Shuriken pistol" hidden="false" collective="false" import="true" targetId="3c0f-7ba5-fe68-e0ea" type="selectionEntry"/>
+            <entryLink id="8033-5ff3-4349-28fd" name="Fusion pistol" hidden="false" collective="false" import="true" targetId="69ca-e2bd-a3a1-aae3" type="selectionEntry"/>
+            <entryLink id="5f07-93f9-ff8d-5c76" name="Neuro disruptor" hidden="false" collective="false" import="true" targetId="b5a9-4c89-1e04-85e3" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="9d3d-aa93-fad6-ec37" name="Specialism" hidden="false" collective="false" import="true" targetId="304e-db9c-290f-5f48" type="selectionEntryGroup"/>
-        <entryLink id="e9b6-c749-b797-354f" name="Plasma Grenade" hidden="false" collective="false" import="true" targetId="d880-cf1d-86f9-095f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a10-44cb-08a1-f9c6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8459-d6b9-46c7-c254" type="min"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="e9b6-c749-b797-354f" name="Plasma grenades" hidden="false" collective="false" import="true" targetId="d880-cf1d-86f9-095f" type="selectionEntry"/>
         <entryLink id="c5b1-f09a-b767-a565" name="Masque" hidden="false" collective="false" import="true" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -576,12 +575,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="dcdc-937b-b80a-8487" name="Specialism" hidden="false" collective="false" import="true" targetId="304e-db9c-290f-5f48" type="selectionEntryGroup"/>
-        <entryLink id="767e-a124-7e95-e6ee" name="Plasma grenades" hidden="false" collective="false" import="true" targetId="d880-cf1d-86f9-095f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a10-44cb-08a1-f9c6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8459-d6b9-46c7-c254" type="min"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="767e-a124-7e95-e6ee" name="Plasma grenades" hidden="false" collective="false" import="true" targetId="d880-cf1d-86f9-095f" type="selectionEntry"/>
         <entryLink id="ad83-0044-72bd-b517" name="Masque" hidden="false" collective="false" import="true" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -867,12 +861,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="55b7-f385-45dd-868b" name="Specialism" hidden="false" collective="false" import="true" targetId="94e9-4e9d-7489-e707" type="selectionEntryGroup"/>
-        <entryLink id="5c19-ea38-70e4-ed11" name="Plasma grenades" hidden="false" collective="false" import="true" targetId="d880-cf1d-86f9-095f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a10-44cb-08a1-f9c6" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8459-d6b9-46c7-c254" type="min"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="5c19-ea38-70e4-ed11" name="Plasma grenades" hidden="false" collective="false" import="true" targetId="d880-cf1d-86f9-095f" type="selectionEntry"/>
         <entryLink id="42fd-d841-aa99-27a4" name="Masque" hidden="false" collective="false" import="true" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -946,13 +935,21 @@
       <entryLinks>
         <entryLink id="aeac-4617-476e-89d2" name="Harlequin&apos;s kiss" hidden="false" collective="false" import="true" targetId="a811-9e26-4b1b-3cd9" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0"/>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="095c-8e98-81fd-28f7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837f-863c-b5d8-db8d" type="min"/>
+          </constraints>
         </entryLink>
         <entryLink id="1b03-e1b8-620b-1692" name="Harlequin&apos;s caress" hidden="false" collective="false" import="true" targetId="1904-ff84-354d-da8d" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0"/>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0"/>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d882-ca42-c351-67a8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="295b-e3b4-77db-282e" type="min"/>
+          </constraints>
         </entryLink>
         <entryLink id="9f1f-dadd-fb14-c264" name="Specialism" hidden="false" collective="false" import="true" targetId="94e9-4e9d-7489-e707" type="selectionEntryGroup"/>
         <entryLink id="7206-88de-49c9-b381" name="Masque" hidden="false" collective="false" import="true" targetId="dcd9-b536-3878-81db" type="selectionEntryGroup"/>
@@ -1201,6 +1198,24 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="13bc-ce69-816e-bcc7" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2202-431d-a2a1-b04b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7e48-ab3a-b94a-0ecc" name="Strength" hidden="false" collective="false" import="true" targetId="4550-6c27-1911-68ae" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2202-431d-a2a1-b04b" type="notInstanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
