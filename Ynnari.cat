@@ -613,7 +613,7 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="67d2-7230-99b2-6ec2" name="Shadowseer" hidden="false" collective="false" import="true" targetId="845b-69a2-92a2-577a" type="selectionEntry"/>
-    <entryLink id="67d2-7230-99b2-6ec2" name="Great Harlequin" hidden="false" collective="false" import="true" targetId="9697-4eab-ad47-4e7c" type="selectionEntry"/>
+    <entryLink id="7ada-6b39-6788-02d7" name="Great Harlequin" hidden="false" collective="false" import="true" targetId="9697-4eab-ad47-4e7c" type="selectionEntry"/>
     <entryLink id="bbb0-fde8-5e88-bbec" name="Death Jester" hidden="false" collective="false" import="true" targetId="9b4c-feda-4ce3-4df4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ced5-904d-5a5d-9ff6" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
@@ -2969,6 +2969,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="54a2-c4e4-4ac8-2eef" name="Klaivex" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -3048,6 +3051,9 @@
       <entryLinks>
         <entryLink id="02b0-44eb-e69d-2896" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4598-6786-0f7c-51a8" name="Agonizer" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3136,6 +3142,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6c2e-41b0-c4ff-f290" name="Huskblade" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3150,6 +3159,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="dd62-1dd0-118a-9b96" name="Hydra gauntlets" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3263,6 +3275,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="851e-f7d0-c1ec-15be" name="Splinter rifle" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3277,6 +3292,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="135f-3ec2-eaa2-ca91" name="Venom blade" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3560,6 +3578,9 @@
       <entryLinks>
         <entryLink id="f527-5d86-941d-ca67" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="da24-d2a5-1ae7-bd30" name="Wych" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -3675,6 +3696,9 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -3824,6 +3848,9 @@
       <entryLinks>
         <entryLink id="4dfa-ae86-4702-84ec" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8226-843b-0b79-dcee" name="Succubus" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -3900,6 +3927,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4047,6 +4077,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7cd3-d769-fc36-e0e1" name="Harlequin&apos;s caress" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4095,6 +4128,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ade6-5a3a-a5b9-2411" name="Neuro disruptor" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4284,6 +4320,9 @@
       <entryLinks>
         <entryLink id="1833-d43a-cd91-4d05" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="845b-69a2-92a2-577a" name="Shadowseer" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -4367,6 +4406,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="80fd-ba3d-8f36-eb43" name="Miststave" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4385,6 +4427,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4418,19 +4463,19 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15.0">
           <conditions>
-            <condition field="selections" scope="0f8e-40b9-3ed7-2fca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+            <condition field="selections" scope="9697-4eab-ad47-4e7c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15.0">
           <conditions>
-            <condition field="selections" scope="0f8e-40b9-3ed7-2fca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+            <condition field="selections" scope="9697-4eab-ad47-4e7c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="25">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="25.0">
           <conditions>
-            <condition field="selections" scope="0f8e-40b9-3ed7-2fca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+            <condition field="selections" scope="9697-4eab-ad47-4e7c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4438,7 +4483,7 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2ff8-b4ba-4053-5942" type="max"/>
       </constraints>
       <profiles>
-        <profile id="855b-ffd9-08e3-ae4b" name="Great Harlequin" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+        <profile id="6db3-b453-b831-d75b" name="Great Harlequin" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
           <characteristics>
             <characteristic name="M" typeId="0a65-6cb0-f00d-e414">8&quot;</characteristic>
             <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">2+</characteristic>
@@ -4454,10 +4499,10 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="dce1-4b8a-4ac4-a399" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
-        <infoLink id="e895-1798-bc44-a9df" name="Flip Belt" hidden="false" targetId="0d8c-eca8-0cb8-619d" type="rule"/>
-        <infoLink id="694b-89c6-10c4-7893" name="Holo-suit" hidden="false" targetId="36a6-ba45-18a2-bf1b" type="rule"/>
-        <infoLink id="b262-a214-1f40-6cfb" name="Rising Crescendo" hidden="false" targetId="d4d1-1e00-f47e-01f2" type="rule"/>
+        <infoLink id="86e2-3435-5353-513a" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="b21b-7a7b-c4c7-ed1f" name="Flip Belt" hidden="false" targetId="0d8c-eca8-0cb8-619d" type="rule"/>
+        <infoLink id="4a48-2260-f383-02a6" name="Holo-suit" hidden="false" targetId="36a6-ba45-18a2-bf1b" type="rule"/>
+        <infoLink id="2fd5-a0ba-ca31-db6d" name="Rising Crescendo" hidden="false" targetId="d4d1-1e00-f47e-01f2" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="54a4-ff0d-9f49-2aa6" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4489,7 +4534,7 @@
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7"/>
               </modifiers>
             </entryLink>
-            <entryLink id="0ca0-2d72-a941-d414" name="Power Sword" hidden="false" collective="false" import="true" targetId="5b8b-0830-a0bc-4955" type="selectionEntry">
+            <entryLink id="9e2a-41a3-013a-0513" name="Power sword" hidden="false" collective="false" import="true" targetId="5b8b-0830-a0bc-4955" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="4"/>
               </modifiers>
@@ -4624,6 +4669,9 @@ Each time you make a wound roll of 6+ for ranged attack, that hit is resolved wi
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4652,6 +4700,9 @@ Each time you make a wound roll of 6+ for ranged attack, that hit is resolved wi
           </modifiers>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
