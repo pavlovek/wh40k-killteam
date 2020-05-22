@@ -9,6 +9,9 @@
 !*.cat
 !*.gst
 
+# Don't ignore solution files
+!*.sln
+
 # Don't ignore docs
 !*.md
 
