@@ -226,6 +226,7 @@
     <categoryEntry id="546b-63e4-4e33-88a3" name="Master of Possession" publicationId="701a-4a21-90a2-7618" hidden="false"/>
     <categoryEntry id="22f7-3786-ff9d-ca18" name="Chaos Lord" hidden="false"/>
     <categoryEntry id="836f-fb27-0862-3fcc" name="Lord of Contagion" hidden="false"/>
+    <categoryEntry id="1a04-4a33-8010-744a" name="Haarken Worldclaimer" hidden="false"/>
     <categoryEntry id="4676-b1b4-203e-ac26" name="Boss Snikrot" hidden="false"/>
     <categoryEntry id="9c92-7f60-82bf-33ba" name="Phobos" hidden="false"/>
     <categoryEntry id="37d8-f20c-a4fe-2db1" name="Faction: Adeptus Custodes" hidden="false"/>

@@ -11,6 +11,13 @@
     <categoryEntry id="dcef-a825-ce87-0933" name="Daemon" hidden="false"/>
     <categoryEntry id="7f4e-8a05-4e12-f790" name="Khorne Berserker" hidden="false"/>
     <categoryEntry id="a71b-a6ef-d7ee-ba50" name="Possessed" publicationId="701a-4a21-90a2-7618" hidden="false"/>
+    <categoryEntry id="b152-4f02-bc8b-ab94" name="Chosen" hidden="false"/>
+    <categoryEntry id="c08d-4a7b-adb2-84d2" name="Raptor" hidden="false"/>
+    <categoryEntry id="43a4-4afb-8a2f-46af" name="Warp Talon" hidden="false"/>
+    <categoryEntry id="326a-45a4-b66b-ad13" name="Nose Marine" hidden="false"/>
+    <categoryEntry id="4c4b-4b81-8819-011c" name="Plague Marine" hidden="false"/>
+    <categoryEntry id="647c-4302-a2bf-ab0f" name="Rubric Marine" hidden="false"/>
+    <categoryEntry id="1960-46af-9086-3f4c" name="Chaos Spawn" hidden="false"/>
     <categoryEntry id="5a8a-7dbc-0960-2068" name="Dark Disciple" hidden="false"/>
     <categoryEntry id="2c0a-3b4d-314f-f31c" name="Alpha Legion" hidden="false"/>
     <categoryEntry id="8b65-b614-a1bb-9883" name="Black Legion" hidden="false"/>
