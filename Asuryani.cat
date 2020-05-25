@@ -911,10 +911,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="fc30-4a05-b29a-d2aa" name="Powerblades" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e5-43e5-b3b4-480c" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="054c-4c5d-803f-ba7b" type="max"/>
-      </constraints>
       <profiles>
         <profile id="81ce-4568-892c-fcc3" name="Powerblades" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
@@ -1036,7 +1032,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
