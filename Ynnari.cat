@@ -9,7 +9,6 @@
     <categoryEntry id="f238-1d80-4d5e-18fc" name="Aspect Warrior" hidden="false"/>
     <categoryEntry id="53bc-1d8c-af8a-e8ab" name="Dire Avenger" hidden="false"/>
     <categoryEntry id="9365-94f5-a354-b27e" name="Ranger" hidden="false"/>
-    <categoryEntry id="d613-8c70-cfc2-6582" name="Jump Pack" hidden="false"/>
     <categoryEntry id="f354-e173-a6cb-2bba" name="Spirit Host" hidden="false"/>
     <categoryEntry id="cbfe-f6e0-f9c3-b6c0" name="Illic Nightspear" hidden="false"/>
     <categoryEntry id="0617-e315-79b0-8e8d" name="Wraithguard" hidden="false"/>
@@ -17,7 +16,9 @@
     <categoryEntry id="bd11-0f22-8ebc-9118" name="Wraith Construct" hidden="false"/>
     <categoryEntry id="3168-ad8a-945a-1bc4" name="Striking Scorpion" hidden="false"/>
     <categoryEntry id="d2aa-fbd7-e051-b22f" name="Howling Banshee" hidden="false"/>
+    <categoryEntry id="6fbf-4e9a-9c24-2c48" name="Warp Spider" hidden="false"/>
     <categoryEntry id="1084-11fe-cd1c-c6d2" name="Incubus" hidden="false"/>
+    <categoryEntry id="0ef1-40a2-9e69-4316" name="Scourge" hidden="false"/>
     <categoryEntry id="3367-575b-5239-4548" name="Kabalite Warrior" hidden="false"/>
     <categoryEntry id="208c-38b5-80d9-dabb" name="Wych" page="" hidden="false"/>
     <categoryEntry id="e7f2-ba07-2cfb-003b" name="Death Jester" hidden="false"/>
@@ -643,6 +644,122 @@
         <categoryLink id="b10c-63c1-05ce-8fa5" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="2a87-47be-9e34-5adf" name="Warp Spider" hidden="false" collective="false" import="true" targetId="6735-4684-8f03-22d1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6b6b-4aaf-af63-b79b" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="099b-40f9-b5a1-dd9a" name="Warp Spider" hidden="false" collective="false" import="true" targetId="6735-4684-8f03-22d1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="82f7-4d7d-96ae-9b2a" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="61b1-4e10-99bd-44e3" name="Warp Spider Exarch" hidden="false" collective="false" import="true" targetId="de53-4be1-9084-8e04" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0570-4a14-81d3-69e5" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e0ae-4fb9-b5e8-aa07" name="Warp Spider Exarch" hidden="false" collective="false" import="true" targetId="de53-4be1-9084-8e04" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="733a-4751-a79a-9b5a" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="91ec-4de5-aea7-acbd" name="Warp Spider Exarch" hidden="false" collective="false" import="true" targetId="de53-4be1-9084-8e04" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6227-4d8c-a3ec-65b9" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0105-4b73-8e3f-9510" name="Warp Spider Fire Team" hidden="false" collective="false" import="true" targetId="812a-4762-ad73-6f8e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c0f4-4348-9523-cc5e" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dc15-461f-a7e2-bc54" name="Scourge Gunner" hidden="false" collective="false" import="true" targetId="caec-4166-9812-0b55" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e623-4dc6-98ab-7bbd" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7019-4700-97f2-0f3b" name="Scourge Gunner" hidden="false" collective="false" import="true" targetId="caec-4166-9812-0b55" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2729-45cb-84d7-e63e" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a195-4743-8c54-b743" name="Scourge" hidden="false" collective="false" import="true" targetId="4604-408d-bb0a-7ac3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7838-4e2d-a675-d8a5" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="262b-46e3-9de0-6b1f" name="Scourge" hidden="false" collective="false" import="true" targetId="4604-408d-bb0a-7ac3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ad65-4b15-a883-c0f0" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9764-42a8-83d3-46cd" name="Solarite" hidden="false" collective="false" import="true" targetId="d0db-43e0-a331-fc02" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1ca5-4ae4-8b72-e2c4" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4a46-43c0-bbd9-3457" name="Solarite" hidden="false" collective="false" import="true" targetId="d0db-43e0-a331-fc02" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f044-4474-80e0-806a" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="64b8-4bd0-992b-79ad" name="Solarite" hidden="false" collective="false" import="true" targetId="d0db-43e0-a331-fc02" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7684-4d31-bfbb-a709" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cb9a-4dbd-9eb2-fdbe" name="Scourge Fire Team" hidden="false" collective="false" import="true" targetId="a641-4e7c-8e0b-030a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="74a1-6b5c-0980-9c59" name="Guardian Defender" hidden="false" collective="false" import="true" type="model">
@@ -1031,6 +1148,23 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="80c5-42c8-95a0-7173" name="Power lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2d8b-43b4-a0f6-0379" name="Power lance" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+2</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="52ca-794b-1bce-b44d" name="Storm Guardian" hidden="false" collective="false" import="true" type="model">
@@ -2916,6 +3050,209 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ff76-4e06-aae9-071f" name="Death Spinner" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="faa8-4560-8efa-3e86" name="Death Spinner" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">12&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault 2</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -4.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc30-4a05-b29a-d2aa" name="Powerblades" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e5-43e5-b3b4-480c" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="054c-4c5d-803f-ba7b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="81ce-4568-892c-fcc3" name="Powerblades" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Each time the bearer fights, it can make 1 additional attack with this weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6735-4684-8f03-22d1" name="Warp Spider" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d631-4a52-9179-bc0b" name="Warp Spider" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">7&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">1</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">3+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2e23-428a-9f78-0156" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
+        <infoLink id="23e1-493d-b1e4-9966" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
+        <infoLink id="01e5-4aa5-9caf-bfa9" name="Flicker Jump" hidden="false" targetId="365d-4134-a610-801d" type="profile"/>
+        <infoLink id="599d-440d-8c2c-bcb0" name="Warp Jump Generator" hidden="false" targetId="5093-4346-9fa3-d1b3" type="profile"/>
+        <infoLink id="dde6-4fe1-a632-15f6" name="Iron Resolve" hidden="false" targetId="c5ec-4255-a54c-18f8" type="profile"/>
+        <infoLink id="e3dc-4107-a568-b06d" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8a21-4d0d-bb1e-62ab" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
+        <categoryLink id="94bd-404c-930d-7c39" name="Reborn Asuriani" hidden="false" targetId="f7ac-6451-93ab-9fd0" primary="false"/>
+        <categoryLink id="e662-473e-b087-83aa" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="bfc8-4c01-9179-a4fc" name="Aspect Warrior" hidden="false" targetId="f238-1d80-4d5e-18fc" primary="false"/>
+        <categoryLink id="17a6-41db-9292-d865" name="Warp Spider" hidden="false" targetId="6fbf-4e9a-9c24-2c48" primary="false"/>
+        <categoryLink id="f76c-4830-b7a1-50f7" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a08d-41f2-a3f8-b9a8" name="Warp Spider Specialism" hidden="false" collective="false" import="true" targetId="87b4-4ce6-a945-c6a2" type="selectionEntryGroup"/>
+        <entryLink id="078a-40e0-95a9-d2dc" name="Death Spinner" hidden="false" collective="false" import="true" targetId="ff76-4e06-aae9-071f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de73-41ef-a31e-deab" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d52-427c-a384-3b89" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="de53-4be1-9084-8e04" name="Warp Spider Exarch" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="4682-4e85-8fe1-101e" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4682-4e85-8fe1-101e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="acb5-40a7-bb89-2891" name="Warp Spider Exarch" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">7&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">3+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="27cc-41b8-9d8f-8a7c" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
+        <infoLink id="2866-4faa-bb8e-445c" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
+        <infoLink id="a8d7-4248-b9b2-aa3a" name="Flicker Jump" hidden="false" targetId="365d-4134-a610-801d" type="profile"/>
+        <infoLink id="52f1-493b-b521-2ca0" name="Warp Jump Generator" hidden="false" targetId="5093-4346-9fa3-d1b3" type="profile"/>
+        <infoLink id="e0b1-465b-9e61-ae14" name="Iron Resolve" hidden="false" targetId="c5ec-4255-a54c-18f8" type="profile"/>
+        <infoLink id="c7a1-4455-b5a0-8eed" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dfe9-4d67-a9ca-c7eb" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
+        <categoryLink id="44d9-44af-ac7b-7927" name="Reborn Asuriani" hidden="false" targetId="f7ac-6451-93ab-9fd0" primary="false"/>
+        <categoryLink id="bfbf-45cb-bc29-7067" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="f66e-43f0-9539-620e" name="Aspect Warrior" hidden="false" targetId="f238-1d80-4d5e-18fc" primary="false"/>
+        <categoryLink id="16d7-4ebe-95e0-bb86" name="Warp Spider" hidden="false" targetId="6fbf-4e9a-9c24-2c48" primary="false"/>
+        <categoryLink id="9c4b-495e-8bfd-cee0" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="99d2-482d-97c0-ef68" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="1069-46c1-9416-6ca6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e700-4d0b-83a4-de12" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf47-453e-a1b7-8144" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7092-48ee-aaa7-27dc" name="Pair of Death Spinners" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="0080-4b33-82da-656b" name="Death Spinner" hidden="false" collective="false" import="true" targetId="ff76-4e06-aae9-071f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a421-4f0f-92e9-c368" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c98-4cf4-bfef-64ec" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="1069-46c1-9416-6ca6" name="Death Spinner" hidden="false" collective="false" import="true" targetId="ff76-4e06-aae9-071f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0485-43c7-809b-d364" name="Warp Spider Specialism" hidden="false" collective="false" import="true" targetId="87b4-4ce6-a945-c6a2" type="selectionEntryGroup"/>
+        <entryLink id="a3de-4f08-b702-811b" name="Powerblades" hidden="false" collective="false" import="true" targetId="fc30-4a05-b29a-d2aa" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dad-4e94-83fb-fc65" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="812a-4762-ad73-6f8e" name="Warp Spider Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd7b-46e4-a9e9-e21b" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6fd4-4a68-a000-373b" name="Warp Spiders" hidden="false" collective="false" import="true" defaultSelectionEntryId="40a3-4aba-86af-a34e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4595-40d4-87a2-cffe" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="40a3-4aba-86af-a34e" name="Warp Spider" hidden="false" collective="false" import="true" targetId="6735-4684-8f03-22d1" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="c222-412f-96ac-c6d8" name="Warp Spider Exarch" hidden="false" collective="false" import="true" targetId="de53-4be1-9084-8e04" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0f4e-4404-9f3e-2c8f" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="7195-407f-66fe-ad37" name="Incubus" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="6d5e-47be-9354-55a7" name="Incubus" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
@@ -2941,7 +3278,7 @@
         <categoryLink id="740b-3e0d-4c88-c98d" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
         <categoryLink id="698d-f75c-4f20-3529" name="Incubus" hidden="false" targetId="1084-11fe-cd1c-c6d2" primary="false"/>
         <categoryLink id="d91d-9aa1-f659-2f86" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
-        <categoryLink id="2b91-2993-4a14-edd0" name="Reborn Asuriani" hidden="false" targetId="f7ac-6451-93ab-9fd0" primary="false"/>
+        <categoryLink id="2b91-2993-4a14-edd0" name="Reborn Drukhari" hidden="false" targetId="fda5-4be7-2469-4680" primary="false"/>
         <categoryLink id="ddf9-ea91-1fc0-6a38" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -3009,6 +3346,13 @@
         <infoLink id="ba7f-eee5-047f-9728" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
         <infoLink id="b312-ed58-f07e-762f" name="Tormentors" hidden="false" targetId="404c-ebe1-3e3b-fd6b" type="profile"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e1d7-4c05-8f1a-1095" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
+        <categoryLink id="419a-4ce6-8ba6-0546" name="Incubus" hidden="false" targetId="1084-11fe-cd1c-c6d2" primary="false"/>
+        <categoryLink id="5fa4-41fe-b397-e9ca" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="16d6-4205-863f-5272" name="Reborn Drukhari" hidden="false" targetId="fda5-4be7-2469-4680" primary="false"/>
+        <categoryLink id="be1a-47bd-9a68-f922" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="7904-0cea-dfa5-e19b" name="Klaive" hidden="false" collective="false" import="true" targetId="9fa4-c91e-2dfe-ad4d" type="selectionEntry"/>
         <entryLink id="48d9-054c-e719-2de7" name="Incubus Specialism" hidden="false" collective="false" import="true" targetId="8c3b-2432-dd4a-ced2" type="selectionEntryGroup"/>
@@ -3127,6 +3471,26 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9101-49e6-957e-6d03" name="Heat lance" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10bb-d958-0d62-98c8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1c09-4557-8a1f-3f97" name="Heat lance" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">18&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-5</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">D6</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">If the target is within half range of this weapon, roll 2 dice when inflicting damage with it and discard the lowest result.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62e2-c003-430e-944b" name="Hekatarii blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -3285,6 +3649,23 @@
           <characteristics>
             <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">24&quot;</characteristic>
             <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Rapid Fire 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">*</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">This weapon wounds on a 4+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1568-48e3-a0ca-681a" name="Shardcarabine" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b9b7-4077-9080-3cf7" name="Shardcarabine" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">18&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault 3</characteristic>
             <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">*</characteristic>
             <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
             <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
@@ -3847,6 +4228,286 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4dfa-ae86-4702-84ec" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4604-408d-bb0a-7ac3" name="Scourge" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c9fe-4041-b3b6-de9e" name="Scourge" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">14&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">1</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">4+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9110-40cb-bbfe-151c" name="Ghostplate Armour" hidden="false" targetId="ad60-4ca1-9c44-0174" type="profile"/>
+        <infoLink id="9fec-47f0-825c-0ffc" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ec26-4e48-a486-8ff8" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
+        <categoryLink id="afbc-4b9a-8418-1894" name="Reborn Drukhari" hidden="false" targetId="fda5-4be7-2469-4680" primary="false"/>
+        <categoryLink id="b9e7-41d7-a9fa-1c81" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="1a85-4f0c-b843-961c" name="Scourge" hidden="false" targetId="0ef1-40a2-9e69-4316" primary="false"/>
+        <categoryLink id="7b77-4e5c-940e-0263" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="8a4b-4ad8-a0f9-0580" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
+        <categoryLink id="bc85-45e1-9013-c790" name="Jump Pack" hidden="false" targetId="d613-8c70-cfc2-6582" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="16d0-41a9-bb6e-b949" name="Shardcarabine" hidden="false" collective="false" import="true" targetId="1568-48e3-a0ca-681a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5e9b-4f82-b756-bad7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="77be-4a35-b721-d549" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e023-459e-8b21-8c5d" name="Plasma Grenade" hidden="false" collective="false" import="true" targetId="e020-7406-fcae-4d17" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="346f-49a4-9991-aee4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="792c-4c63-aa56-409d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c009-4a44-b392-d260" name="Scourge Specialism" hidden="false" collective="false" import="true" targetId="54d4-4cc7-8c8b-547a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="17.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="caec-4166-9812-0b55" name="Scourge Gunner" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="68dc-4101-9ffc-d67c" value="3.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="68dc-4101-9ffc-d67c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1715-42d2-84d2-bf49" name="Scourge Gunner" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">14&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">1</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">4+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="79de-4d24-b2ef-ab4f" name="Ghostplate Armour" hidden="false" targetId="ad60-4ca1-9c44-0174" type="profile"/>
+        <infoLink id="e399-4e69-be20-4eae" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2239-495f-837e-6b67" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
+        <categoryLink id="c96f-484c-bf6b-0002" name="Reborn Drukhari" hidden="false" targetId="fda5-4be7-2469-4680" primary="false"/>
+        <categoryLink id="b5ef-44f7-a995-773d" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="ad7a-4099-8d39-81a1" name="Scourge" hidden="false" targetId="0ef1-40a2-9e69-4316" primary="false"/>
+        <categoryLink id="9316-4cc1-9437-c5c6" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="2d93-46c6-b75f-9894" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
+        <categoryLink id="bc95-4e03-bd12-8710" name="Jump Pack" hidden="false" targetId="d613-8c70-cfc2-6582" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3f1d-4e09-a2c6-d0a6" name="Weapon options" hidden="false" collective="false" import="true" defaultSelectionEntryId="b8d2-472f-a4cd-cef2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e2e-4a03-8e47-5814" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e57b-48cf-a947-5f30" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="888e-4efe-8fb3-be99" name="Shredder" hidden="false" collective="false" import="true" targetId="8f18-f8f9-f5f6-1163" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="8.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46fe-4a4d-a34d-b395" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="cc74-4c28-8f59-137d" name="Blaster" hidden="false" collective="false" import="true" targetId="0799-c185-899a-40ad" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="9.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d84d-459d-9b7d-6c91" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4b40-4580-a740-be17" name="Heat lance" hidden="false" collective="false" import="true" targetId="9101-49e6-957e-6d03" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="9.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b67e-4a92-b24f-5037" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5a57-43ba-ba77-d1cf" name="Dark Lance" hidden="false" collective="false" import="true" targetId="d50c-0742-ba49-9336" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="9.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af29-4ae8-9f9d-9b6f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2867-44ba-8b05-3914" name="Splinter Cannon" hidden="false" collective="false" import="true" targetId="3223-b8f0-20d6-8321" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="8.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdfe-41a9-a694-5b13" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b8d2-472f-a4cd-cef2" name="Shardcarabine" hidden="false" collective="false" import="true" targetId="1568-48e3-a0ca-681a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58d2-489a-9583-f099" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d572-4c33-8473-8322" name="Plasma Grenade" hidden="false" collective="false" import="true" targetId="e020-7406-fcae-4d17" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f47-4bb2-9eaf-0793" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2648-49c1-be65-3d7e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9d2b-4020-8e0e-732c" name="Scourge Specialism" hidden="false" collective="false" import="true" targetId="54d4-4cc7-8c8b-547a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d0db-43e0-a331-fc02" name="Solarite" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="a104-4501-8e83-c363" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a104-4501-8e83-c363" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="2e3e-4f0f-ba40-52a8" name="Solarite" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">14&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">4+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ca63-4ab8-821f-9765" name="Ghostplate Armour" hidden="false" targetId="ad60-4ca1-9c44-0174" type="profile"/>
+        <infoLink id="3f83-4717-9ff9-7564" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2034-4513-b060-42ec" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
+        <categoryLink id="837b-4ef4-8ae2-23ae" name="Reborn Drukhari" hidden="false" targetId="fda5-4be7-2469-4680" primary="false"/>
+        <categoryLink id="55ab-4149-82b6-1914" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="9fa0-4065-9be2-912a" name="Scourge" hidden="false" targetId="0ef1-40a2-9e69-4316" primary="false"/>
+        <categoryLink id="f1f1-4a55-9cd0-2910" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="192f-41b5-92a4-eac0" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
+        <categoryLink id="787b-40ca-9a75-2e29" name="Jump Pack" hidden="false" targetId="d613-8c70-cfc2-6582" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7041-41e7-b708-3ad6" name="Melee weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5fb-4a8d-a2f8-46d7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c5f2-41ce-be22-dd25" name="Venom blade" hidden="false" collective="false" import="true" targetId="135f-3ec2-eaa2-ca91" type="selectionEntry"/>
+            <entryLink id="800d-418b-9327-fb1a" name="Agonizer" hidden="false" collective="false" import="true" targetId="4598-6786-0f7c-51a8" type="selectionEntry"/>
+            <entryLink id="7875-44a8-ad99-f00b" name="Power lance" hidden="false" collective="false" import="true" targetId="80c5-42c8-95a0-7173" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="eed9-4440-9119-5e5b" name="Ranged weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="92ba-4095-95af-96ca">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a031-4bb5-b36c-7569" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd2b-4e4b-aa9a-0f78" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="46a9-4128-9068-4b6f" name="Splinter Pistol" hidden="false" collective="false" import="true" targetId="c61b-028e-7b99-838f" type="selectionEntry"/>
+            <entryLink id="92ba-4095-95af-96ca" name="Shardcarabine" hidden="false" collective="false" import="true" targetId="1568-48e3-a0ca-681a" type="selectionEntry"/>
+            <entryLink id="00b3-42b3-9929-9faf" name="Blast Pistol" hidden="false" collective="false" import="true" targetId="c923-5a4c-d1a6-f063" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="46d7-431b-bcf5-13a9" name="Plasma Grenade" hidden="false" collective="false" import="true" targetId="e020-7406-fcae-4d17" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6eb6-4795-9581-5fae" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6091-4241-8924-2c16" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3363-4f24-9457-77fa" name="Scourge Specialism" hidden="false" collective="false" import="true" targetId="54d4-4cc7-8c8b-547a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a641-4e7c-8e0b-030a" name="Scourge Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50fa-4d15-bf2f-8cdc" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7a26-435c-9cdd-114d" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a4c4-4a31-9419-038b" name="Scourges" hidden="false" collective="false" import="true" defaultSelectionEntryId="3cde-48b8-bcbd-3e10">
+          <entryLinks>
+            <entryLink id="5998-4b6a-848b-7d5e" name="Scourge Gunner" hidden="false" collective="false" import="true" targetId="caec-4166-9812-0b55" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="3cde-48b8-bcbd-3e10" name="Scourge" hidden="false" collective="false" import="true" targetId="4604-408d-bb0a-7ac3" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="2616-41f0-bab4-3a0a" name="Solarite" hidden="false" collective="false" import="true" targetId="d0db-43e0-a331-fc02" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a973-4829-a52b-a493" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
@@ -5104,6 +5765,63 @@ Each time you make a wound roll of 6+ for ranged attack, that hit is resolved wi
         <entryLink id="7c94-bfab-08da-96f1" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="87b4-4ce6-a945-c6a2" name="Warp Spider Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cc2-4a59-99ed-d402" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73e2-4c30-8d27-af7b" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="10d3-4829-9fed-3199" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+        <entryLink id="4bf3-4141-90d9-66c7" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry"/>
+        <entryLink id="fa4c-4bef-b3fa-0738" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+        <entryLink id="69c7-4249-bdd2-849f" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry"/>
+        <entryLink id="713d-4e90-9a01-e1c0" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+        <entryLink id="9cd7-481c-afc0-eee1" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="54d4-4cc7-8c8b-547a" name="Scourge Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29e7-d60f-5acd-4d99" type="notInstanceOf"/>
+                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ade4-0710-e40e-be3f" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62df-4e7b-abad-1da3" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bd1-495f-9cca-9ebe" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="4fdc-4bca-ab26-e75e" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+        <entryLink id="b4d5-48c7-8515-82b7" name="Medic" hidden="false" collective="false" import="true" targetId="01ab-630a-cf81-38c9" type="selectionEntry"/>
+        <entryLink id="e8cc-4a66-857f-3051" name="Comms" hidden="false" collective="false" import="true" targetId="02a0-4107-4818-7c99" type="selectionEntry"/>
+        <entryLink id="1dec-4020-afcb-57cf" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry"/>
+        <entryLink id="e83d-4d8f-a895-95f3" name="Veteran" hidden="false" collective="false" import="true" targetId="c89e-5e73-276f-cc16" type="selectionEntry"/>
+        <entryLink id="9fe8-4e83-b433-57d6" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry"/>
+        <entryLink id="38ef-4a92-b5bf-a3e6" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+        <entryLink id="a90d-4296-81f2-d680" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="caec-4166-9812-0b55" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b95d-66ca-a17b-a3d8" name="Strength from Death" hidden="false">
@@ -5188,6 +5906,21 @@ When resolving an attack made with a melee weapon by a model that is drawing str
     <profile id="08ff-da0f-de4b-d1b7" name="Battle Focus" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">If this model moves or Advances in its Movement phase, weapons (excluding Heavy weapons) are used as if the model had remained stationary.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="365d-4134-a610-801d" name="Flicker Jump" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">When this unit is targeted by a ranged weapon, you can declare that they will make a flicker jump - your opponent must subtract 1 from hit rolls for attacks that target this unit until the end of the phase. You must then immediately roll 2D6; on a 2, this model is out of action.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5093-4346-9fa3-d1b3" name="Warp Jump Generator" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">When this model moves in the Movement phase, it can use their warp jump generators. If they they do, they cannot Advance and must substract 1 from hit rolls in shooting phase, but their Move characteristic is increased by 4D6" and they can FLY until the end of the phase. A model that uses warp jump generators to Fall Back can still shoot in its Shooting phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c5ec-4255-a54c-18f8" name="Iron Resolve" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll Morale tests for this model within 3" from a Warp Spider Exarch.</characteristic>
       </characteristics>
     </profile>
     <profile id="3527-9e0d-b1ef-fa3a" name="Defence Tactics" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
@@ -5316,6 +6049,11 @@ When resolving an attack made with a melee weapon by a model that is drawing str
     <profile id="40f2-2c41-f19c-1a90" name="No Escape" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">If an Infantry model within 1&quot; of any enemy models with this ability would Fall Back, the controlling players roll off. The model that would Fall Back can only do so if the player controlling it wins the roll-off.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ad60-4ca1-9c44-0174" name="Ghostplate Armour" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+      <characteristics>
+        <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">Models in this unit have a 6+ invulnerable save.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -96,6 +96,7 @@
     <categoryEntry id="435f-8dce-6770-d39a" name="Aeldari" hidden="false"/>
     <categoryEntry id="581c-2c95-bcd7-2ccd" name="Artillery" hidden="false"/>
     <categoryEntry id="95a6-6b90-5f87-ca85" name="Jet Pack" hidden="false"/>
+    <categoryEntry id="d613-8c70-cfc2-6582" name="Jump Pack" hidden="false"/>
     <categoryEntry id="5976-3b31-eca7-9828" name="Fly" hidden="false"/>
     <categoryEntry id="1d17-d234-f022-8762" name="Tyranids" hidden="false"/>
     <categoryEntry id="6e29-5d9a-98f5-ad2a" name="Level 1" hidden="false"/>
