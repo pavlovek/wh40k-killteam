@@ -975,7 +975,7 @@
         <entryLink id="1dcf-494b-9b48-7039" name="Craftworld" hidden="false" collective="false" import="true" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="de53-4be1-9084-8e04" name="Warp Spider Exarch" hidden="false" collective="false" import="true" type="model">
@@ -1056,7 +1056,7 @@
         <entryLink id="3275-42f5-82ba-155a" name="Craftworld" hidden="false" collective="false" import="true" targetId="3bba-3f69-bb8f-48f2" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="812a-4762-ad73-6f8e" name="Warp Spider Fire Team" hidden="false" collective="false" import="true" type="unit">
