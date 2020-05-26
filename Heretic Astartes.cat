@@ -1346,7 +1346,7 @@
           <entryLinks>
             <entryLink id="9fa3-466d-ae77-00db" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="61c8-b45d-100b-33e0" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="047c-481f-bf79-4504" value="0.0"/>
+                <modifier type="set" field="6f65-47a2-91ca-8d97" value="0.0"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f65-47a2-91ca-8d97" type="min"/>
@@ -1355,7 +1355,7 @@
             </entryLink>
             <entryLink id="8a75-4e4d-b67b-2e1c" name="Chainsword" hidden="false" collective="false" import="true" targetId="66af-e06c-a79f-50f8" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="11bd-4fba-964f-183f" value="0.0"/>
+                <modifier type="set" field="9641-4376-894a-d783" value="0.0"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9641-4376-894a-d783" type="min"/>
@@ -1538,7 +1538,7 @@
           <entryLinks>
             <entryLink id="1e15-4b38-b4ac-f75d" name="Chainsword" hidden="false" collective="false" import="true" targetId="66af-e06c-a79f-50f8" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="54ef-d059-9845-15a2" value="0.0"/>
+                <modifier type="set" field="173a-4abd-8e85-072f" value="0.0"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="173a-4abd-8e85-072f" type="min"/>
@@ -1547,7 +1547,7 @@
             </entryLink>
             <entryLink id="aead-49ec-aba6-830c" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="61c8-b45d-100b-33e0" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="d8a4-913d-bdbd-8d8f" value="0.0"/>
+                <modifier type="set" field="210f-4de8-b40f-58d4" value="0.0"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="210f-4de8-b40f-58d4" type="min"/>
