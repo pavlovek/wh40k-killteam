@@ -848,22 +848,22 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047c-481f-bf79-4504" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fead-4c8c-b3cb-b7b4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fead-4c8c-b3cb-b7b4" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="90a9-4bb7-80cc-a02e" name="Chainsword" hidden="false" collective="false" import="true" targetId="66af-e06c-a79f-50f8" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bca-46c5-a09d-2cde" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bca-46c5-a09d-2cde" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="1153-4dad-ba08-8ebb" name="Chainaxe" hidden="false" collective="false" import="true" targetId="6511-f269-4198-d567" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2929-4198-a086-04ea" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2929-4198-a086-04ea" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="e98f-499b-aa73-8161" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="1ffe-81a9-c612-d79b" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ede3-48d0-95b9-cfd7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ede3-48d0-95b9-cfd7" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="7e1b-4a28-a9ec-238c" name="Combi-bolter" hidden="false" collective="false" import="true" targetId="844c-5c55-4269-fd9c" type="selectionEntry">
@@ -908,12 +908,12 @@
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="2"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da3b-4b0b-9837-5f78" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da3b-4b0b-9837-5f78" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="69fd-4858-a60d-73a1" name="Power fist" hidden="false" collective="false" import="true" targetId="223e-d693-a58c-77ef" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbde-4d70-85f2-c99e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbde-4d70-85f2-c99e" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="9141-4ff3-ad0f-0236" name="Power maul" hidden="false" collective="false" import="true" targetId="6d68-9356-5f22-9aa5" type="selectionEntry">
@@ -921,7 +921,7 @@
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="1"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df3-42bd-b387-3f32" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df3-42bd-b387-3f32" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="ffeb-4e95-8c2a-2ce5" name="Power sword" hidden="false" collective="false" import="true" targetId="4b19-95cd-f879-1a1b" type="selectionEntry">
@@ -929,7 +929,7 @@
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="1"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e2c-4a92-a5ab-590a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e2c-4a92-a5ab-590a" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1119,7 +1119,7 @@
             </entryLink>
             <entryLink id="17e6-421e-98b5-1530" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="1ffe-81a9-c612-d79b" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f5-4b54-bbcd-f6a4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f5-4b54-bbcd-f6a4" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="67d6-400c-a123-2c82" name="Flamer" hidden="false" collective="false" import="true" targetId="cfa0-6489-2bb0-bb74" type="selectionEntry">
@@ -1296,7 +1296,7 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="173a-4abd-8e85-072f" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2fb-4800-8408-5ee2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2fb-4800-8408-5ee2" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="aead-49ec-aba6-830c" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="61c8-b45d-100b-33e0" type="selectionEntry">
@@ -1305,17 +1305,17 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="210f-4de8-b40f-58d4" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e15-43b2-9026-d912" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e15-43b2-9026-d912" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="0eb8-40e9-b694-6bab" name="Chainaxe" hidden="false" collective="false" import="true" targetId="6511-f269-4198-d567" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066c-4048-a3d2-a90b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066c-4048-a3d2-a90b" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="dd2e-4b67-ba2b-0a08" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="1ffe-81a9-c612-d79b" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d3-4a57-942a-3328" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d3-4a57-942a-3328" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="3468-434d-a6ac-1fee" name="Combi-bolter" hidden="false" collective="false" import="true" targetId="844c-5c55-4269-fd9c" type="selectionEntry">
@@ -1365,12 +1365,12 @@
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="2"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="439f-4251-a3be-ab1c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="439f-4251-a3be-ab1c" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="b171-4a62-88f6-28e3" name="Power fist" hidden="false" collective="false" import="true" targetId="223e-d693-a58c-77ef" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76cb-4018-bee0-defb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76cb-4018-bee0-defb" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="aaca-43d2-ac86-9d5f" name="Power maul" hidden="false" collective="false" import="true" targetId="6d68-9356-5f22-9aa5" type="selectionEntry">
@@ -1378,7 +1378,7 @@
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="1"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c1-42ad-9062-25a3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c1-42ad-9062-25a3" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="3d7b-47bb-8259-4fdb" name="Power sword" hidden="false" collective="false" import="true" targetId="4b19-95cd-f879-1a1b" type="selectionEntry">
@@ -1386,7 +1386,7 @@
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="1"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9682-4b87-98bc-8f03" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9682-4b87-98bc-8f03" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
