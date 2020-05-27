@@ -2371,21 +2371,6 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ad60-33e8-2e4d-385e" name="Legion Trait" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4464-4ba7-152d-bcca" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ad4-9ac8-ee3f-4822" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="b84e-cec7-d328-2b75" name="New CategoryLink" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="9543-d24d-6a9a-bc3e" name="Legion Trait" hidden="false" collective="false" import="true" targetId="a273-63fe-5a78-fb5c" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="bba2-068a-6667-9a3f" name="Greater Possessed" publicationId="701a-4a21-90a2-7618" page="64" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="5291-dc2c-cfa5-a77f" value="100">
