@@ -283,6 +283,12 @@
       </modifiers>
       <description>At the start of each Fight phase roll 2 dice and discard the highest result. Until the end of the phase, each time an opponent targets a model in your kill team and makes a hit roll that, before modifiers, exactly matches your dice result, that hit roll fails.</description>
     </rule>
+    <rule id="7bf5-6584-711f-511d" name="Союзники для всех" hidden="false">
+      <description>В конце миссии бросьте по одному D6 с противником. Если ваш результат в точности равен результату противника, вы сами можете решить, перераспределение каких ресурсов происходит - территории или материалов.</description>
+    </rule>
+    <rule id="fd2a-32d5-1c2b-e7db" name="Покровительство смеющегося бога" hidden="false">
+      <description>В начале игры вы можете потратить 1 единицу материалов. чтобы обеспечить одной вашей модели (кроме командира) покровительство Цегораха. Эта модель получает 3+ непробиваемый спас-бросок до конца игры.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="69ca-e2bd-a3a1-aae3" name="Fusion pistol" hidden="false" collective="false" import="true" type="upgrade">
