@@ -546,6 +546,14 @@
       </modifiers>
       <description>Only models with the KHORNE keyword can be drawn from this Legion. You can make one additional attack in the Fight phase with a model in your kill team if it charged, was charged or made a pile-in move granted by the Heroic Intervention Commander Tactic in that battle round.</description>
     </rule>
+    <rule id="d10f-49b0-a9ed-03b8" name="Бич Колдунов" hidden="false">
+      <description>В начале психической фазы выберите вражескую модель с ключевым словом PSYKER и бростье 2D6. Если результат броска равен 8, выбранная вражеская модель получает D3 смертельных ран и вычитает 3 из своих пси-тестов до конца психической фазы.</description>
+    </rule>
+    <rule id="1e1e-467c-9b92-54e4" name="Власть крови" hidden="false">
+      <description>В начале рануда вы можете выбрать модель, видимую для вашего лидера и потратить 1 единицу материалов, чтобы призвать силу пролитой в сражении крови.
+Если вы выбрали свою модель, до конца раунда она получает 8+ непробиваемый спас-бросок и ФнП (8+). Прибавьте 1 к таким броскам за каждую выведенную из строя вражескую модель до максимума в +5.
+Если вы выбрали вражескую модель, до конца раунда она вычитает 1 из своих характеристик лидерства, атак и движения за каждую вражескую модель, выведенную из строя, до максимума штрафа в -8.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="22b6-464f-b5b7-98d9" name="Chosen" hidden="false" collective="false" import="true" type="model">
