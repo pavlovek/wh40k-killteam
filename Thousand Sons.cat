@@ -12,6 +12,7 @@
     <categoryEntry id="d5e7-b1b5-4e6a-c394" name="Daemon" hidden="false"/>
     <categoryEntry id="a4be-2fde-a2e8-2715" name="Cavalry" hidden="false"/>
     <categoryEntry id="7e7c-2072-7216-6e6a" name="Scarab Occult Terminator" hidden="false"/>
+    <categoryEntry id="1c15-22dc-276d-23b2" name="Enlightened" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="7a8e-6bde-a12d-0062" name="Rubric Marine" hidden="false" collective="false" import="true" targetId="8f6f-6cd3-fe43-a89d" type="selectionEntry">
@@ -204,10 +205,65 @@
         <categoryLink id="a565-1ebf-a57c-c9ef" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="a9f7-f799-719b-62b6" name="Tzaangor Enlightened" hidden="false" collective="false" import="true" targetId="1c42-d6fc-08a6-f9fe" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="02e5-a55d-1136-5700" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3ed4-ed16-cd9a-e7c8" name="Tzaangor Enlightened" hidden="false" collective="false" import="true" targetId="1c42-d6fc-08a6-f9fe" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ae46-a6e4-a660-2703" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bf54-0f6d-d41c-1b43" name="Aviarch" hidden="false" collective="false" import="true" targetId="c1fd-b818-2209-0f3b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d5bf-451e-78f9-0a65" name="Leader" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dce3-9f99-1afe-dd5f" name="Aviarch" hidden="false" collective="false" import="true" targetId="c1fd-b818-2209-0f3b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e6b2-dd4c-db9a-50ad" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d096-d6b8-6a01-0fb8" name="Aviarch" hidden="false" collective="false" import="true" targetId="c1fd-b818-2209-0f3b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7066-dde4-c48b-f5f1" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="59ef-5643-1e5f-4a5f" name="Tzaangor Enlightened Fire Team" hidden="false" collective="false" import="true" targetId="893a-7855-6fd7-b9bf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="80b4-b4db-7b59-7ab9" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="5d87-4bdc-700d-9fd0" name="Brotherhood of Psykers" hidden="false">
       <description>When it is your turn to choose a PSYKER from your kill team to attempt to manifest psychic powers in this phase, you can choose up to two models from your kill team to do so. Resolve all of one model&apos;s attempts before choosing the next model. In addition, the ranges of all psychic powers manifested by models in your kill team are increased by 3&quot;.</description>
+    </rule>
+    <rule id="23fc-eb74-717a-7d67" name="Наведенные иллюзии" hidden="false">
+      <description>В начале фазы движения вы можете заявить, что будете наводить иллюзию. Выберите вашу модель, видимую для вашего лидера и не имеющую ключевого слова PSYKER, после чего разместите в базовом контакте с этой моделью ее &quot;копию&quot; (модель, обладающую таким же снаряжением) так, чтобы &quot;копия&quot; была как можно дальше от центра стола. В тайне от соперника решите, какая из моделей будет настоящей (настоящей может быть как &quot;копия&quot;, так и &quot;оригинал&quot;) и запишите это решение. После этого обе модели считаются одинаковыми до конца психической фазы или до того. как одна из них не будет выведена из строя. В конце психической фазы (или если ненастоящая модель выведена из строя), покажите оппоненту запись о том, какая модель настоящая, и уберите из игры ненастоящую. Если настоящая модель выведена из строя, покажите оппоненту запись о том, какая модель настоящая, и немедленно уберите с поля обе модели.
+В конце игры, в которой вы хотя бы раз использовали эту способность. вы теряете 1 единицу материалов.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -456,7 +512,7 @@
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="set" field="bed5-190a-4269-f79c" value="1">
+        <modifier type="set" field="bed5-190a-4269-f79c" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
           </conditions>
@@ -593,7 +649,7 @@
           <entryLinks>
             <entryLink id="1695-cc07-fcff-b3e7" name="Tzaangor blades" hidden="false" collective="false" import="true" targetId="4f10-6ac7-bd58-0e23" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="3f25-9278-12a7-63fa" value="1">
+                <modifier type="set" field="3f25-9278-12a7-63fa" value="1.0">
                   <conditions>
                     <condition field="selections" scope="b38d-f559-8aaf-983a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4aae-c61b-8e1c-5558" type="equalTo"/>
                   </conditions>
@@ -990,29 +1046,6 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7bf0-08a2-84a8-7c78" name="Disc of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ac-dcb5-07a9-28bb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a22-30ea-34e0-0aec" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="cdc7-7671-c721-b56a" name="Blades" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b6b-5237-be16-fc27" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e490-0dd0-258e-01cf" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="cf19-0745-c968-a6b7" name="Blades" hidden="false" targetId="4085-4cb2-dfe5-fc0f" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="32da-0dc4-65d4-bf53" name="Pistol choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8e3-7ff1-4a56-35ff">
@@ -1069,6 +1102,11 @@
         <entryLink id="d39e-bee3-8982-c800" name="Force stave" hidden="false" collective="false" import="true" targetId="08da-47ce-4a28-97fa" type="selectionEntry"/>
         <entryLink id="dd94-5727-33b1-a9e3" name="Specialism" hidden="false" collective="false" import="true" targetId="76bf-0ae8-e6b4-65a4" type="selectionEntryGroup"/>
         <entryLink id="74f4-6a1f-bf67-cd8f" name="Frag and krak grenades" hidden="false" collective="false" import="true" targetId="e119-c749-a7be-72ff" type="selectionEntry"/>
+        <entryLink id="bb49-ef18-ed8e-332d" name="Disc of Tzeentch" hidden="false" collective="false" import="true" targetId="71e8-d47c-fc00-7d6b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="20.0"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="81.0"/>
@@ -1076,7 +1114,7 @@
     </selectionEntry>
     <selectionEntry id="cf6d-38a0-a291-5098" name="Tzaangor Shaman" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="9f35-de1d-aa1d-7407" value="1">
+        <modifier type="set" field="9f35-de1d-aa1d-7407" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
           </conditions>
@@ -1549,6 +1587,242 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1c42-d6fc-08a6-f9fe" name="Tzaangor Enlightened" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="6f5b-915a-1979-94d4" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f5b-915a-1979-94d4" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5cc3-db3d-f4ef-d7dd" name="Tzaangor Enlightened" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">12&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">4</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ae50-e4df-bf66-6dc0" name="Aura of Dark Glory" hidden="false" targetId="09fc-cd63-a88a-46ee" type="profile"/>
+        <infoLink id="dc70-ea4f-fdcf-6e58" name="Guided by Fate" hidden="false" targetId="5079-b392-353e-aa96" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="398f-b72c-f25a-bde7" name="Faction: Thousand Sons" hidden="false" targetId="0f21-9dc3-e109-c3c3" primary="false"/>
+        <categoryLink id="602a-6d82-ce50-0fa1" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="3df6-39fb-8b99-6fae" name="Tzeentch" hidden="false" targetId="ae7f-dd57-6f92-4087" primary="false"/>
+        <categoryLink id="85bf-9433-97bb-c6fa" name="Heretic Astartes" hidden="false" targetId="a2ee-c1c7-735f-f678" primary="false"/>
+        <categoryLink id="aa78-b865-0d75-5488" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="f07d-acbd-148e-50a5" name="Tzaangor" hidden="false" targetId="1eaf-47ca-d17e-14b9" primary="false"/>
+        <categoryLink id="0eec-735f-2b74-0225" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="d23c-aaea-e106-a5d8" name="Daemon" hidden="false" targetId="d5e7-b1b5-4e6a-c394" primary="false"/>
+        <categoryLink id="1111-33fe-fd3f-f81f" name="Cavalry" hidden="false" targetId="3598-c49c-3964-6884" primary="false"/>
+        <categoryLink id="dd9d-e836-8bce-33fb" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
+        <categoryLink id="0a34-f102-1267-0440" name="Enlightened" hidden="false" targetId="1c15-22dc-276d-23b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d5af-a9d2-2915-f393" name="Weapon choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="961b-2632-4c7a-bb45">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed43-4c40-6e80-d932" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40a1-3a95-bf3e-3a8e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="332b-3161-59d9-f6a1" name="Autopistol and chainsword" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="1b8e-4686-914e-2935" name="Autopistol" hidden="false" targetId="b9bd-901c-113c-a551" type="profile"/>
+                <infoLink id="fc38-6493-890c-fec9" name="Chainsword" hidden="false" targetId="a710-c1c8-a96a-82dc" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="f920-461a-1045-6a42" name="Fatecaster greatbow" hidden="false" collective="false" import="true" targetId="38c7-a2f8-1afe-78e7" type="selectionEntry"/>
+            <entryLink id="961b-2632-4c7a-bb45" name="Divining spear" hidden="false" collective="false" import="true" targetId="1317-5e00-b256-f397" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ceb0-68e6-627a-8568" name="Specialism" hidden="false" collective="false" import="true" targetId="76bf-0ae8-e6b4-65a4" type="selectionEntryGroup"/>
+        <entryLink id="b67c-7e81-ed6c-6771" name="Disc of Tzeentch" hidden="false" collective="false" import="true" targetId="71e8-d47c-fc00-7d6b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71e8-d47c-fc00-7d6b" name="Disc of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bab-7357-fd99-2572" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1f2-5444-4127-be47" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="7887-5099-eac8-dc12" name="Blades" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6cc-fc1e-0a4e-85e7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25a0-7051-b579-8a21" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ee89-1792-de74-89fb" name="Blades" hidden="false" targetId="4085-4cb2-dfe5-fc0f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="1317-5e00-b256-f397" name="Divining spear" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9993-0eb9-1166-3aba" name="Divining spear" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+1</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Increase the Damage of this weapon by 1 in a battle round in which the bearer charged.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="38c7-a2f8-1afe-78e7" name="Fatecaster greatbow" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8b15-3c93-40eb-3272" name="Fatecaster greatbow" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">24&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault 2</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">5</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c1fd-b818-2209-0f3b" name="Aviarch" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="7254-13cd-c02e-c80e" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7254-13cd-c02e-c80e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6a0c-b61b-a620-048f" name="Aviarch" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">12&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">4</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">3</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0bfa-09d5-daf6-1816" name="Aura of Dark Glory" hidden="false" targetId="09fc-cd63-a88a-46ee" type="profile"/>
+        <infoLink id="9f95-e26f-9a4d-2447" name="Guided by Fate" hidden="false" targetId="5079-b392-353e-aa96" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f9fe-c2a5-7d3c-5a31" name="Faction: Thousand Sons" hidden="false" targetId="0f21-9dc3-e109-c3c3" primary="false"/>
+        <categoryLink id="eb4d-d0de-ae1d-b2db" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="9748-0d78-bc1b-3ee9" name="Tzeentch" hidden="false" targetId="ae7f-dd57-6f92-4087" primary="false"/>
+        <categoryLink id="2b0a-3751-d6ee-a068" name="Heretic Astartes" hidden="false" targetId="a2ee-c1c7-735f-f678" primary="false"/>
+        <categoryLink id="93db-394c-b3e6-b1c1" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="c599-be74-9cc1-5216" name="Tzaangor" hidden="false" targetId="1eaf-47ca-d17e-14b9" primary="false"/>
+        <categoryLink id="43e1-03c0-83d6-958a" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="77e6-74d3-d973-7fe0" name="Daemon" hidden="false" targetId="d5e7-b1b5-4e6a-c394" primary="false"/>
+        <categoryLink id="90f6-7e93-00cb-0d7a" name="Cavalry" hidden="false" targetId="3598-c49c-3964-6884" primary="false"/>
+        <categoryLink id="5e08-1550-f8eb-ba78" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
+        <categoryLink id="8ed1-26ab-3d42-4d9c" name="Enlightened" hidden="false" targetId="1c15-22dc-276d-23b2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e206-e7e5-421b-4cf3" name="Weapon choice" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efb5-21bc-d207-d1a9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e947-21ee-11ed-166a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f863-5a05-0859-0563" name="Autopistol and chainsword" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="f111-5195-3a7e-a7d2" name="Autopistol" hidden="false" targetId="b9bd-901c-113c-a551" type="profile"/>
+                <infoLink id="1e5f-f9a9-a379-ddef" name="Chainsword" hidden="false" targetId="a710-c1c8-a96a-82dc" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="c98c-8e03-ea34-6aab" name="Fatecaster greatbow" hidden="false" collective="false" import="true" targetId="38c7-a2f8-1afe-78e7" type="selectionEntry"/>
+            <entryLink id="2eca-99a7-0ce0-9fe7" name="Divining spear" hidden="false" collective="false" import="true" targetId="1317-5e00-b256-f397" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4622-dc73-9790-d544" name="Specialism" hidden="false" collective="false" import="true" targetId="76bf-0ae8-e6b4-65a4" type="selectionEntryGroup"/>
+        <entryLink id="b724-5270-1399-1201" name="Disc of Tzeentch" hidden="false" collective="false" import="true" targetId="71e8-d47c-fc00-7d6b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="17.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="893a-7855-6fd7-b9bf" name="Tzaangor Enlightened Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6cb7-bea0-446a-a898" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="88a4-7315-afe9-8d13" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7a87-ea58-1de3-ca70" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0735-6e34-1fe5-1ba2" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f0ea-1c3f-086a-2b79" name="Aviarch" hidden="false" collective="false" import="true" targetId="c1fd-b818-2209-0f3b" type="selectionEntry"/>
+            <entryLink id="8766-08c8-a36a-8142" name="Tzaangor Enlightened" hidden="false" collective="false" import="true" targetId="1c42-d6fc-08a6-f9fe" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0d4d-5f30-07da-5e77" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="76bf-0ae8-e6b4-65a4" name="Specialism" hidden="false" collective="false" import="true">
@@ -1640,6 +1914,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0110-fd3d-1c15-4846" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ec0-dd6e-9680-2288" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c15-22dc-276d-23b2" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1756,6 +2031,15 @@
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72ab-b686-b5c5-fa0e" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="8c7b-1041-214d-6670" name="Scout" hidden="false" collective="false" import="true" targetId="1d42-7d93-e0a4-330b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c15-22dc-276d-23b2" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1891,6 +2175,11 @@
     <profile id="a80f-e649-93df-2acd" name="Terminator Armour" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">This model has a 5+ invulnerable save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5079-b392-353e-aa96" name="Guided by Fate" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">If this model attacks with a divining spear or a fatecaster greatbow, each unmodified hit roll of 6 made for this model&apos;s attacks automatically results in a wound (do not make a wound roll for that attack).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

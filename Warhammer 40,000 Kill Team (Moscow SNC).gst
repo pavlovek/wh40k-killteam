@@ -261,6 +261,7 @@
     <categoryEntry id="f7ac-6451-93ab-9fd0" name="Reborn Asuriani" hidden="false"/>
     <categoryEntry id="fda5-4be7-2469-4680" name="Reborn Drukhari" hidden="false"/>
     <categoryEntry id="ba46-b41e-0673-f611" name="Reborn Harlequin" hidden="false"/>
+    <categoryEntry id="6683-f915-cbf3-70b3" name="Malignant Plaguecaster" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
