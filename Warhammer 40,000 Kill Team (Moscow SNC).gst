@@ -262,6 +262,10 @@
     <categoryEntry id="fda5-4be7-2469-4680" name="Reborn Drukhari" hidden="false"/>
     <categoryEntry id="ba46-b41e-0673-f611" name="Reborn Harlequin" hidden="false"/>
     <categoryEntry id="6683-f915-cbf3-70b3" name="Malignant Plaguecaster" hidden="false"/>
+    <categoryEntry id="2b72-40be-8068-9240" name="Herald of Slaanesh" hidden="false"/>
+    <categoryEntry id="9f6b-4e5e-bdea-285b" name="Bloodmaster" hidden="false"/>
+    <categoryEntry id="8d2d-4de1-ba7d-ad49" name="Changecaster" hidden="false"/>
+    <categoryEntry id="c271-430d-95b4-ecca" name="Poxbringer" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">

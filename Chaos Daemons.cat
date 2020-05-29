@@ -1416,6 +1416,128 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
       </costs>
     </selectionEntry>
+	<selectionEntry id="012d-b06f-ce4c-1fba" name="1. Vision of the Warp" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f3de-a695-a440-8ed8" name="1. Vision of the Warp" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Vision of the Warp has a warp charge value of 6. If manifested, enemy models must subtract 1 from their Leadership characteristic until the next Psychic phase whilst they are within 12&quot; of the psyker.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="2147-b196-9b8b-8859" name="2. Life Draining" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cdca-bf1e-5a56-ac61" name="2. Life Draining" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Life Draining has a warp charge value of 9. If manifested, select an enemy model that is within 9&quot; of the psyker and visible to it. Until the next Psychic phase, decrease that model's Toughness characteristic by 1 and increase the psyker's Toughness characteristic by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="8003-0c53-d3cd-ea33" name="3. Demonic Inconstancy" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2bb0-47aa-3f5e-1816" name="3. Demonic Inconstancy" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Demonic Inconstancy has a warp charge value of 8. If manifested, choose another friendly model within 6&quot; of the psyker and roll a D6 for each characteristic (excluding the Max, WS, BS and Sv characteristics) of that model. On a 1, until the next Psychic phase, decrease the characteristic you rolled for by 1. On 4+, until the next Psychic phase, increase the characteristic you rolled for by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="65a6-e6b6-fc27-0eb6" name="Herald of Slaanesh" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="ee4b-bff5-2a6b-44b7" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="53.0">
+          <conditions>
+            <condition field="selections" scope="65a6-e6b6-fc27-0eb6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="67.0">
+          <conditions>
+            <condition field="selections" scope="65a6-e6b6-fc27-0eb6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="85.0">
+          <conditions>
+            <condition field="selections" scope="65a6-e6b6-fc27-0eb6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee4b-bff5-2a6b-44b7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9b31-a2e5-2295-119a" name="Herald of Slaanesh" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">7&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">2+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">2+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">4</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">4</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="81c2-d1b1-af10-dc2b" name="Herald of Slaanesh" hidden="false" typeId="201a-159a-7751-b85b" typeName="Psyker">
+          <characteristics>
+            <characteristic name="Manifest" typeId="998f-87b1-cc06-fb7e">1</characteristic>
+            <characteristic name="Deny" typeId="cb14-ded3-0978-88b8">1</characteristic>
+            <characteristic name="Powers known" typeId="67ce-9d6c-052c-d1eb">Psybolt and one powers from the Daemonic discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1d4e-9aae-e84a-ce74" name="Daemonic" hidden="false" targetId="8d61-a524-7fb2-487a" type="profile"/>
+        <infoLink id="9fdd-db2e-ebef-2e51" name="Quicksilver Swiftness" hidden="false" targetId="f462-093e-8e1e-6611" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ca87-dd2c-0f9b-2a09" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="df55-84b5-1993-b35d" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="262f-eb20-1443-e7c1" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="a75b-69a4-d52b-839a" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="aefe-fc9c-15e5-7d83" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="bc58-5161-ca52-8158" name="Herald of Slaanesh" hidden="false" targetId="2b72-40be-8068-9240" primary="false"/>
+        <categoryLink id="07a6-6c2d-da03-5132" name="Slaanesh" hidden="false" targetId="dc22-107b-4bae-8a8c" primary="false"/>
+        <categoryLink id="1ec4-646d-c9dd-9744" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5ca4-1612-d72a-850a" name="Ravaging claws" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f91e-d99b-eb07-d454" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63c3-6b27-6d78-55eb" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f03d-cb9c-96e6-9faf" name="Ravaging claws" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">2</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Each time you make a wound roll of 6+ for this weapon, that hit is resolved with AP of -4 instead of -1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7e3e-3e58-73eb-0b29" name="Herald of Slaanesh Specialism" hidden="false" collective="false" import="true" targetId="573e-fb8d-b1cd-1a85" type="selectionEntryGroup"/>
+        <entryLink id="a3a7-74a9-db34-24f0" name="Psychic powers" hidden="false" collective="false" import="true" targetId="5c03-b5ce-8e29-9b59" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afb1-e2ee-36f3-eef1" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="45.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="5621-2b31-1622-c4e0" name="Specialism" hidden="false" collective="false" import="true">
@@ -1479,6 +1601,82 @@
               </conditions>
             </modifier>
           </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+	<selectionEntryGroup id="573e-fb8d-b1cd-1a85" name="Herald of Slaanesh Specialism" hidden="false" collective="false" import="true">
+	  <constraints>
+	    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0f7-411e-b189-9d8e" type="max"/>
+	    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0c-12cc-95be-8e3c" type="min"/>
+	  </constraints>
+	  <entryLinks>
+	    <entryLink id="82c0-e2da-7898-d606" name="Ferocity" hidden="false" collective="false" import="true" targetId="275f-0c8c-74e6-899f" type="selectionEntry"/>
+	    <entryLink id="0b8a-4343-a7f9-4cda" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+	    <entryLink id="e170-4961-ac9b-94b4" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+	    <entryLink id="98c8-4d6d-803f-11c5" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+	    <entryLink id="0b49-625c-349f-6b3d" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
+	  </entryLinks>
+	</selectionEntryGroup>
+	<selectionEntryGroup id="211f-462c-b2d9-afe1" name="Bloodmaster Specialism" hidden="false" collective="false" import="true">
+	  <constraints>
+		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f80-4fc7-bf29-36bc" type="max"/>
+		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ba0-4f53-b2ad-90fd" type="min"/>
+	  </constraints>
+	  <entryLinks>
+		<entryLink id="48f7-41bd-b730-0f3a" name="Strength" hidden="false" collective="false" import="true" targetId="4550-6c27-1911-68ae" type="selectionEntry"/>
+		<entryLink id="c58a-484a-8bb8-7667" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+		<entryLink id="8c0a-4dcd-a43a-2be3" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+		<entryLink id="09d9-4b2d-ad46-6aaa" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+	  </entryLinks>
+	</selectionEntryGroup>
+	<selectionEntryGroup id="88d7-4f1b-b3d0-50ee" name="Changecaster Specialism" hidden="false" collective="false" import="true">
+	  <constraints>
+		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e53-4a8d-86df-9e6f" type="max"/>
+		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c3-4e18-9002-3c7d" type="min"/>
+	  </constraints>
+	  <entryLinks>
+		<entryLink id="5b84-43f2-9335-485a" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
+		<entryLink id="9d7a-4f32-89ed-dffc" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+		<entryLink id="54c1-4e8f-9f94-c02e" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+		<entryLink id="7e4a-494e-bed4-8827" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+		<entryLink id="0dd3-48de-866e-d07e" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
+	  </entryLinks>
+	</selectionEntryGroup>
+	<selectionEntryGroup id="f7ae-4ad6-b2c6-2b49" name="Poxbringer Specialism" hidden="false" collective="false" import="true">
+	  <constraints>
+		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c39c-4f1c-ab61-3af6" type="max"/>
+		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e9-4ba5-9670-a162" type="min"/>
+	  </constraints>
+	  <entryLinks>
+		<entryLink id="ce3f-48cd-8d41-57a4" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry"/>
+		<entryLink id="789d-4ac0-9574-6a4d" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+		<entryLink id="8a3c-404b-a900-cda5" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+		<entryLink id="d9e4-4635-8348-ce36" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+		<entryLink id="7aa2-4c25-b1a4-3fa1" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
+	  </entryLinks>
+	</selectionEntryGroup>
+    <selectionEntryGroup id="5c03-b5ce-8e29-9b59" name="Psychic powers" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="0f40-6014-2f6b-7244" name="Commander Psychic Powers" hidden="false" collective="false" import="true" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup"/>
+        <entryLink id="341a-f0fc-df65-43cb" name="Daemonic discipline" hidden="false" collective="false" import="true" targetId="f6c2-4b2b-48c1-e607" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f6c2-4b2b-48c1-e607" name="Daemonic discipline" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="d303-8406-079e-33f2" name="1. Vision of the Warp" hidden="false" collective="false" import="true" targetId="012d-b06f-ce4c-1fba" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9adf-d3de-2ba9-d647" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7074-04b4-54bf-5a8f" name="2. Life Draining" hidden="false" collective="false" import="true" targetId="2147-b196-9b8b-8859" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ca-d6ab-a0c1-893d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4df2-1ed4-9085-6f88" name="3. Demonic Inconstancy" hidden="false" collective="false" import="true" targetId="8003-0c53-d3cd-ea33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e93-61e6-25c7-0b6d" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
