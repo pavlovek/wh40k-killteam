@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0737-c237-2604-a08c" name="Chaos Daemons" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0737-c237-2604-a08c" name="Chaos Daemons" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="29a4-cdb6-08ba-6f7e" name="Tzeentch" hidden="false"/>
     <categoryEntry id="c5bf-46ca-5e7d-713d" name="Khorne" hidden="false"/>
@@ -10,9 +10,13 @@
     <categoryEntry id="58b7-6f78-20d5-b2e7" name="Daemonette" hidden="false"/>
     <categoryEntry id="cd54-08c0-8ac9-940e" name="Horror" hidden="false"/>
     <categoryEntry id="7cb6-3231-ff31-1be2" name="Plaguebearer" hidden="false"/>
+    <categoryEntry id="36ed-ae7d-3245-1e75" name="Fiend" hidden="false"/>
+    <categoryEntry id="b7cc-7df2-ee4a-3b6d" name="Flesh Hound" hidden="false"/>
+    <categoryEntry id="607e-ac8f-9d2c-4915" name="Flamer" hidden="false"/>
+    <categoryEntry id="82ee-57a0-bae1-70ce" name="Beast of Nurgle" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry id="7237-548a-e941-2f53" name="Bloodletter Fire Team" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7237-548a-e941-2f53" name="Bloodletter Fire Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -46,7 +50,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6326-ab9e-9dbe-4084" name="Daemonette Fire Team" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6326-ab9e-9dbe-4084" name="Daemonette Fire Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -80,7 +84,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="43a0-f2b6-bd23-95cf" name="Horrors Fire Team" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="43a0-f2b6-bd23-95cf" name="Horrors Fire Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -114,7 +118,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b9b7-01d7-6ac7-d813" name="Plagebearer Fire Team" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b9b7-01d7-6ac7-d813" name="Plagebearer Fire Team" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -143,6 +147,116 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6a14-72c5-a5d9-cf27" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7ed0-ee56-1d2b-8188" name="Fiend Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3858-caac-2c11-8a17" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="03fa-273d-016b-e352" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="af5b-acf2-c9f6-bc40" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+        <entryLink id="4578-4d14-fddc-79af" name="Fiend" hidden="false" collective="false" import="true" targetId="1a64-e534-2092-58a2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5306-0643-889c-943e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f720-6d0c-5c37-dc61" name="Flesh Hound Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1023-2999-3fa1-b843" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a97c-5390-b2f6-1542" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="82f5-d621-184c-df42" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48b6-f990-0608-484c" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3552-6274-d224-2b17" name="Gore Hound" hidden="false" collective="false" import="true" targetId="9cdc-170c-dc86-fcf5" type="selectionEntry"/>
+            <entryLink id="e262-5257-3976-4e88" name="Flesh Hound" hidden="false" collective="false" import="true" targetId="e59c-7510-f8e5-ff57" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e970-52e4-6441-6f6a" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ce9d-05d8-fcaf-3ecf" name="Flamer Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7572-82a0-9022-79e4" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="18d8-4aa4-146c-5e38" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="77ec-0305-38b1-104d" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+        <entryLink id="1be7-1b51-0576-c3c1" name="Flamer" hidden="false" collective="false" import="true" targetId="fcaa-2436-67f9-cb58" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e342-7813-e765-bdf3" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e720-8baf-8a27-ee23" name="Beast of Nurgle Team" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c2d-9885-08e7-9081" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cf27-4255-a4fa-24c0" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b652-4dc7-2e59-ec98" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+        <entryLink id="be20-c019-f62f-5e29" name="Beast of Nurgle" hidden="false" collective="false" import="true" targetId="0480-4e3b-da74-e236" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd4e-a053-2f95-1802" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
@@ -442,6 +556,95 @@
         <categoryLink id="cb56-58ac-d602-57b3" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="8aef-a9d1-116d-cea4" name="Herald of Slaanesh" hidden="false" collective="false" import="true" targetId="65a6-e6b6-fc27-0eb6" type="selectionEntry"/>
+    <entryLink id="2630-768c-cc08-8f6f" name="Bloodmaster" hidden="false" collective="false" import="true" targetId="0c1b-0f86-a629-e5f9" type="selectionEntry"/>
+    <entryLink id="8707-56cb-d102-b27c" name="Changecaster" hidden="false" collective="false" import="true" targetId="041d-c92a-cd70-3a1b" type="selectionEntry"/>
+    <entryLink id="c6e3-ddb1-7c0a-d98e" name="Poxbringer" hidden="false" collective="false" import="true" targetId="f8c7-3a6c-12bc-f803" type="selectionEntry"/>
+    <entryLink id="2e37-0bb8-672a-5776" name="Fiend" hidden="false" collective="false" import="true" targetId="1a64-e534-2092-58a2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="72c7-b1f0-d668-9ab1" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e508-be7d-4b51-737a" name="Fiend" hidden="false" collective="false" import="true" targetId="1a64-e534-2092-58a2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4838-cb59-63d6-0bfe" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d0ba-b66a-2206-4100" name="Flesh Hound" hidden="false" collective="false" import="true" targetId="e59c-7510-f8e5-ff57" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fef6-cfa0-e65c-87b7" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eba5-aa68-21f8-b8e2" name="Flesh Hound" hidden="false" collective="false" import="true" targetId="e59c-7510-f8e5-ff57" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4f04-748c-3100-b379" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eebe-43d6-0476-a0f0" name="Gore Hound" hidden="false" collective="false" import="true" targetId="9cdc-170c-dc86-fcf5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="32ef-276d-8cb9-2d38" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ac1d-a769-df34-14c4" name="Gore Hound" hidden="false" collective="false" import="true" targetId="9cdc-170c-dc86-fcf5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7803-85b2-0a62-0e3c" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="949f-3cfe-cc56-5955" name="Flamer" hidden="false" collective="false" import="true" targetId="fcaa-2436-67f9-cb58" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="bae4-1f46-228b-6ec9" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ed44-3a3b-7af6-fe59" name="Flamer" hidden="false" collective="false" import="true" targetId="fcaa-2436-67f9-cb58" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5065-90d7-caa6-8515" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="01f1-edad-ab88-3cb8" name="Beast of Nurgle" hidden="false" collective="false" import="true" targetId="0480-4e3b-da74-e236" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e657-afc9-8ec9-8136" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6931-c7ab-1e7c-980a" name="Beast of Nurgle" hidden="false" collective="false" import="true" targetId="0480-4e3b-da74-e236" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6ecc-6cb6-346f-efe5" name="Non-specialist" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c058-5ee5-febb-85ea" name="Bloodletter" hidden="false" collective="false" import="true" type="model">
@@ -654,7 +857,7 @@
             <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
             <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
             <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
-            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
             <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
             <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
             <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
@@ -893,7 +1096,7 @@
             <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
             <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
             <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
-            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
             <characteristic name="A" typeId="d63d-20cc-db25-5dd5">3</characteristic>
             <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
             <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
@@ -954,6 +1157,7 @@
         <categoryLink id="f77f-bc85-91c3-ef81" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
         <categoryLink id="8472-715c-975b-ef54" name="Horror" hidden="false" targetId="cd54-08c0-8ac9-940e" primary="false"/>
         <categoryLink id="0c54-f93b-8948-e7a1" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="8d14-dd25-eb81-b144" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="16ee-2d42-bd0e-ec82" name="Coruscating Flames" hidden="false" collective="false" import="true" targetId="6897-8c74-0576-4b76" type="selectionEntry"/>
@@ -1027,6 +1231,7 @@
         <categoryLink id="ed75-2919-e8c0-3408" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
         <categoryLink id="4ac3-8cf7-2f48-4bf9" name="Horror" hidden="false" targetId="cd54-08c0-8ac9-940e" primary="false"/>
         <categoryLink id="03ce-8f27-75c9-2ffe" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="f07d-85b0-d173-6ddf" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e249-5dcc-d496-d119" name="Icon of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
@@ -1097,6 +1302,7 @@
         <categoryLink id="1795-1c0c-a6dc-7fc9" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
         <categoryLink id="a443-587e-61c0-d733" name="Horror" hidden="false" targetId="cd54-08c0-8ac9-940e" primary="false"/>
         <categoryLink id="236f-b0ed-e518-fd99" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="50c8-ad3d-9433-762e" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="810c-4bc7-c9d7-a171" name="Instrument of Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
@@ -1144,7 +1350,7 @@
             <characteristic name="BS" typeId="27ff-d5c5-5422-1614">4+</characteristic>
             <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
             <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
-            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
             <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
             <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
             <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
@@ -1167,6 +1373,7 @@
         <categoryLink id="cfe6-a8ee-a4bd-f52d" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
         <categoryLink id="fe5f-da8a-07b4-0895" name="Horror" hidden="false" targetId="cd54-08c0-8ac9-940e" primary="false"/>
         <categoryLink id="3362-b8c8-3588-c5ad" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="8169-fec2-400b-5339" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="10bc-a5fc-dec4-5a9d" name="Coruscating Flames" hidden="false" collective="false" import="true" targetId="6897-8c74-0576-4b76" type="selectionEntry"/>
@@ -1387,7 +1594,7 @@
             <characteristic name="BS" typeId="27ff-d5c5-5422-1614">4+</characteristic>
             <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
             <characteristic name="T" typeId="803c-5453-20c4-4b94">4</characteristic>
-            <characteristic name="W" typeId="0c48-aed0-609b-9818">1</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
             <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
             <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
             <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
@@ -1416,7 +1623,7 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="012d-b06f-ce4c-1fba" name="1. Vision of the Warp" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="012d-b06f-ce4c-1fba" name="1. Vision of the Warp" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="f3de-a695-a440-8ed8" name="1. Vision of the Warp" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
           <characteristics>
@@ -1424,15 +1631,21 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2147-b196-9b8b-8859" name="2. Life Draining" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="cdca-bf1e-5a56-ac61" name="2. Life Draining" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
           <characteristics>
-            <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Life Draining has a warp charge value of 9. If manifested, select an enemy model that is within 9&quot; of the psyker and visible to it. Until the next Psychic phase, decrease that model's Toughness characteristic by 1 and increase the psyker's Toughness characteristic by 1.</characteristic>
+            <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Life Draining has a warp charge value of 9. If manifested, select an enemy model that is within 9&quot; of the psyker and visible to it. Until the next Psychic phase, decrease that model&apos;s Toughness characteristic by 1 and increase the psyker&apos;s Toughness characteristic by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8003-0c53-d3cd-ea33" name="3. Demonic Inconstancy" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1442,6 +1655,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="65a6-e6b6-fc27-0eb6" name="Herald of Slaanesh" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1505,6 +1721,7 @@
         <categoryLink id="bc58-5161-ca52-8158" name="Herald of Slaanesh" hidden="false" targetId="2b72-40be-8068-9240" primary="false"/>
         <categoryLink id="07a6-6c2d-da03-5132" name="Slaanesh" hidden="false" targetId="dc22-107b-4bae-8a8c" primary="false"/>
         <categoryLink id="1ec4-646d-c9dd-9744" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
+        <categoryLink id="1dfb-1eb8-5f1b-27a1" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5ca4-1612-d72a-850a" name="Ravaging claws" hidden="false" collective="false" import="true" type="upgrade">
@@ -1524,6 +1741,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1536,6 +1756,682 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c1b-0f86-a629-e5f9" name="Bloodmaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="3d27-29d8-64c2-f141" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="70.0">
+          <conditions>
+            <condition field="selections" scope="0c1b-0f86-a629-e5f9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="85.0">
+          <conditions>
+            <condition field="selections" scope="0c1b-0f86-a629-e5f9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="100.0">
+          <conditions>
+            <condition field="selections" scope="0c1b-0f86-a629-e5f9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d27-29d8-64c2-f141" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="226b-ff73-78f8-3d16" name="Bloodmaster" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">2+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">2+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">5</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">4</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">4</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">3</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8238-6a93-412e-e80f" name="Daemonic" hidden="false" targetId="8d61-a524-7fb2-487a" type="profile"/>
+        <infoLink id="cb5f-e21f-c1d4-e6d7" name="Unstoppable Ferocity" hidden="false" targetId="6a7e-9275-b723-053d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7a9c-d600-7ff8-59b4" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="4b26-34eb-b497-f363" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="3dc4-fa7f-c7af-1c96" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="3e81-8253-67d5-3ca7" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="f9d2-9279-13c6-4654" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="428c-97c7-6b72-e4aa" name="Bloodmaster" hidden="false" targetId="9f6b-4e5e-bdea-285b" primary="false"/>
+        <categoryLink id="c072-8bca-5071-9d64" name="Khorne" hidden="false" targetId="c5bf-46ca-5e7d-713d" primary="false"/>
+        <categoryLink id="e49b-d629-2c7b-5515" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="67cc-fa2a-fffc-f318" name="Blade of blood" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="005e-9137-d361-b509" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7081-e846-58dd-210f" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="9b10-7503-55c9-1865" name="Blade of blood" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-3</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Each time you make a wound roll of 6+ for this weapon, that hit is resolved with a Damage of 3.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="013a-c278-6234-c418" name="Bloodmaster Specialism" hidden="false" collective="false" import="true" targetId="211f-462c-b2d9-afe1" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="041d-c92a-cd70-3a1b" name="Changecaster" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="ad00-812a-47f9-365b" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="58.0">
+          <conditions>
+            <condition field="selections" scope="041d-c92a-cd70-3a1b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="72.0">
+          <conditions>
+            <condition field="selections" scope="041d-c92a-cd70-3a1b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="90.0">
+          <conditions>
+            <condition field="selections" scope="041d-c92a-cd70-3a1b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad00-812a-47f9-365b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6ffc-aa8a-3611-3d3e" name="Changecaster" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">4+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">4</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8543-8819-201f-c835" name="Changecaster" hidden="false" typeId="201a-159a-7751-b85b" typeName="Psyker">
+          <characteristics>
+            <characteristic name="Manifest" typeId="998f-87b1-cc06-fb7e">1</characteristic>
+            <characteristic name="Deny" typeId="cb14-ded3-0978-88b8">1</characteristic>
+            <characteristic name="Powers known" typeId="67ce-9d6c-052c-d1eb">Psybolt and 2 powers from the Daemonic discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="98e8-b0b1-d452-7c69" name="Ephemeral Daemon" hidden="false" targetId="a499-ef1c-1a84-d623" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c80f-6b34-9047-d98c" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="6aaf-acbc-6c87-9b6a" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="1d7b-591e-e176-ec12" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="0a70-3bcb-0fbc-3a31" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="17e9-be7e-f30e-3579" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="3413-eb5b-014b-1e86" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
+        <categoryLink id="3ed4-0316-d058-b2a3" name="Changecaster" hidden="false" targetId="8d2d-4de1-ba7d-ad49" primary="false"/>
+        <categoryLink id="5d67-43d4-c780-4d9f" name="Tzeentch" hidden="false" targetId="29a4-cdb6-08ba-6f7e" primary="false"/>
+        <categoryLink id="521a-5dda-1c2d-f249" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3c0f-7a90-7fad-a44a" name="Ritual dagger" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9934-41d0-8249-a7bb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6976-25ea-5bf9-cab7" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="547b-3f7f-322d-9dbd" name="Ritual dagger" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Each time this weapon takes an enemy model out of action, the bearer regains 1 lost wound.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e26e-9e54-35b3-ae68" name="Changecaster Specialism" hidden="false" collective="false" import="true" targetId="88d7-4f1b-b3d0-50ee" type="selectionEntryGroup"/>
+        <entryLink id="15a3-dd01-6254-8dea" name="Psychic powers" hidden="false" collective="false" import="true" targetId="5c03-b5ce-8e29-9b59" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="306b-5903-9125-8b87" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f8c7-3a6c-12bc-f803" name="Poxbringer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="af35-115a-3506-126c" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="68.0">
+          <conditions>
+            <condition field="selections" scope="f8c7-3a6c-12bc-f803" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="81.0">
+          <conditions>
+            <condition field="selections" scope="f8c7-3a6c-12bc-f803" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="95.0">
+          <conditions>
+            <condition field="selections" scope="f8c7-3a6c-12bc-f803" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af35-115a-3506-126c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="86b4-2eb5-db4d-f593" name="Poxbringer" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">5&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">2+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">2+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">5</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">5</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">4</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">3</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">8</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="63e0-7b16-2f39-fe46" name="Poxbringer" hidden="false" typeId="201a-159a-7751-b85b" typeName="Psyker">
+          <characteristics>
+            <characteristic name="Manifest" typeId="998f-87b1-cc06-fb7e">1</characteristic>
+            <characteristic name="Deny" typeId="cb14-ded3-0978-88b8">1</characteristic>
+            <characteristic name="Powers known" typeId="67ce-9d6c-052c-d1eb">Psybolt and one powers from the Daemonic discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7d08-8656-04a8-2ef2" name="Daemonic" hidden="false" targetId="8d61-a524-7fb2-487a" type="profile"/>
+        <infoLink id="64c4-7c39-5a81-01c6" name="Disgustingly Resilient" hidden="false" targetId="455d-db5d-faec-36bf" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="733c-23bc-e1bc-dd63" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="10da-a361-71dc-694a" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="b4e6-eecf-aee1-cfed" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="62ad-7ab8-bc6c-dfb0" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="f8c2-766f-eae5-3f83" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="51bc-d526-50be-9d40" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
+        <categoryLink id="00c1-3f82-02d3-5197" name="Poxbringer" hidden="false" targetId="c271-430d-95b4-ecca" primary="false"/>
+        <categoryLink id="169d-5d26-64af-9cf9" name="Nurgle" hidden="false" targetId="854f-05f0-fb32-7466" primary="false"/>
+        <categoryLink id="8e8a-7bdc-f457-a454" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4681-79c5-22f0-84cc" name="Balesword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a77-dd2b-daa2-9cc4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ede9-5dc5-b2a5-4138" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="24f2-d823-f9c3-be66" name="Balesword" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-3</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">You can re-roll failed wound rolls for this weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="11a2-c0ec-df2c-8fbf" name="Poxbringer Specialism" hidden="false" collective="false" import="true" targetId="f7ae-4ad6-b2c6-2b49" type="selectionEntryGroup"/>
+        <entryLink id="fdc1-36c9-479f-7a14" name="Psychic powers" hidden="false" collective="false" import="true" targetId="5c03-b5ce-8e29-9b59" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b5-9c62-ead2-37d2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a64-e534-2092-58a2" name="Fiend" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="02d1-02b4-3c0d-89c5" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="02d1-02b4-3c0d-89c5" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a5e4-6aff-3671-bfb1" name="Fiend" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">14&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">-</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">4</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">4</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">4</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="314c-0868-5700-5fad" name="Disruptive Song" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Subtract 1 from any psychic test made for enemy PSYKERS within 12&quot; of this model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bbb5-2a73-1350-97f6" name="Soporific Musk" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">If an enemy INFANTRY model within 1&quot; of this model would Fall Back, roll a D6 and add the number of this model&apos;s remaining Wounds to the result of this roll. On 5+, that enemy model cannot Fall Back.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0a1e-24c0-8de6-4f4c" name="Daemonic" hidden="false" targetId="8d61-a524-7fb2-487a" type="profile"/>
+        <infoLink id="e137-2940-1d47-4cf3" name="Quicksilver Swiftness" hidden="false" targetId="f462-093e-8e1e-6611" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2f24-4d25-edfe-5a3d" name="Beast" hidden="false" targetId="5d31-bdf1-1016-290b" primary="false"/>
+        <categoryLink id="94c4-94ce-059a-e794" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="b1a5-022d-c7f3-38f9" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="ac75-dd4b-c064-a327" name="Slaanesh" hidden="false" targetId="dc22-107b-4bae-8a8c" primary="false"/>
+        <categoryLink id="05ef-a051-4edc-1de6" name="Fiend" hidden="false" targetId="36ed-ae7d-3245-1e75" primary="false"/>
+        <categoryLink id="09f3-ffc2-5020-003f" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="4a56-02e8-beca-0b37" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c3c1-440f-a271-0816" name="Dissecting claws" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc81-e373-a028-de47" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a00-da77-3b91-ed05" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="2bdb-67fa-0f88-a94b" name="Dissecting claws" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">2</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">Each time you make a wound roll of 6+ for this weapon, that hit is resolved with AP of -4 instead of -1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a96a-d325-07f2-de19" name="Vicious barbed tail" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a744-bd7a-d99f-2c1d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a908-39dd-47d2-7e1e" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b875-7b23-067a-aa29" name="Vicious barbed tail" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-3</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">A model can only make a single attack with this weapon each time to fights.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2148-03a6-6941-f53c" name="Fiend Specialism" hidden="false" collective="false" import="true" targetId="ebdc-49d9-7bc2-1568" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e59c-7510-f8e5-ff57" name="Flesh Hound" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="9d9d-0720-77a5-e013" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d9d-0720-77a5-e013" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e6ba-3eb5-d5ab-8a28" name="Flesh Hound" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">10&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">-</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">4</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9666-c4b3-fb26-9725" name="Daemonic" hidden="false" targetId="8d61-a524-7fb2-487a" type="profile"/>
+        <infoLink id="3935-6476-443f-1a39" name="Unstoppable Ferocity" hidden="false" targetId="6a7e-9275-b723-053d" type="profile"/>
+        <infoLink id="7871-c2dd-3323-2991" name="Collar of Khorne" hidden="false" targetId="f81f-351c-e28f-0f0c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1d48-19dc-5c45-641b" name="Beast" hidden="false" targetId="5d31-bdf1-1016-290b" primary="false"/>
+        <categoryLink id="22c3-09ac-3d0a-b14c" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="60b9-40e9-dd2b-9c4a" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="0c63-f7de-6115-9779" name="Flesh Hound" hidden="false" targetId="b7cc-7df2-ee4a-3b6d" primary="false"/>
+        <categoryLink id="7d82-a6b3-b001-feb5" name="Khorne" hidden="false" targetId="c5bf-46ca-5e7d-713d" primary="false"/>
+        <categoryLink id="a5ca-2359-7b93-deee" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="6bb8-c1ee-eac3-9b60" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a188-0caf-7800-d641" name="Gore-drenched fangs" hidden="false" collective="false" import="true" targetId="770d-a294-49eb-3fea" type="selectionEntry"/>
+        <entryLink id="423c-93a2-433d-f7d6" name="Flesh Hound Specialism" hidden="false" collective="false" import="true" targetId="7864-6f96-bfa7-d5fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="770d-a294-49eb-3fea" name="Gore-drenched fangs" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36f8-5da4-8263-ba37" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e8-7359-4166-7af2" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="a280-0782-98d7-d484" name="Gore-drenched fangs" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9cdc-170c-dc86-fcf5" name="Gore Hound" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="58be-5f22-809a-56f2" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="58be-5f22-809a-56f2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3dc0-8362-b10c-8490" name="Gore Hound" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">10&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">6+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">4</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4ae7-c3a4-a357-99f9" name="Daemonic" hidden="false" targetId="8d61-a524-7fb2-487a" type="profile"/>
+        <infoLink id="7f62-4bd2-ae40-591b" name="Unstoppable Ferocity" hidden="false" targetId="6a7e-9275-b723-053d" type="profile"/>
+        <infoLink id="78b4-e8ff-3a12-0c6d" name="Collar of Khorne" hidden="false" targetId="f81f-351c-e28f-0f0c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d9e3-f897-f944-bfbe" name="Beast" hidden="false" targetId="5d31-bdf1-1016-290b" primary="false"/>
+        <categoryLink id="c87b-aa91-afd6-6da0" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="6c80-09df-aa88-9642" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="3c14-559c-c03e-4e0f" name="Flesh Hound" hidden="false" targetId="b7cc-7df2-ee4a-3b6d" primary="false"/>
+        <categoryLink id="8948-82c1-6fa2-61d2" name="Khorne" hidden="false" targetId="c5bf-46ca-5e7d-713d" primary="false"/>
+        <categoryLink id="f062-2c7b-d8b8-2e10" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="9036-dcc0-0b9d-bac8" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b8b3-0032-1dcc-adc0" name="Burning roar" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9412-4391-2dee-139c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a9d-c04e-cb7f-6733" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b7d5-39bc-0220-8de4" name="Burning roar" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">8&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault D6</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">This weapon automatically hits its target.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0259-0eae-4582-6327" name="Gore-drenched fangs" hidden="false" collective="false" import="true" targetId="770d-a294-49eb-3fea" type="selectionEntry"/>
+        <entryLink id="3449-8086-a9d8-e236" name="Flesh Hound Specialism" hidden="false" collective="false" import="true" targetId="7864-6f96-bfa7-d5fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="17.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fcaa-2436-67f9-cb58" name="Flamer" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="a2a1-bdf9-931c-948c" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a2a1-bdf9-931c-948c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="76f2-6c56-ea3a-7913" name="Flamer" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">12&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">5+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">4</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">2</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">2</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="55f3-1c1c-dbe3-4d28" name="Ephemeral Daemon" hidden="false" targetId="a499-ef1c-1a84-d623" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0dc2-9f00-f56e-c7db" name="Beast" hidden="false" targetId="5d31-bdf1-1016-290b" primary="false"/>
+        <categoryLink id="92c5-f1ff-0bef-0621" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="62a2-03ca-7a31-095a" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="9e07-1565-0884-25b9" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="1a54-645a-5ac7-2196" name="Flamer" hidden="false" targetId="607e-ac8f-9d2c-4915" primary="false"/>
+        <categoryLink id="ce8d-1594-c012-9769" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
+        <categoryLink id="f014-2dc5-1df7-3a69" name="Tzeentch" hidden="false" targetId="29a4-cdb6-08ba-6f7e" primary="false"/>
+        <categoryLink id="121f-762f-259c-ada6" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b9ac-f191-5161-7d04" name="Flickering flames" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3735-7c2d-5fde-d55e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c93-f581-f23d-0d02" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f6d7-6f1b-1065-3618" name="Flickering flames" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">12&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Pistol D6</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">This weapon automatically hits its target.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="46c2-0601-c2d9-219f" name="Flamer Specialism" hidden="false" collective="false" import="true" targetId="238c-0e7e-b2a4-3d19" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0480-4e3b-da74-e236" name="Beast of Nurgle" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="fdfc-c815-88ae-fb23" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fdfc-c815-88ae-fb23" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="301b-ace1-651d-68b8" name="Beast of Nurgle" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">4+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">-</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">4</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">5</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">5</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">D6</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">7</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">6+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ba00-a161-61d7-180b" name="Deadly Slime Trail" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Roll a D6 each time an enemy model Falls Back within 1&quot; of this model. On a 5+, that enemy model suffer a mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="557a-fd5c-6314-f7ce" name="Attention Seeker" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">For the purposes of the Heroic Intervention Commander Tactic you can treat this model as your Commander.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bf0d-7b06-2a7f-c69e" name="Daemonic" hidden="false" targetId="8d61-a524-7fb2-487a" type="profile"/>
+        <infoLink id="c979-2887-72e9-a4ed" name="Disgustingly Resilient" hidden="false" targetId="455d-db5d-faec-36bf" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="53f6-25aa-e261-257b" name="Beast" hidden="false" targetId="5d31-bdf1-1016-290b" primary="false"/>
+        <categoryLink id="9944-371d-019e-14e5" name="Beast of Nurgle" hidden="false" targetId="82ee-57a0-bae1-70ce" primary="false"/>
+        <categoryLink id="52c7-2189-291c-00f7" name="Chaos" hidden="false" targetId="5c8a-0750-e7af-2761" primary="false"/>
+        <categoryLink id="c4a0-4452-9509-2cde" name="Daemon" hidden="false" targetId="ffde-f2b6-eefb-c7e6" primary="false"/>
+        <categoryLink id="500c-32de-2d7a-9ab4" name="Faction: Chaos Daemons" hidden="false" targetId="1ac8-a49e-16ce-e047" primary="false"/>
+        <categoryLink id="0336-0b32-3cb2-8241" name="Nurgle" hidden="false" targetId="854f-05f0-fb32-7466" primary="false"/>
+        <categoryLink id="e124-6d15-ebfc-6fdb" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cfae-4551-a946-50a5" name="Putrid appendages" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcb0-c81d-d477-a2d9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0063-f579-1969-7b29" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="8f81-96bc-b5fa-64e8" name="Putrid appendages" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">2</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">You can re-roll failed wound rolls for this weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3b6d-e5fb-7fdb-e83c" name="Beast of Nurgle Specialism" hidden="false" collective="false" import="true" targetId="1215-3a90-8823-35ed" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="34.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1604,57 +2500,57 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-	<selectionEntryGroup id="573e-fb8d-b1cd-1a85" name="Herald of Slaanesh Specialism" hidden="false" collective="false" import="true">
-	  <constraints>
-	    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0f7-411e-b189-9d8e" type="max"/>
-	    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0c-12cc-95be-8e3c" type="min"/>
-	  </constraints>
-	  <entryLinks>
-	    <entryLink id="82c0-e2da-7898-d606" name="Ferocity" hidden="false" collective="false" import="true" targetId="275f-0c8c-74e6-899f" type="selectionEntry"/>
-	    <entryLink id="0b8a-4343-a7f9-4cda" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
-	    <entryLink id="e170-4961-ac9b-94b4" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
-	    <entryLink id="98c8-4d6d-803f-11c5" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
-	    <entryLink id="0b49-625c-349f-6b3d" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
-	  </entryLinks>
-	</selectionEntryGroup>
-	<selectionEntryGroup id="211f-462c-b2d9-afe1" name="Bloodmaster Specialism" hidden="false" collective="false" import="true">
-	  <constraints>
-		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f80-4fc7-bf29-36bc" type="max"/>
-		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ba0-4f53-b2ad-90fd" type="min"/>
-	  </constraints>
-	  <entryLinks>
-		<entryLink id="48f7-41bd-b730-0f3a" name="Strength" hidden="false" collective="false" import="true" targetId="4550-6c27-1911-68ae" type="selectionEntry"/>
-		<entryLink id="c58a-484a-8bb8-7667" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
-		<entryLink id="8c0a-4dcd-a43a-2be3" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
-		<entryLink id="09d9-4b2d-ad46-6aaa" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
-	  </entryLinks>
-	</selectionEntryGroup>
-	<selectionEntryGroup id="88d7-4f1b-b3d0-50ee" name="Changecaster Specialism" hidden="false" collective="false" import="true">
-	  <constraints>
-		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e53-4a8d-86df-9e6f" type="max"/>
-		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c3-4e18-9002-3c7d" type="min"/>
-	  </constraints>
-	  <entryLinks>
-		<entryLink id="5b84-43f2-9335-485a" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
-		<entryLink id="9d7a-4f32-89ed-dffc" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
-		<entryLink id="54c1-4e8f-9f94-c02e" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
-		<entryLink id="7e4a-494e-bed4-8827" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
-		<entryLink id="0dd3-48de-866e-d07e" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
-	  </entryLinks>
-	</selectionEntryGroup>
-	<selectionEntryGroup id="f7ae-4ad6-b2c6-2b49" name="Poxbringer Specialism" hidden="false" collective="false" import="true">
-	  <constraints>
-		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c39c-4f1c-ab61-3af6" type="max"/>
-		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e9-4ba5-9670-a162" type="min"/>
-	  </constraints>
-	  <entryLinks>
-		<entryLink id="ce3f-48cd-8d41-57a4" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry"/>
-		<entryLink id="789d-4ac0-9574-6a4d" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
-		<entryLink id="8a3c-404b-a900-cda5" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
-		<entryLink id="d9e4-4635-8348-ce36" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
-		<entryLink id="7aa2-4c25-b1a4-3fa1" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
-	  </entryLinks>
-	</selectionEntryGroup>
+    <selectionEntryGroup id="573e-fb8d-b1cd-1a85" name="Herald of Slaanesh Specialism" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0f7-411e-b189-9d8e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0c-12cc-95be-8e3c" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="82c0-e2da-7898-d606" name="Ferocity" hidden="false" collective="false" import="true" targetId="275f-0c8c-74e6-899f" type="selectionEntry"/>
+        <entryLink id="0b8a-4343-a7f9-4cda" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+        <entryLink id="e170-4961-ac9b-94b4" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+        <entryLink id="98c8-4d6d-803f-11c5" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+        <entryLink id="0b49-625c-349f-6b3d" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="211f-462c-b2d9-afe1" name="Bloodmaster Specialism" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f80-4fc7-bf29-36bc" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ba0-4f53-b2ad-90fd" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="48f7-41bd-b730-0f3a" name="Strength" hidden="false" collective="false" import="true" targetId="4550-6c27-1911-68ae" type="selectionEntry"/>
+        <entryLink id="c58a-484a-8bb8-7667" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+        <entryLink id="8c0a-4dcd-a43a-2be3" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+        <entryLink id="09d9-4b2d-ad46-6aaa" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="88d7-4f1b-b3d0-50ee" name="Changecaster Specialism" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e53-4a8d-86df-9e6f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c3-4e18-9002-3c7d" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="5b84-43f2-9335-485a" name="Strategist" hidden="false" collective="false" import="true" targetId="8301-dd25-06aa-2d15" type="selectionEntry"/>
+        <entryLink id="9d7a-4f32-89ed-dffc" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+        <entryLink id="54c1-4e8f-9f94-c02e" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+        <entryLink id="7e4a-494e-bed4-8827" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+        <entryLink id="0dd3-48de-866e-d07e" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f7ae-4ad6-b2c6-2b49" name="Poxbringer Specialism" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c39c-4f1c-ab61-3af6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e9-4ba5-9670-a162" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="ce3f-48cd-8d41-57a4" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry"/>
+        <entryLink id="789d-4ac0-9574-6a4d" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+        <entryLink id="8a3c-404b-a900-cda5" name="Melee" hidden="false" collective="false" import="true" targetId="d429-68d8-5a9f-fab6" type="selectionEntry"/>
+        <entryLink id="d9e4-4635-8348-ce36" name="Stealth" hidden="false" collective="false" import="true" targetId="37cb-84d5-5250-ef16" type="selectionEntry"/>
+        <entryLink id="7aa2-4c25-b1a4-3fa1" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
     <selectionEntryGroup id="5c03-b5ce-8e29-9b59" name="Psychic powers" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="0f40-6014-2f6b-7244" name="Commander Psychic Powers" hidden="false" collective="false" import="true" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup"/>
@@ -1678,6 +2574,83 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e93-61e6-25c7-0b6d" type="max"/>
           </constraints>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ebdc-49d9-7bc2-1568" name="Fiend Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944b-99ae-bd1f-c2d3" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0be9-7ada-526d-7f13" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="b683-5b19-21ae-d951" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+        <entryLink id="d4e2-a4ec-32ea-efe3" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7864-6f96-bfa7-d5fa" name="Flesh Hound Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5abc-0e70-61c3-a193" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d22e-eaf7-0548-edda" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="462b-2b0e-20c2-23ab" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+        <entryLink id="af93-66b7-baa4-f70c" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry"/>
+        <entryLink id="dceb-4557-3b1e-dd22" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cdc-170c-dc86-fcf5" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="238c-0e7e-b2a4-3d19" name="Flamer Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff66-888b-365d-7cc1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddf2-d9cb-91f1-18d4" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="b749-8e7d-fc6a-117c" name="Demolitions" hidden="false" collective="false" import="true" targetId="1933-2ec9-f5b1-5666" type="selectionEntry"/>
+        <entryLink id="606f-bd3d-67aa-20ea" name="Comms" hidden="false" collective="false" import="true" targetId="02a0-4107-4818-7c99" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1215-3a90-8823-35ed" name="Beast of Nurgle Specialism" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="79c6-76fc-47ee-c005" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bf6-4e52-265d-c1f4" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a733-95b8-2630-8b35" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="cfa8-94fb-832d-6406" name="Combat" hidden="false" collective="false" import="true" targetId="cc58-f869-82d1-b353" type="selectionEntry"/>
+        <entryLink id="31cd-b256-df57-a977" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -1755,6 +2728,16 @@ Blue Horrors and Pairs of Brimstone Horrors are not treated as part of your kill
     <profile id="cb88-f8c8-41d4-b182" name="Ephemeral Daemons" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">This model has an invulnerable save of 4+. Blue Horrors instead have an invulnerable save of 5+. Pairs of Brimstone Horrors instead have an invulnerable save of 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f81f-351c-e28f-0f0c" name="Collar of Khorne" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">If your kill team does not include TZEENTCH models, this model can attempt to deny one psychic power in each Psychic phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a499-ef1c-1a84-d623" name="Ephemeral Daemon" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">This model has 4+ invulnerable save.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
