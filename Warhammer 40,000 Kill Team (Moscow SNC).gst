@@ -266,6 +266,7 @@
     <categoryEntry id="9f6b-4e5e-bdea-285b" name="Bloodmaster" hidden="false"/>
     <categoryEntry id="8d2d-4de1-ba7d-ad49" name="Changecaster" hidden="false"/>
     <categoryEntry id="c271-430d-95b4-ecca" name="Poxbringer" hidden="false"/>
+    <categoryEntry id="27d6-bd77-e429-99a0" name="Neurothrope" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
