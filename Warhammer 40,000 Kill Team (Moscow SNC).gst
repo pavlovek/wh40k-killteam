@@ -193,6 +193,8 @@
     <categoryEntry id="5d66-dc73-817b-ccd4" name="Warboss" hidden="false"/>
     <categoryEntry id="9d1d-d7b6-14cc-8142" name="Big Mek" hidden="false"/>
     <categoryEntry id="c85b-5771-30b4-5329" name="Painboy" hidden="false"/>
+    <categoryEntry id="7528-4c85-ae5b-d3ca" name="Weirdboy" hidden="false"/>
+    <categoryEntry id="47ee-46a1-90fe-d6c3" name="Boss Zagstruk" hidden="false"/>
     <categoryEntry id="8646-8755-99e7-083d" name="Commissar" hidden="false"/>
     <categoryEntry id="6ba4-0136-d018-f5fa" name="Lord Commissar" hidden="false"/>
     <categoryEntry id="34ae-f354-467b-f6da" name="Platoon Commander" hidden="false"/>
