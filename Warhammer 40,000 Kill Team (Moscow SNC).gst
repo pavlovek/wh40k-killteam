@@ -238,6 +238,7 @@
     <categoryEntry id="37d8-f20c-a4fe-2db1" name="Faction: Adeptus Custodes" hidden="false"/>
     <categoryEntry id="d62a-0498-8cf6-c058" name="Shield-Captain" hidden="false"/>
     <categoryEntry id="57d0-d5a8-fcae-214a" name="Brother-Captain" hidden="false"/>
+    <categoryEntry id="7233-431d-a9fd-dfad" name="Brother-Captain Stern" hidden="false"/>
     <categoryEntry id="f1ba-4709-e2cd-4c36" name="Sly Marbo" hidden="false"/>
     <categoryEntry id="6439-c44e-cb97-a2bb" name="Nexus" hidden="false"/>
     <categoryEntry id="3fcd-6b5f-4801-9b95" name="Biophagus" hidden="false"/>
