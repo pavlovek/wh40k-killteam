@@ -1114,6 +1114,16 @@
         <entryLink id="b37d-2fdc-9747-c9ea" name="Specialism" hidden="false" collective="false" import="true" targetId="a12e-5cf6-d9c6-0e56" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
+    <entryLink id="fa1b-4cf4-9f83-db93" name="Garran Branatar" hidden="false" collective="false" import="true" targetId="1791-4880-80c1-fca9" type="selectionEntry">
+	    <categoryLinks>
+		    <categoryLink id="db37-4fb0-883e-7d97" name="Salamanders" hidden="false" targetId="def9-9207-76e0-fefd" primary="false"/>
+	    </categoryLinks>
+    </entryLink>
+    <entryLink id="9ed8-4f79-86d5-777f" name="Antor Delassio" hidden="false" collective="false" import="true" targetId="fcd8-47da-9822-245d" type="selectionEntry">
+	    <categoryLinks>
+		    <categoryLink id="8d8c-4f00-af7d-be10" name="Blood Angels" hidden="false" targetId="f7df-60bf-379d-8847" primary="false"/>
+	    </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e59b-c658-31c9-f6b9" name="Boltgun" hidden="false" collective="false" import="true" type="upgrade">
