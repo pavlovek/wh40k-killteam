@@ -204,6 +204,7 @@
     <categoryEntry id="0b71-2728-da83-660a" name="Tempestor Prime" hidden="false"/>
     <categoryEntry id="3320-1c26-1def-a58e" name="Captain" hidden="false"/>
     <categoryEntry id="3634-f76f-42f8-7b23" name="Lieutenant" hidden="false"/>
+    <categoryEntry id="34f8-4674-ae39-2c6c" name="Sergeant Tellion" hidden="false"/>
     <categoryEntry id="cfe3-aa39-7886-891c" name="Chaplain" hidden="false"/>
     <categoryEntry id="d778-e774-3b07-1b67" name="Librarian" hidden="false"/>
     <categoryEntry id="f4e6-5904-782d-8390" name="Watch Master" hidden="false"/>
