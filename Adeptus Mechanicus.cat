@@ -3288,6 +3288,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bb05-e980-9005-15a4" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="669b-1926-9636-366b" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72cb-2c09-5b9f-21af" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cbc-4839-b35e-6d7b" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3341,6 +3342,7 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35df-b7d9-84cc-bde1" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0d62-5055-94aa-9df2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="611f-4f74-ae61-1d34" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cbc-4839-b35e-6d7b" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3360,7 +3362,11 @@
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
-                <conditionGroup type="or"/>
+                <conditionGroup type="or">
+                    <conditions>
+	                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cbc-4839-b35e-6d7b" type="instanceOf"/>
+                    </conditions>
+                </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
