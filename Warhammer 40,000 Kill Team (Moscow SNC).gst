@@ -240,6 +240,7 @@
     <categoryEntry id="57d0-d5a8-fcae-214a" name="Brother-Captain" hidden="false"/>
     <categoryEntry id="7233-431d-a9fd-dfad" name="Brother-Captain Stern" hidden="false"/>
     <categoryEntry id="f1ba-4709-e2cd-4c36" name="Sly Marbo" hidden="false"/>
+    <categoryEntry id="9019-44ce-b597-c792" name="Sergeant Harker" hidden="false"/>
     <categoryEntry id="6439-c44e-cb97-a2bb" name="Nexus" hidden="false"/>
     <categoryEntry id="3fcd-6b5f-4801-9b95" name="Biophagus" hidden="false"/>
     <categoryEntry id="67af-c62e-6a4f-d3db" name="Locus" hidden="false"/>
