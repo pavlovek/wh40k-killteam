@@ -376,33 +376,33 @@
     </entryLink>
     <entryLink id="8c96-4a55-9fcb-c0fd" name="Primaris Psyker" hidden="false" collective="false" import="true" targetId="6ce0-4ff9-8e37-0c5e" type="selectionEntry"/>
     <entryLink id="043b-4a87-9f2f-8190" name="Wyrdvane Psyker" hidden="false" collective="false" import="true" targetId="9518-4f92-9ed4-c9a2" type="selectionEntry">
-	    <modifiers>
-		    <modifier type="set" field="hidden" value="true">
-			    <conditions>
-				    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
-			    </conditions>
-		    </modifier>
-	    </modifiers>
-	    <categoryLinks>
-		    <categoryLink id="4fe1-4f30-8352-a96b" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
-	    </categoryLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4fe1-4f30-8352-a96b" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="c5a6-4ed5-8ac4-1570" name="Wyrdvane Psyker" hidden="false" collective="false" import="true" targetId="9518-4f92-9ed4-c9a2" type="selectionEntry">
-	    <categoryLinks>
-		    <categoryLink id="0e45-458d-bc75-1fbf" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
-	    </categoryLinks>
+      <categoryLinks>
+        <categoryLink id="0e45-458d-bc75-1fbf" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="7199-4fc7-873d-3edb" name="Wyrdvane Psyker Fire Team" hidden="false" collective="false" import="true" targetId="d0e8-4221-a9ed-33c7" type="selectionEntry">
-	    <modifiers>
-		    <modifier type="set" field="hidden" value="true">
-			    <conditions>
-				    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-			    </conditions>
-		    </modifier>
-	    </modifiers>
-	    <categoryLinks>
-		    <categoryLink id="bee4-46f5-851a-d07c" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
-	    </categoryLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bee4-46f5-851a-d07c" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="d158-4914-8812-3b1a" name="Sergeant &apos;Stonetooth&apos; Harker" hidden="false" collective="false" import="true" targetId="5ced-474d-8616-11af" type="selectionEntry"/>
   </entryLinks>
@@ -3280,27 +3280,27 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="38.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="2b81-f65f-7a29-b357" name="Force Stave" hidden="false" collective="false" import="true" type="upgrade">
-	  <constraints>
-		  <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b07-ee4d-f773-5d49" type="min"/>
-		  <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d737-8f78-57e0-05f3" type="max"/>
-	  </constraints>
-	  <profiles>
-		  <profile id="e150-6fe2-3d2c-463e" name="Force Stave" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-			  <characteristics>
-				  <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
-				  <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
-				  <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+2</characteristic>
-				  <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
-				  <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
-				  <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-			  </characteristics>
-		  </profile>
-	  </profiles>
-	  <costs>
-		  <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-	  </costs>
-	</selectionEntry>
+    <selectionEntry id="2b81-f65f-7a29-b357" name="Force Stave" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b07-ee4d-f773-5d49" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d737-8f78-57e0-05f3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e150-6fe2-3d2c-463e" name="Force Stave" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+2</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="ae32-e0c3-d0b2-d00c" name="Aradia Madellan" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="10.0">
@@ -3374,7 +3374,7 @@
         <categoryLink id="f35c-2c7d-e6a1-0836" name="Primaris Psyker" hidden="false" targetId="3d99-6583-46b1-df3d" primary="false"/>
         <categoryLink id="e2fb-8640-cf10-fe82" name="Aradia Madellan" hidden="false" targetId="d187-b1b2-ccab-93c1" primary="false"/>
       </categoryLinks>
-	    <entryLinks>
+      <entryLinks>
         <entryLink id="df48-7853-705e-63f9" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63c-8d12-3e95-45c0" type="min"/>
@@ -3387,7 +3387,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5e6-fc25-e89f-da1b" type="max"/>
           </constraints>
         </entryLink>
-		<entryLink id="d5ee-4b54-9363-370d" name="Force Stave" hidden="false" collective="false" import="true" targetId="2b81-f65f-7a29-b357" type="selectionEntry"/>
+        <entryLink id="d5ee-4b54-9363-370d" name="Force Stave" hidden="false" collective="false" import="true" targetId="2b81-f65f-7a29-b357" type="selectionEntry"/>
         <entryLink id="b0d1-b4d7-5f4f-575e" name="Commander Psychic Powers" hidden="false" collective="false" import="true" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -3398,17 +3398,17 @@
       <modifiers>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15.0">
           <conditions>
-            <condition field="selections" scope="ae32-e0c3-d0b2-d00c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+            <condition field="selections" scope="6ce0-4ff9-8e37-0c5e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15.0">
           <conditions>
-            <condition field="selections" scope="ae32-e0c3-d0b2-d00c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+            <condition field="selections" scope="6ce0-4ff9-8e37-0c5e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15.0">
           <conditions>
-            <condition field="selections" scope="ae32-e0c3-d0b2-d00c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+            <condition field="selections" scope="6ce0-4ff9-8e37-0c5e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
           </conditions>
         </modifier>
         <modifier type="set" field="6f64-43e6-a33f-3342" value="1.0">
@@ -3476,9 +3476,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7773-4a66-b10f-70f8" type="max"/>
           </constraints>
         </entryLink>
-	    <entryLink id="5525-4de1-85c1-1927" name="Force Stave" hidden="false" collective="false" import="true" targetId="2b81-f65f-7a29-b357" type="selectionEntry"/>
-        <entryLink id="9da5-4c5a-9a8d-da32" name="Commander Psychic Powers" hidden="false" collective="false" import="true" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup"/>
-	    <entryLink id="ee45-4315-b812-15b5" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
+        <entryLink id="5525-4de1-85c1-1927" name="Force Stave" hidden="false" collective="false" import="true" targetId="2b81-f65f-7a29-b357" type="selectionEntry"/>
+        <entryLink id="ee45-4315-b812-15b5" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
+        <entryLink id="1221-8584-2da4-2e7e" name="Psybolt" hidden="false" collective="false" import="true" targetId="bb99-4086-e731-058e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
@@ -3490,8 +3490,8 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-	              <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
-	              <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3536,41 +3536,40 @@
         <categoryLink id="2c0e-4647-8cdd-6589" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
         <categoryLink id="857f-44aa-bc94-4cdb" name="Wyrdvane Psyker" hidden="false" targetId="6831-48b6-b517-6414" primary="false"/>
       </categoryLinks>
-        <selectionEntries>
-	        <selectionEntry id="1f8b-4a28-88a2-0ea5" name="Wyrdvane Stave" hidden="false" collective="false" import="true" type="upgrade">
-		        <constraints>
-			        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ecf-4d46-9e78-ecc3" type="min"/>
-			        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8af-4b93-9d23-3d02" type="max"/>
-		        </constraints>
-		        <profiles>
-			        <profile id="4ecb-40d2-a94a-cf96" name="Wyrdvane Stave" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-				        <characteristics>
-					        <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
-					        <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
-					        <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+1</characteristic>
-					        <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
-					        <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-					        <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-				        </characteristics>
-			        </profile>
-		        </profiles>
-		        <costs>
-			        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-		        </costs>
-	        </selectionEntry>
-        </selectionEntries>
+      <selectionEntries>
+        <selectionEntry id="1f8b-4a28-88a2-0ea5" name="Wyrdvane Stave" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ecf-4d46-9e78-ecc3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8af-4b93-9d23-3d02" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4ecb-40d2-a94a-cf96" name="Wyrdvane Stave" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">+1</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="7ca4-4f42-ae0e-26e2" name="Comms" hidden="false" collective="false" import="true" targetId="02a0-4107-4818-7c99" type="selectionEntry">
-	        <modifiers>
-		        <modifier type="set" field="hidden" value="true">
-			        <conditions>
-				        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29e7-d60f-5acd-4d99" type="notInstanceOf"/>
-			        </conditions>
-		        </modifier>
-	        </modifiers>
-	        <constraints>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c066-4c51-baeb-4848" type="min"/>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6721-43fe-98ee-3bfe" type="max"/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29e7-d60f-5acd-4d99" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6721-43fe-98ee-3bfe" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="9068-461b-80e7-f781" name="Laspistol" hidden="false" collective="false" import="true" targetId="afe5-6341-ec59-0444" type="selectionEntry">
@@ -3579,33 +3578,34 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1f7-4f9f-a0a8-d41d" type="max"/>
           </constraints>
         </entryLink>
-	    <entryLink id="f1d9-42d6-a669-599c" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
+        <entryLink id="f1d9-42d6-a669-599c" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
+        <entryLink id="4efc-42ff-ba23-535c" name="Psybolt" hidden="false" collective="false" import="true" targetId="bb99-4086-e731-058e" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="d0e8-4221-a9ed-33c7" name="Wyrdvane Psyker Fire Team" hidden="false" collective="false" import="true" type="unit">
-	  <constraints>
-		  <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0b78-0254-2a27-eae9" type="max"/>
-	  </constraints>
-	  <selectionEntryGroups>
-		  <selectionEntryGroup id="4d7c-4c36-b71f-3411" name="Models" hidden="false" collective="false" import="true">
-			  <constraints>
-				  <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b3b-4ba3-8a07-0cb5" type="min"/>
-			  </constraints>
-			  <entryLinks>
-				  <entryLink id="f5b7-4063-a21d-d808" name="Wyrdvane Psyker" hidden="false" collective="false" import="true" targetId="9518-4f92-9ed4-c9a2" type="selectionEntry"/>
-			  </entryLinks>
-		  </selectionEntryGroup>
-	  </selectionEntryGroups>
-	  <entryLinks>
-		  <entryLink id="ad84-421f-9df2-bf36" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
-	  </entryLinks>
-	  <costs>
-		  <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-	  </costs>
-	</selectionEntry>
+    <selectionEntry id="d0e8-4221-a9ed-33c7" name="Wyrdvane Psyker Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0b78-0254-2a27-eae9" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4d7c-4c36-b71f-3411" name="Models" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b3b-4ba3-8a07-0cb5" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f5b7-4063-a21d-d808" name="Wyrdvane Psyker" hidden="false" collective="false" import="true" targetId="9518-4f92-9ed4-c9a2" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ad84-421f-9df2-bf36" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="5ced-474d-8616-11af" name="Sergeant &apos;Stonetooth&apos; Harker" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="1adc-4d3f-9142-dd71" value="1.0">
@@ -3681,24 +3681,24 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-	      <entryLink id="8afd-456b-ba4a-80c3" name="Krak grenade" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
-		      <constraints>
-			      <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7cd-40ce-a1ef-d78f" type="min"/>
-			      <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ab-4bea-b2db-5c90" type="max"/>
-		      </constraints>
-	      </entryLink>
-	      <entryLink id="332c-41e6-a62e-1054" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry">
-		      <constraints>
-			      <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b577-46bd-a7e2-0e9f" type="min"/>
-			      <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce86-4f01-838c-b24b" type="max"/>
-		      </constraints>
-	      </entryLink>
-	      <entryLink id="e6ec-461f-95da-1075" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry">
-		      <constraints>
-			      <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b57c-4e12-89c7-126b" type="min"/>
-			      <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a728-479a-92a4-9c2d" type="max"/>
-		      </constraints>
-	      </entryLink>
+        <entryLink id="8afd-456b-ba4a-80c3" name="Krak grenade" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7cd-40ce-a1ef-d78f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ab-4bea-b2db-5c90" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="332c-41e6-a62e-1054" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b577-46bd-a7e2-0e9f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce86-4f01-838c-b24b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e6ec-461f-95da-1075" name="Heavy" hidden="false" collective="false" import="true" targetId="8c9b-a772-02e7-d673" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b57c-4e12-89c7-126b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a728-479a-92a4-9c2d" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>

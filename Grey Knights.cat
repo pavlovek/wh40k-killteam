@@ -1428,16 +1428,16 @@
             <characteristic name="Powers known" typeId="67ce-9d6c-052c-d1eb">Psybolt and one psychic powers from the Sanctic discipline</characteristic>
           </characteristics>
         </profile>
-	      <profile id="54eb-4fd2-af16-49ca" name="Zone of Banishment" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-		      <characteristics>
-			      <characteristic name="Description" typeId="b373-019d-503a-1124">When Brother-Captain Stern manifests the Psybolt psychic power, it has a range of 6&quot; rather than 12&quot;. Additionally, the target unit suffers only 1 mortal wound (whether or not the result of the Psychic test is more than 10) – unless the target is a DAEMON, in which case it suffers 3 mortal wounds instead and roll a D6 for each DAEMON models within 6&quot; of Brother-Captain Stern - on 5+ also suffer a mortal wound.</characteristic>
-		      </characteristics>
-	      </profile>
-	      <profile id="d5c3-49bc-83ec-3bb9" name="The Strands of Fate" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-		      <characteristics>
-			      <characteristic name="Description" typeId="b373-019d-503a-1124">In each of your turns, you can choose to re-roll a single failed hit or wound roll, or a single failed saving throw for Brother-Captain Stern. However, if you do so, your opponent can re-roll a single failed hit or wound roll, or a single failed saving throw for one of their models in their next turn.</characteristic>
-		      </characteristics>
-	      </profile>
+        <profile id="54eb-4fd2-af16-49ca" name="Zone of Banishment" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">When Brother-Captain Stern manifests the Psybolt psychic power, it has a range of 6&quot; rather than 12&quot;. Additionally, the target unit suffers only 1 mortal wound (whether or not the result of the Psychic test is more than 10) – unless the target is a DAEMON, in which case it suffers 3 mortal wounds instead and roll a D6 for each DAEMON models within 6&quot; of Brother-Captain Stern - on 5+ also suffer a mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d5c3-49bc-83ec-3bb9" name="The Strands of Fate" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">In each of your turns, you can choose to re-roll a single failed hit or wound roll, or a single failed saving throw for Brother-Captain Stern. However, if you do so, your opponent can re-roll a single failed hit or wound roll, or a single failed saving throw for one of their models in their next turn.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="e9dc-44f5-9087-8f37" name="And They Shall Know No Fear" hidden="false" targetId="550e-388a-9611-00c5" type="profile"/>
@@ -1457,23 +1457,23 @@
         <categoryLink id="d73d-4392-bc1b-a2f7" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="bfe8-43d6-b577-2038" name="Legendary Hunter - Level 2" hidden="false" collective="false" import="true" targetId="2f39-9bac-6c2f-f48b" type="selectionEntryGroup"/>
+        <entryLink id="bfe8-43d6-b577-2038" name="Legendary Hunter - Level 2" hidden="false" collective="false" import="true" targetId="2f39-9bac-6c2f-f48b" type="selectionEntry"/>
         <entryLink id="69d9-4cb1-9dca-81fe" name="Psychic powers" hidden="false" collective="false" import="true" targetId="0a32-c166-4278-5794" type="selectionEntryGroup">
-	        <constraints>
-		        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95c5-46ba-8999-a8f4" type="max"/>
-	        </constraints>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95c5-46ba-8999-a8f4" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="9583-42de-9e1e-f159" name="Storm bolter" hidden="false" collective="false" import="true" targetId="56d6-e495-41f0-9c0e" type="selectionEntry">
-	        <constraints>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72bb-4d91-99aa-f6c1" type="min"/>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fc5-4dbe-aded-a753" type="max"/>
-	        </constraints>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72bb-4d91-99aa-f6c1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fc5-4dbe-aded-a753" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="328b-407a-baf3-27c9" name="Nemesis Force Sword" hidden="false" collective="false" import="true" targetId="3966-5535-7de7-20f4" type="selectionEntry">
-	        <constraints>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ba5-48fe-9f4b-7471" type="min"/>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a08-4107-be05-b095" type="max"/>
-	        </constraints>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ba5-48fe-9f4b-7471" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a08-4107-be05-b095" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="d4e8-4a5c-9f7e-b715" name="Grenades" hidden="false" collective="false" import="true" targetId="bb38-55fb-b03d-8660" type="selectionEntry"/>
       </entryLinks>

@@ -9100,7 +9100,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4580-4487-aecf-9237" type="max"/>
           </constraints>
           <infoLinks>
-	          <infoLink id="9c7b-4c48-ba5d-6dc1" name="Hard Case" hidden="false" targetId="f4e4-6550-bb95-a211" type="profile"/>
+            <infoLink id="9c7b-4c48-ba5d-6dc1" name="Hard Case" hidden="false" targetId="f4e4-6550-bb95-a211" type="profile"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="b8f5-4937-980f-e4cc" name="Level 1" hidden="false" targetId="6e29-5d9a-98f5-ad2a" primary="false"/>
@@ -9128,14 +9128,14 @@
           <selectionEntries>
             <selectionEntry id="2db3-4f55-8d12-83e6" name="Level 2: Sudden Ambush" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-	              <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
                   <conditions>
                     <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <infoLinks>
-	              <infoLink id="33e6-4c50-b24c-28eb" name="Sudden Ambush" hidden="false" targetId="fc6e-0784-3305-af34" type="profile"/>
+                <infoLink id="33e6-4c50-b24c-28eb" name="Sudden Ambush" hidden="false" targetId="fc6e-0784-3305-af34" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
@@ -9160,19 +9160,14 @@
           <selectionEntries>
             <selectionEntry id="b4d7-46c9-9177-695f" name="Level 3: Stealthy Hunter" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-	              <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
                   <conditions>
                     <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87fe-41db-0133-c5bd" type="equalTo"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <infoLinks>
-	              <infoLink id="2a3d-4923-b0b3-d87f" name="Stealthy Hunter" hidden="false" targetId="782d-bf5f-8137-9f6b" type="profile"/>
+                <infoLink id="2a3d-4923-b0b3-d87f" name="Stealthy Hunter" hidden="false" targetId="782d-bf5f-8137-9f6b" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
@@ -9219,27 +9214,17 @@
           <selectionEntries>
             <selectionEntry id="83bf-4928-8e11-b141" name="Level 4: Like Fighting a Shadow" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-	              <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="0.0">
                   <conditions>
                     <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df25-888b-43c1-0fe6" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2927-6d46-7681-b00d" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bf0-4644-9e46-a102" type="max"/>
               </constraints>
               <infoLinks>
-	              <infoLink id="91a4-47f7-892a-0d71" name="Like Fighting a Shadow" hidden="false" targetId="33ae-4224-52bd-6bc1" type="profile"/>
+                <infoLink id="91a4-47f7-892a-0d71" name="Like Fighting a Shadow" hidden="false" targetId="33ae-4224-52bd-6bc1" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
@@ -9922,11 +9907,11 @@
             <characteristic name="Description" typeId="b373-019d-503a-1124">This model has a 5+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-	    <profile id="b7d8-47cd-85a9-f302" name="Flamecraft" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-		    <characteristics>
-		      <characteristic name="Description" typeId="b373-019d-503a-1124">Roll a D6 each time this model lost a wound from the attacks that hits automatically. On 4+ that wound not lost. You can re-roll failed wound rolls when attacking with heavy flamer. You can re-roll one hit roll then make attack with its master-crafted weapon.</characteristic>
-		    </characteristics>
-	    </profile>
+        <profile id="b7d8-47cd-85a9-f302" name="Flamecraft" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Roll a D6 each time this model lost a wound from the attacks that hits automatically. On 4+ that wound not lost. You can re-roll failed wound rolls when attacking with heavy flamer. You can re-roll one hit roll then make attack with its master-crafted weapon.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="79d8-4de0-b216-8c87" name="And They Shall Know No Fear" hidden="false" targetId="e5ca-492a-93b1-9e90" type="profile"/>
@@ -9940,6 +9925,7 @@
         <categoryLink id="2322-465c-8aac-2744" name="Terminator" hidden="false" targetId="1ec0-dd6e-9680-2288" primary="false"/>
         <categoryLink id="1625-4553-9921-9b1d" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
         <categoryLink id="d623-4a97-81e7-9916" name="Garran Branatar" hidden="false" targetId="e7ca-416d-b81a-34f6" primary="false"/>
+        <categoryLink id="01b7-14bb-d3d0-27d2" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8424-4fae-a6a2-9cf0" name="Heavy flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -10046,8 +10032,8 @@
         </profile>
       </profiles>
       <infoLinks>
-	    <infoLink id="7603-4714-9120-b0b1" name="And They Shall Know No Fear" hidden="false" targetId="e5ca-492a-93b1-9e90" type="profile"/>
-	    <infoLink id="1176-455c-b1a9-09f2" name="Transhuman Physiology" hidden="false" targetId="dff6-48bd-9739-bf99" type="profile"/>
+        <infoLink id="7603-4714-9120-b0b1" name="And They Shall Know No Fear" hidden="false" targetId="e5ca-492a-93b1-9e90" type="profile"/>
+        <infoLink id="1176-455c-b1a9-09f2" name="Transhuman Physiology" hidden="false" targetId="dff6-48bd-9739-bf99" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c9b2-4593-ba46-3b00" name="New CategoryLink" hidden="false" targetId="181f-e47f-6ec3-2e9b" primary="true"/>
@@ -10058,6 +10044,7 @@
         <categoryLink id="1537-4e08-95e1-fb91" name="Jump Pack" hidden="false" targetId="d613-8c70-cfc2-6582" primary="false"/>
         <categoryLink id="b7e3-4237-a97d-074f" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
         <categoryLink id="7132-45c8-9121-f1d8" name="Antor Delassio" hidden="false" targetId="aa97-40b0-8297-0775" primary="false"/>
+        <categoryLink id="c5af-ad58-26ad-95c0" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="cf0f-47f8-bb9c-be1d" name="Hand flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -10066,7 +10053,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7c8-4c32-b706-dc2f" type="max"/>
           </constraints>
           <profiles>
-	          <profile id="7cd2-4248-a2df-d5f6" name="Hand flamer" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+            <profile id="7cd2-4248-a2df-d5f6" name="Hand flamer" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">8&quot;</characteristic>
                 <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault D6</characteristic>
@@ -10108,26 +10095,26 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562f-4654-ba0a-aaea" type="max"/>
           </constraints>
           <profiles>
-	          <profile id="108a-4d68-9615-8cc8" name="Frag grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-                <characteristics>
-                  <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
-                  <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade D6</characteristic>
-                  <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">3</characteristic>
-                  <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
-                  <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-                  <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-                </characteristics>
+            <profile id="108a-4d68-9615-8cc8" name="Frag grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade D6</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">3</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
             </profile>
-	          <profile id="1e99-4c5a-abc1-e34d" name="Krak grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-		          <characteristics>
-			          <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
-			          <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade 1</characteristic>
-			          <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
-			          <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
-			          <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
-			          <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-		          </characteristics>
-	          </profile>
+            <profile id="1e99-4c5a-abc1-e34d" name="Krak grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade 1</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
@@ -11954,15 +11941,15 @@
         <characteristic name="Description" typeId="b373-019d-503a-1124">This model may not be picked to be affected by an order as part of the Voice of Command ability.</characteristic>
       </characteristics>
     </profile>
-	<profile id="e5ca-492a-93b1-9e90" name="And They Shall Know No Fear" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-	  <characteristics>
-		  <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll failed Nerve tests for this model.</characteristic>
-	  </characteristics>
-	</profile>
-	<profile id="dff6-48bd-9739-bf99" name="Transhuman Physiology" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-	  <characteristics>
-		  <characteristic name="Description" typeId="b373-019d-503a-1124">Ignore the penalty to this model&apos;s hit rolls from one flesh wound it has suffered.</characteristic>
-	  </characteristics>
-	</profile>
+    <profile id="e5ca-492a-93b1-9e90" name="And They Shall Know No Fear" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll failed Nerve tests for this model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dff6-48bd-9739-bf99" name="Transhuman Physiology" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">Ignore the penalty to this model&apos;s hit rolls from one flesh wound it has suffered.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>

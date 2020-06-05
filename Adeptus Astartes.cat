@@ -1115,14 +1115,14 @@
       </entryLinks>
     </entryLink>
     <entryLink id="fa1b-4cf4-9f83-db93" name="Garran Branatar" hidden="false" collective="false" import="true" targetId="1791-4880-80c1-fca9" type="selectionEntry">
-	    <categoryLinks>
-		    <categoryLink id="db37-4fb0-883e-7d97" name="Salamanders" hidden="false" targetId="def9-9207-76e0-fefd" primary="false"/>
-	    </categoryLinks>
+      <categoryLinks>
+        <categoryLink id="db37-4fb0-883e-7d97" name="Salamanders" hidden="false" targetId="def9-9207-76e0-fefd" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="9ed8-4f79-86d5-777f" name="Antor Delassio" hidden="false" collective="false" import="true" targetId="fcd8-47da-9822-245d" type="selectionEntry">
-	    <categoryLinks>
-		    <categoryLink id="8d8c-4f00-af7d-be10" name="Blood Angels" hidden="false" targetId="f7df-60bf-379d-8847" primary="false"/>
-	    </categoryLinks>
+      <categoryLinks>
+        <categoryLink id="8d8c-4f00-af7d-be10" name="Blood Angels" hidden="false" targetId="f7df-60bf-379d-8847" primary="false"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="d4e6-48e1-9930-95d7" name="Sergeant Tellion" hidden="false" collective="false" import="true" targetId="ddf4-4efd-801d-379a" type="selectionEntry"/>
   </entryLinks>
@@ -2551,7 +2551,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a089-f022-b1ee-6cbf" type="min"/>
                   </constraints>
                   <infoLinks>
-	                  <infoLink id="ae3d-4c8c-b56d-de41" name="Camo cloak" hidden="false" targetId="fa5c-beaa-82d0-753b" type="profile"/>
+                    <infoLink id="ae3d-4c8c-b56d-de41" name="Camo cloak" hidden="false" targetId="fa5c-beaa-82d0-753b" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
@@ -3594,14 +3594,14 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="385d-44ab-9067-bf67" type="max"/>
           </constraints>
           <profiles>
-	          <profile id="5563-42e8-8549-102d" name="Quietus" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+            <profile id="5563-42e8-8549-102d" name="Quietus" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">36&quot;</characteristic>
                 <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Heavy 2</characteristic>
                 <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
                 <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
                 <characteristic name="D" typeId="cc1f-e463-c014-2251">2</characteristic>
-                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">A model firing this weapon does not suffer the penalty to hit rolls for the target being at long range. If you roll a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to it's normal damage.</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">A model firing this weapon does not suffer the penalty to hit rolls for the target being at long range. If you roll a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to it&apos;s normal damage.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3618,7 +3618,7 @@
         </entryLink>
         <entryLink id="5108-46c0-92a4-51bf" name="Frag grenades" hidden="false" collective="false" import="true" targetId="f748-797c-dbfd-b7a1" type="selectionEntry"/>
         <entryLink id="e845-4476-a074-7f18" name="Krak grenades" hidden="false" collective="false" import="true" targetId="14ce-31b4-2dd1-14f3" type="selectionEntry"/>
-        <entryLink id="dd2d-45dd-aa65-34ee" name="Legendary Hunter - Level 3" hidden="false" collective="false" import="true" targetId="7da4-b687-c93e-28d0" type="selectionEntryGroup"/>
+        <entryLink id="dd2d-45dd-aa65-34ee" name="Legendary Hunter - Level 3" hidden="false" collective="false" import="true" targetId="7da4-b687-c93e-28d0" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="70.0"/>
@@ -4064,11 +4064,11 @@
         <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">At the start of the shooting phase, you can choose another ADEPTUS ASTARTES model within 3&quot; of a friendly model equipped with an auspex that is not shaken. That model does not suffer penalties to their hit or injury rolls due to their target being obscured</characteristic>
       </characteristics>
     </profile>
-	<profile id="fa5c-beaa-82d0-753b" name="Camo cloak" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
-	  <characteristics>
-		  <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">When a model makes a hit roll for a shooting attack that targets a model equipped with with a camo cloak, and that model is obscured, that hit roll suffers an additional -1 modifier</characteristic>
-	  </characteristics>
-	</profile>
+    <profile id="fa5c-beaa-82d0-753b" name="Camo cloak" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+      <characteristics>
+        <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">When a model makes a hit roll for a shooting attack that targets a model equipped with with a camo cloak, and that model is obscured, that hit roll suffers an additional -1 modifier</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="1932-beaa-882a-e60f" name="Space Marines" targetId="fce0-30e5-a4fc-8736" type="catalogue" importRootEntries="true"/>
