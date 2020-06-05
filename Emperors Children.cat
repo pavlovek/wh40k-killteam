@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c1f3-663c-12c5-b1ee" name="Emperor&apos;s Children" revision="1" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c1f3-663c-12c5-b1ee" name="Emperor&apos;s Children" revision="2" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="29d6-3690-d4a0-2836" name="Slaanesh" hidden="false"/>
     <categoryEntry id="be41-2105-548f-c896" name="Chaos Space Marine" hidden="false"/>
@@ -556,6 +556,9 @@
 ... страданием! Ваши модели получают ФнП (5+). Если они уже имеют подобный эффект, они выбирают один из них и могут перебрасывать единицы.
 Эффект действует до конца раунда
       </description>
+    </rule>
+    <rule id="bdd9-8d27-c85c-6a43" name="Совершенство или смерть" hidden="false">
+      <description>Увеличивайте характеристику атак вашей модели на 1 за каждую потерянную рану и/или лёгкую рану на ней до тех пор, пока эти раны не будут восстановлены или игра не закончится.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -3848,6 +3851,7 @@
         <infoLink id="ac2a-3927-d63e-b18c" name="Death to the False Emperor" hidden="false" targetId="936f-5757-453b-83b5" type="profile"/>
         <infoLink id="4f39-730b-c83d-5723" name="Transhuman Physiology" hidden="false" targetId="30ba-1544-5db1-c355" type="profile"/>
         <infoLink id="c5ab-6752-ca6a-62d5" name="Music of the Apocalypse" hidden="false" targetId="26f9-58bf-ea29-a1d0" type="profile"/>
+        <infoLink id="16b9-bf3e-320b-86ec" name="Third Legion" hidden="false" targetId="5a02-cb23-83b5-6c21" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6364-fc41-7f01-93cc" name="Faction: Heretic Astartes" hidden="false" targetId="57de-32ed-68ae-23bf" primary="false"/>
@@ -3940,6 +3944,7 @@
         <infoLink id="0d15-9c9d-3ab6-c098" name="Death to the False Emperor" hidden="false" targetId="936f-5757-453b-83b5" type="profile"/>
         <infoLink id="9182-0a11-0ce3-2e12" name="Transhuman Physiology" hidden="false" targetId="30ba-1544-5db1-c355" type="profile"/>
         <infoLink id="4163-659c-f057-f483" name="Music of the Apocalypse" hidden="false" targetId="26f9-58bf-ea29-a1d0" type="profile"/>
+        <infoLink id="be08-4725-00f9-d959" name="Third Legion" hidden="false" targetId="5a02-cb23-83b5-6c21" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="78a4-4b1a-ed3f-9d4a" name="Faction: Heretic Astartes" hidden="false" targetId="57de-32ed-68ae-23bf" primary="false"/>
@@ -4045,6 +4050,7 @@
         <infoLink id="daa6-8ae1-c20e-5b57" name="Death to the False Emperor" hidden="false" targetId="936f-5757-453b-83b5" type="profile"/>
         <infoLink id="c372-005a-e98c-dce3" name="Transhuman Physiology" hidden="false" targetId="30ba-1544-5db1-c355" type="profile"/>
         <infoLink id="385d-0eff-db80-ae5b" name="Music of the Apocalypse" hidden="false" targetId="26f9-58bf-ea29-a1d0" type="profile"/>
+        <infoLink id="7abb-5aa1-6d0b-c2a8" name="Third Legion" hidden="false" targetId="5a02-cb23-83b5-6c21" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ca17-b6fd-7b14-ca04" name="Faction: Heretic Astartes" hidden="false" targetId="57de-32ed-68ae-23bf" primary="false"/>
@@ -4980,6 +4986,11 @@
     <profile id="cfeb-19fb-116f-6ea1" name="Icon of Excess" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
       <characteristics>
         <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">The Death to the False Emperor ability of models within 6&quot; of any friendly models equipped with an Icon of Excess takes effect on hit rolls of 5+ rather than 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5a02-cb23-83b5-6c21" name="Third Legion" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">Характеристика АР оружия ближнего боя (в том числе и базового) ваших моделей с ключевым словом NOISE MARINE улучшается на 1.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
