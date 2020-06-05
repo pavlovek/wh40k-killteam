@@ -690,9 +690,15 @@
     <rule id="1d35-ac05-65ac-681d" name="Militarum Tempestus" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986c-5d9c-6459-1a66" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="986c-5d9c-6459-1a66" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07b0-41e6-8d93-fff0" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08b5-456a-a9a8-b634" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <description>Models with the MILITARUM TEMPESTUS keyword cannot be drawn from a regiment. However, their presence in your kill team does not prevent you using a Regimental Doctrine, as long as the models in the kill team that can be drawn from a regiment are all drawn from the same regiment. Note, however, that models with the MILITARUM TEMPESTUS keyword can never themselves benefit from a Regimental Doctrine, unless every model (other than Advisors and Auxilla, see opposite) in that kill team has the MILITARUM TEMPESTUS keyword (in which case you will use the Storm Troopers Regimental Doctrine).</description>
@@ -717,12 +723,12 @@
 • OFFICIO PREFECTUS
 • SCHOLASTICA PSYKANA</description>
     </rule>
-	  <rule id="210a-473f-8a45-dd42" name="Вторая шеренга, в атаку!" hidden="false">
-		  <description>Раз за игру в начале раунда вы можете потратить 1 единицу материалов, чтобы призвать в бой подкрепление новобранцев.
+    <rule id="210a-473f-8a45-dd42" name="Вторая шеренга, в атаку!" hidden="false">
+      <description>Раз за игру в начале раунда вы можете потратить 1 единицу материалов, чтобы призвать в бой подкрепление новобранцев.
 Выставьте в вашей зоне расстановки, но дальше 1&quot; от любых моделей противника до двух моделей Guardsman, вооруженных стандартным оружием. Они учитываются как модели вашей истребительной команды до конца игры (в том числе могут получать полковую доктрину).
 Не бросайте на последствия миссии для этих моделей и не включайте их в свой командный ростер.</description>
-	  </rule>
-	  <rule id="16e1-4cb3-8354-6487" name="Death Korps of Krieg (Krieg)" hidden="false">
+    </rule>
+    <rule id="16e1-4cb3-8354-6487" name="Death Korps (Krieg)" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -755,7 +761,7 @@
       </modifiers>
       <description>При прохождении нерв-теста игнорируйте штраф за ваши модели, погибшие в данном раунде. Ваши модели MILITARUM TEMPESTUS получают эффект этой доктрины и строевой подготовки.</description>
     </rule>
-      <rule id="d849-40f4-81da-a9bc" name="Elysian Storm Troopers (Elysian)" hidden="false">
+    <rule id="d849-40f4-81da-a9bc" name="Storm Troopers (Elysian)" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -1060,6 +1066,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdd4-3b17-9572-a36a" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="639f-b634-986b-6220" name="Militarum Tempestus Regiment" hidden="false" collective="false" import="true" targetId="127c-b01d-7ba0-9d1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
@@ -1722,6 +1729,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e138-1b41-d197-f8a7" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="d068-0f4f-8389-4937" name="Militarum Tempestus Regiment" hidden="false" collective="false" import="true" targetId="127c-b01d-7ba0-9d1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -1797,6 +1805,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118d-39a3-ae48-f944" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="31d2-07c9-0475-66b5" name="Militarum Tempestus Regiment" hidden="false" collective="false" import="true" targetId="127c-b01d-7ba0-9d1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -2395,6 +2404,7 @@
         <entryLink id="45af-b421-6e40-8ea2" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="d2bb-54e6-2f81-1af6" type="selectionEntry"/>
         <entryLink id="0da3-9186-0a67-e95d" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="c01f-945c-7d58-34fd" type="selectionEntry"/>
         <entryLink id="eb26-dc6a-9160-a25b" name="Display Voice of Command Orders" hidden="false" collective="false" import="true" targetId="b091-39d9-f78c-b993" type="selectionEntry"/>
+        <entryLink id="a44f-5bb7-33ad-a6cf" name="Militarum Tempestus Regiment" hidden="false" collective="false" import="true" targetId="127c-b01d-7ba0-9d1c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="25.0"/>
@@ -4066,6 +4076,39 @@
           <categoryLinks>
             <categoryLink id="7d6e-648d-1bfc-78ca" name="Mordian" hidden="false" targetId="ce52-01a9-272b-0a1b" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d0be-327d-815b-78f8" name="Krieg" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="4452-4633-18cc-3d60" name="Krieg" hidden="false" targetId="07b0-41e6-8d93-fff0" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="29d3-fcbc-4849-b1a3" name="Elysian" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="2a7f-0c72-b92d-5aeb" name="Elysian" hidden="false" targetId="08b5-456a-a9a8-b634" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="127c-b01d-7ba0-9d1c" name="Militarum Tempestus Regiment" hidden="false" collective="false" import="true" defaultSelectionEntryId="e558-be1e-1bb7-3c3f">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd6-c41c-b8af-d49a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9e3-e55c-79bc-8cfe" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="421a-28c1-189c-a069" name="Krieg" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="40aa-f934-392c-578a" name="Krieg" hidden="false" targetId="07b0-41e6-8d93-fff0" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="6aa4-9135-a367-5f3f" name="Elysian" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink id="9eb9-c1cb-ff7e-c58d" name="Elysian" hidden="false" targetId="08b5-456a-a9a8-b634" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="e558-be1e-1bb7-3c3f" name="Militarum Tempestus" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
