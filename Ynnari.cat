@@ -4790,7 +4790,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ade6-5a3a-a5b9-2411" name="Neuro disruptor" hidden="false" collective="false" import="true" type="upgrade">
