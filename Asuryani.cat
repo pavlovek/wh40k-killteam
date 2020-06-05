@@ -575,6 +575,21 @@
       </modifiers>
       <description>Roll a dice each time a model in your kill team loses a wound. On a 6, the damage is ignored and the model does not lose a wound. If a model already has a similar ability, choose which effect applies, and re-roll 1s when making these rolls.</description>
     </rule>
+    <rule id="2983-4301-a0f5-c91e" name="Костепевец" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+	          <conditionGroup type="or">
+		          <conditions>
+			          <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac65-ae76-97a2-a3e0" type="equalTo"/>
+			          <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9cf-4c22-c034-f592" type="equalTo"/>
+		          </conditions>
+	          </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>В начале раунда вы можете заявить создание структуры из психокости. Выберите видимую для вашего командира точку на поле, разместите на ее месте маркер и заплатите 1 единицу материалов. До конца раунда ваши модели в 6&quot; от центра этого маркера увеличивают свои характеристики лидерства и движения на 2, прибавляют 2 к результатам броска на нападение, а также могут перебрасывать броски на ранение. Если вы создаете структуру из психокости, ваш командир не может двигаться и проявлять психосилы до конца раунда.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="74a1-6b5c-0980-9c59" name="Guardian Defender" hidden="false" collective="false" import="true" type="model">

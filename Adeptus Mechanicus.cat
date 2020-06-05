@@ -898,6 +898,10 @@
       </modifiers>
       <description>Models in your kill team are considered to be obscured to enemy models that target them if they are more than 12&quot; away from those models.</description>
     </rule>
+	  <rule id="7fd3-47ce-a115-955c" name="Перфокарты с данными" hidden="false">
+		  <description>Если в течение миссии ваш специалист вывел из строя вражеского специалиста или командира, то после миссии вы можете записать данные об этом на перфокарту.
+Заплатите 1 единицу материалов и добавьте 2 единицы опыта любому специалисту в вашем командном ростере.</description>
+	  </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="8ed1-8ae4-4628-3b72" name="Arc Pistol" hidden="false" collective="false" import="true" type="upgrade">

@@ -549,22 +549,13 @@
       </modifiers>
       <description>Only models with the SLAANESH keyword can be drawn from this Legion. If a model in your kill team is wiithn 1&quot; of an enemy model at the beginning of the Fight phase, the model in your kill team is considered to have charged.</description>
     </rule>
-    <rule id="feed-8e2a-3e14-3df5" name="Резонирующие лезвия" hidden="false">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="326a-45a4-b66b-ad13" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <description>Характеристики AP оружия ближнего боя (в том числе и базового) ваших моделей с ключевым словом NOISE MARINE улучшается на 1.</description>
-    </rule>
     <rule id="e146-922e-f71e-7c7d" name="Восславим Слаанеш..." hidden="false">
-      <description>В начале раунда вы можете заявить, что восславляете Слаанеш. Потратьте 1 единицу материалов и выберите один из эффектов:
-...музыкой! - Характеристики силы и урона оружия Sonic blaster, Doom siren и Blastmaster всех ваших моделей улучшаются на 1.
-...резней! - Характеристики силы и AP оружия ближнего боя (в том числе и базового) всех ваших моделей улучшаются га 1. Кроме того, прибавьте 1 к броскам на нападение ваших моделей.
-...страданием! - Ваши модели получают ФнП (5+). Если они уже имеют подобный эффект, они выбирают один из них и могут перебрасывать единицы.
-Эффект действует до конца раунда.</description>
+      <description>В начале игры вы можете потратить 1 единицу материалов, чтобы восславить Слаанеш. Дважды в течение этой игры в начале раунда вы можете выбрать один из эффектов (эти эффекты не могут повторяться):
+... музыкой! Характеристики силы и урона оружия Sonic Blaster, Doom siren и Blastmaster всех ваших моделей улучшаются на 1.
+... резней! Характеристики силы и АР оружия ближнего боя (в том числе и базового) всех ваших моделей улучшаются на 1. Кроме того, прибавляйте 1 к броскам на нападение ваших моделей.
+... страданием! Ваши модели получают ФнП (5+). Если они уже имеют подобный эффект, они выбирают один из них и могут перебрасывать единицы.
+Эффект действует до конца раунда
+      </description>
     </rule>
   </rules>
   <sharedSelectionEntries>

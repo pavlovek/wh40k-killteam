@@ -391,6 +391,14 @@
     <rule id="6c39-c66b-0b15-60bb" name="Mission Tactics" hidden="false">
       <description>At the beginning of the first battle round, choose a datasheet to be your kill team’s priority target (e.g. Tyranid Warrior). You can re-roll wound rolls of 1 for attacks made by models in your kill team that target a model from the datasheet that is your kill team’s priority target (so if you chose Tyranid Warrior, this ability would apply to attacks that targeted Tyranid Warriors and Tyranid Warrior Gunners).</description>
     </rule>
+	  <rule id="3e8c-4e66-99fb-6b0d" name="Истребители ксеносов" hidden="false">
+		  <description>В начале кампании выберите ключевое слово фракции ксеносов (NECRONS, ASURYANI и т.д. ).
+Ваши модели получают удвоенный опыт после миссий против такой фракции, однако не получают опыта после миссий против фракций Империума и Хаоса.
+В конце миссии против этих фракций вы можете заплатить 1 единицу материалов, чтобы получить опыт как обычно.</description>
+	  </rule>
+	  <rule id="88fb-4884-b4bf-7a59" name="Арсенал крепости" hidden="false">
+		  <description>В начале кампании характеристика Мах вашей модели Veteran Gunner равна 2. Вы можете потратить 3 единицы материалов, чтобы увеличить эту характер и стику и характеристику Мах вашей модели Black Shield на 1.</description>
+	  </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="bdd0-e085-dacc-1f66" name="Veteran" hidden="false" collective="false" import="true" type="model">
@@ -440,7 +448,7 @@
     </selectionEntry>
     <selectionEntry id="fe35-3207-26cd-c3ce" name="Veteran Gunner" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="822d-22dc-828a-e4ae" value="4">
+        <modifier type="set" field="822d-22dc-828a-e4ae" value="2">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
           </conditions>

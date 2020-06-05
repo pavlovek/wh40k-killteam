@@ -469,6 +469,12 @@
       </modifiers>
       <description>Add 1 to the Strength characteristic of models in your kill team. In addition, when a model in your kill team Advances add an additional 2&quot; to the distance it can move.</description>
     </rule>
+	  <rule id="0362-4f45-bc96-3c63" name="Подкрепления культа" hidden="false">
+		  <description>В начале миссии вы можете заявить, что готовите подкрепления культа. Потратьте на это 1 материал.
+В конце фазы движения бросайте D6. На 5+ вы можете выставить в 5&quot; от любого края стола, и дальше 1&quot; от любых моделей противника одну модель Neophyte Hybrid, вооруженную стандартным оружием. Она учитывается как модель вашей истребительной команды до конца игры (в том числе может получать веру культа).
+Не бросайте на последствия миссии для этой модели и не включайте её в свой командный ростер.
+Эта способность может сработать не более трех раз за игру. Если способность не сработала в первые два хода, то она автоматически срабатывает на третий и четвертый ход.</description>
+	  </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="aaff-03b4-3284-61d6" name="Toxin Sacs" hidden="false" collective="false" import="true" type="upgrade">

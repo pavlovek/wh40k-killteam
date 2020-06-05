@@ -489,6 +489,19 @@
     <rule id="65c1-84cd-7277-68ea" name="The Emperor&apos;s Chosen" hidden="false">
       <description>The invulnerable save of models in your kill team is improved by 1 (to a maximum of 3+).</description>
     </rule>
+	  <rule id="01a9-4ee2-be53-2a93" name="Вечное обучение" hidden="false">
+		  <description>После миссии вы можете потратить 1 единицу материалов, чтобы увеличить опыт любого своего специалиста, участвовавшего в миссии и имеющего ключевое слово ADEPTUS CUSTODES, на 1.</description>
+	  </rule>
+	  <rule id="48f2-4d6f-b1ce-dda7" name="Когти Императора" hidden="false">
+		  <modifiers>
+			  <modifier type="set" field="hidden" value="true">
+				  <conditions>
+					  <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="38e4-4333-873f-d3d2" type="equalTo"/>
+				  </conditions>
+			  </modifier>
+		  </modifiers>
+		  <description>Вы можете включать в свой командный ростер модели с ключевым словом SISTERS OF SILENCE, однако такие модели стоят для вас на 2 очка больше. Наличие таких моделей не запрещает вам использовать тактики Адептус Кустодес, но они сами не получают эффекта от таких тактик.</description>
+	  </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="71ef-5547-b88f-bf2e" name="Shield-Captain" hidden="false" collective="false" import="true" type="model">

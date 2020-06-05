@@ -368,6 +368,13 @@
     <entryLink id="ca06-a24e-51a9-f1d2" name="Traitor Commisar" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="f60b-8fea-f213-a98a" type="selectionEntry"/>
     <entryLink id="b3a6-0689-38d6-798e" name="Cultist Firebrand" hidden="false" collective="false" import="true" targetId="e019-0c76-94ef-b120" type="selectionEntry"/>
   </entryLinks>
+	<rules>
+		<rule id="51c8-463d-8b3c-0c51" name="Предатели-гвардейцы" hidden="false">
+			<description>Раз за игру в начале раунда вы можете потратить 1 единицу материалов, чтобы получить подкрепление предателей.
+Выставьте в вашей зоне расстановки, но дальше 1&quot; от любых моделей противника до двух моделей Tгaitor Guardsman, вооруженных стандартным оружием. Они учитываются как модели вашей истребительной команды до концы игры.
+Не бросайте на последствия миссии для этих моделей и не включайте их в свой командный ростер.</description>
+		</rule>
+	</rules>
   <sharedSelectionEntries>
     <selectionEntry id="76b8-a660-b8d3-dcf1" name="Traitor Guardsman" hidden="false" collective="false" import="true" type="model">
       <modifiers>

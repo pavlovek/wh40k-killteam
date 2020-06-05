@@ -434,6 +434,12 @@
       </modifiers>
       <description>Models in your kill team can shoot ranged weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon).</description>
     </rule>
+    <rule id="21da-4fb4-8f72-f41b" name="Перенос сознания" hidden="false">
+      <description>Когда вы включаете в свой командный ростер специалиста, вы можете произвести перенос сознания. Он работает только в том случае, если в вашем командном ростере есть погибшая модель с такой же специализацией. Заплатите N единиц материалов и дайте новой модели 2N единиц опыта, но не больше, чем было у погибшей модели.</description>
+    </rule>
+	  <rule id="7394-4d6f-88dc-290e" name="Пробуждение гробницы" hidden="false">
+		  <description>Вы начинаете кампанию с 6 единицами материалов. Кроме того, вы не можете строить Ресурсные установки, однако в начале каждой игровой недели, кроме первой, вы получаете 1 единицу материалов. В начале седьмой недели и далее вы вместо этого получаете 2 единицы материалов.</description>
+	  </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e299-24fe-f16d-dd4c" name="Deathmark" hidden="false" collective="false" import="true" type="model">

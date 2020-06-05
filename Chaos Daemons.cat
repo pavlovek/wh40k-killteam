@@ -646,6 +646,15 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+	<rules>
+		<rule id="b3ad-49a9-b13b-400d" name="Изменчивость Варпа" hidden="false">
+			<description>Вы можете обменивать 1 единицу материалов на 15 очков резерва и 15 очков резерва на 1 единицу материалов.</description>
+		</rule>
+		<rule id="ddfd-45f0-841e-763f" name="Чемпионы Богов" hidden="false">
+			<description>Если ваш командный ростер целиком состоит из моделей с одной и той же меткой Хаоса, вы по умолчанию получаете эффект соответствующего Алтаря, а также можете построить Высший Алтарь.
+Кроме того, ваш командир в начале каждого раунда восстанавливает 1 потерянную рану.</description>
+		</rule>
+	</rules>
   <sharedSelectionEntries>
     <selectionEntry id="c058-5ee5-febb-85ea" name="Bloodletter" hidden="false" collective="false" import="true" type="model">
       <profiles>

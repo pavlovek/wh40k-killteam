@@ -470,6 +470,16 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+	<rules>
+		<rule id="8c43-4d36-ae9c-4e9c" name="Божественное чудо" hidden="false">
+			<description>В начале каждого раунда бросайте D6 и добавляйте этот куб в свой резерв.
+Кубы из этого резерва можно использовать при совершении бросков на инициативу, попадание, ранение, спас-бросок, повреждение, количество атак, урон или нерв-тест - просто замените ими один или несколько кубов, составляющих бросок.
+Кубы, не использованные в течение двух раундов, удаляются из резерва.</description>
+		</rule>
+		<rule id="3d72-4a49-a6ef-427f" name="Святые деяния" hidden="false">
+			<description>В начале игры вы можете потратить до 3 единиц материалов, чтобы в первом раунде получить соответствующее число кубов Божественного Чуда.</description>
+		</rule>
+	</rules>
   <sharedSelectionEntries>
     <selectionEntry id="fec1-0fa3-951f-f82e" name="Battle Sister" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" type="model">
       <profiles>

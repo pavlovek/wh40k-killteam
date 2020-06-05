@@ -270,7 +270,9 @@
       <description>Models in your kill team do not suffer the penalty to their hit rolls for shooting Heavy weapons during a battle round in which they moved, or for shooting Assault weapons during a battle round in which they Advanced. In addition, models in your kill team firing Rapid Fire weapons double the number of attacks they make if all of their targets are within 18&quot; (rather than half the weapon&apos;s Range characteristic).</description>
     </rule>
     <rule id="2553-717b-1dba-f171" name="Чумная бомбардировка" hidden="false">
-      <description>Раз за игру в конце фазы движения вы можете потратить 1 единицу материалов, чтобы произвести бомбардировку чумными снарядами. Выберите контрольную точку на столе, видимую для вашего лидера. Все модели без ключевого слова NURGLE в 3&quot; от центра этой точки вычитают 1 из характеристики стойкости. Все модели без ключевого слова NURGLE в 7&quot; от центра этой точки вычитают 1 из характеристики лидерства. Эффекты действуют до конца раунда.</description>
+      <description>Раз за игру в конце фазы движения вы можете потратить 1 единицу материалов, чтобы произвести бомбардировку чумными снарядами.
+Выберите контрольную точку на столе, видимую для вашего лидера. Все модели без ключевого слова NURGLE в 2&quot; от центра этой точки вычитают 1 из характеристики стойкости. Все модели без ключевого слова NURGLE в 7&quot; от центра этой точки вычитают 1 из характеристики лидерства.
+Эффекты действуют до конца раунда.</description>
     </rule>
     <rule id="0f73-f82c-9da2-e680" name="Мозговая гниль" hidden="false">
       <description>В начале игры вы можете заявить, что поражаете свои модели Poxwalker мозговой гнилью. До конца игры вы должны вычесть 2 из бросков на нападение и бег для таких моделей, однако они автоматически проходят нерв-тесты и не получают штрафов на попадание при сломе вашей истребительной команды. Применение этой способности расходует 1 материал.</description>

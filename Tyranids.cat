@@ -554,6 +554,11 @@
       </modifiers>
       <description>Roll a D6 each time a model in your kill team loses a wound whilst it is within 6&quot; of a friendly SYNAPSE model. On a 6, the damage is ignored and the model does not lose a wound. In addition, models in your kill team that are within 6&quot; of a friendly SYNAPSE model do not suffer the penalty to their hit rolls from one flesh wound they have suffered.</description>
     </rule>
+	  <rule id="a7d6-4b85-9c19-3959" name="Генерация подкреплений" hidden="false">
+		  <description>Дважды за игру в начале раунда вы можете потратить 1 единицу материалов, чтобы сгенерировать подкрепления.
+Поместите до двух моделей Termagant или Hormagaunt в любых комбинациях, вооружённых стандартным оружием, в вашей зоне расстановки, но дальше 1&quot; от любых моделей противника. Они учитываются как модели вашей истребительной команды до конца игры (в том числе могут получать адаптации улья).
+Не бросайте на последствия миссии для этих моделей и не включайте их в свой командный ростер.</description>
+	  </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="1648-632a-e780-49a5" name="Barbed strangler" hidden="false" collective="false" import="true" type="upgrade">

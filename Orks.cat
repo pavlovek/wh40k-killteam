@@ -841,6 +841,11 @@
       </modifiers>
       <description>Roll a dice each time a model in your kill team loses a wound. On a 6 the would is not lost. If a model already has a similar ability, choose which effect applies, and re-roll 1s when making these rolls.</description>
     </rule>
+	  <rule id="eadc-4d46-af48-aade" name="Дикие Орки" hidden="false">
+		  <description>Раз за игру в начале раунда вы можете потратить 1 единицу материалов, чтобы призвать диких орков.
+Выставьте в вашей зоне расстановки, но дальше 1&quot; от любых моделей противника до двух моделей Огk bоу, вооруженных стандартным оружием. Они учитываются как модели вашей истребительной команды до конца игры (в том числе могут получать культуру клана).
+Не бросайте на последствия миссии для этих моделей и не включайте их в свой командный ростер.</description>
+	  </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="a2f7-b7aa-039d-55f4" name="Kombi-weapon with Rokkit Launcha" hidden="false" collective="false" import="true" type="upgrade">

@@ -529,6 +529,16 @@
       </modifiers>
       <description>Models in your kill team can shoot Rapid Fire weapons as if they were Assault weapons in the Shooting phase of a battle round in which they Advanced (e.g. a Rapid Fire 1 weapon would be used as if it were an Assault 1 weapon). In addition, these models do not suffer the penalty to their hit rolls for shooting Assault weapons during a battle round in which they Advanced.</description>
     </rule>
+	  <rule id="1c4a-4fe9-9f54-1114" name="Сканер местности" hidden="false">
+		  <description>После расстановки моделей вы можете использовать сканер местности. Потратьте 1 единицу материалов и разместите на каждой вражеской модели, находящейся на поле, по 1 жетону маркеров. Эти жетоны сохраняются до конца игры.</description>
+	  </rule>
+	  <rule id="0b6a-425a-8a35-eeac" name="Новые технологии" hidden="false">
+		  <description>В начале кампании способность дронов Saviour protocols выглядит следующим образом:
+&quot;Когда дружественная INFANTRY модель в 2&quot; теряет раны в результате атаки оружием (ближнего или дальнего боя), эта модель может перехватить данную атаку. Бросьте D6, на 3+ атака перехвачена - цель атаки не теряет раны, а эта модель получает 1 смертельную рану.&quot;
+Способность For the Greater Good работает в радиусе 3&quot;.
+В ходе исследования технологий эти способности будут улучшаться.
+		  </description>
+	  </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e5a8-5953-c927-081d" name="Fire Warrior Shas&apos;la" hidden="false" collective="false" import="true" type="model">
