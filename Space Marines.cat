@@ -2594,12 +2594,24 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8faf-b5cb-d838-a131" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="714a-7e57-c098-d560" name="Heavy weapon" hidden="false" collective="false" import="true" targetId="d560-8349-fadc-1e47" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e17-f769-1fb5-d989" type="max"/>
           </constraints>
@@ -2919,6 +2931,11 @@
             <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4790,6 +4807,11 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f512-7b06-73fb-f089" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
