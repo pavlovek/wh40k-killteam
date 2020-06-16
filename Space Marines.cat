@@ -29,6 +29,8 @@
     <categoryEntry id="3b17-281f-ac2d-0410" name="White Scars" hidden="false"/>
     <categoryEntry id="3306-72f8-96be-a551" name="Incursor" hidden="false"/>
     <categoryEntry id="36b5-200b-2e1f-8910" name="Reiver" hidden="false"/>
+    <categoryEntry id="46d3-5d9e-9491-0668" name="Ветераны первой роты" hidden="false"/>
+    <categoryEntry id="d900-25e9-1654-d2ad" name="Штурмовое отделение" hidden="false"/>
   </categoryEntries>
   <rules>
     <rule id="b9d3-f144-2eae-fe1b" name="Righteous Zeal (Black Templars)" hidden="false">
@@ -954,12 +956,30 @@
             </entryLink>
             <entryLink id="944c-6e5a-839d-849d" name="Combi-melta" hidden="false" collective="false" import="true" targetId="9458-28fc-1037-5630" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="3.0"/>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="1f09-5217-74f8-7276" name="Combi-plasma" hidden="false" collective="false" import="true" targetId="e86f-4313-7f7b-ca18" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="2.0"/>
+                <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -1222,7 +1242,16 @@
             </entryLink>
             <entryLink id="4b6f-229e-8065-6c81" name="Combi-melta" hidden="false" collective="false" import="true" targetId="9458-28fc-1037-5630" type="selectionEntry">
               <modifiers>
-                <modifier type="decrement" field="5291-dc2c-cfa5-a77f" value="1.0"/>
+                <modifier type="decrement" field="5291-dc2c-cfa5-a77f" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="2052-e6f0-a677-6d53" name="Combi-plasma" hidden="false" collective="false" import="true" targetId="e86f-4313-7f7b-ca18" type="selectionEntry">
@@ -1361,7 +1390,16 @@
             </entryLink>
             <entryLink id="801d-742e-8715-adfb" name="Combi-melta" hidden="false" collective="false" import="true" targetId="9458-28fc-1037-5630" type="selectionEntry">
               <modifiers>
-                <modifier type="decrement" field="5291-dc2c-cfa5-a77f" value="1.0"/>
+                <modifier type="decrement" field="5291-dc2c-cfa5-a77f" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="601e-a345-fbc9-13e7" name="Combi-plasma" hidden="false" collective="false" import="true" targetId="e86f-4313-7f7b-ca18" type="selectionEntry">
@@ -2200,12 +2238,26 @@
             <selectionEntry id="6481-0490-da86-2fbc" name="Thunder hammer and Storm shield" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="e54d-78b1-a3cb-dae6" name="Thunder hammer" hidden="false" collective="false" import="true" targetId="0528-7cff-65ac-73f7" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="126a-3400-ce91-6b24" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7380-81e4-ba0e-a121" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="eb8e-9878-33b5-a624" name="Storm shield" hidden="false" collective="false" import="true" targetId="dcd7-2c59-d232-9579" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46c0-612f-a45a-7b27" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="954f-b8ab-21bc-4c19" type="max"/>
@@ -2218,10 +2270,23 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="735e-b454-f78f-2cfd" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry"/>
+            <entryLink id="735e-b454-f78f-2cfd" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="e9bd-f59e-7cd7-48e5" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false"/>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -2335,12 +2400,26 @@
             <selectionEntry id="edce-7875-78fe-3cba" name="Thunder hammer and Storm shield" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="02dc-a1e7-4cdc-c230" name="Thunder hammer" hidden="false" collective="false" import="true" targetId="0528-7cff-65ac-73f7" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2708-bf19-114b-a181" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a8-778c-6bb6-bb36" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="aad7-6e15-55f6-1e4c" name="Storm shield" hidden="false" collective="false" import="true" targetId="dcd7-2c59-d232-9579" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f397-0945-4f41-bb9a" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1545-102d-d058-8e8b" type="max"/>
@@ -2450,10 +2529,23 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c029-6fd0-2128-07cb" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9114-8748-fe75-1792" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry"/>
+            <entryLink id="9114-8748-fe75-1792" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="f368-1960-c6d4-4bc9" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false"/>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -2496,6 +2588,11 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -2818,6 +2915,11 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -3832,14 +3934,20 @@
             </entryLink>
             <entryLink id="d53a-b5b7-a9ad-6b3d" name="Melee weapons" hidden="false" collective="false" import="true" targetId="0199-3abe-4bb3-bace" type="selectionEntryGroup">
               <modifiers>
-                <modifier type="decrement" field="7fef-9acc-b749-9853" value="1">
+                <modifier type="decrement" field="7fef-9acc-b749-9853" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="e868-203a-914d-e11d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f748-5a74-0ab2-583e" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
+                <modifier type="set" field="3ecc-0e98-ec32-201a" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fef-9acc-b749-9853" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ecc-0e98-ec32-201a" type="min"/>
               </constraints>
             </entryLink>
             <entryLink id="8f47-336f-e4dc-5fc2" name="Boltgun" hidden="false" collective="false" import="true" targetId="29a8-a3ad-c367-508f" type="selectionEntry">
@@ -4372,10 +4480,15 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
       <entryLinks>
         <entryLink id="fc54-19fc-6d55-6874" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="13">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
-              </conditions>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="13.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="19a2-eb05-54f7-4712" value="1.0">
               <conditions>
@@ -4385,6 +4498,11 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4423,9 +4541,19 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
         </entryLink>
         <entryLink id="6571-e013-72bd-b6f4" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="12">
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="12.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4444,15 +4572,32 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
           </constraints>
         </entryLink>
         <entryLink id="aeb4-beec-6e26-40cd" name="Relic blade" hidden="false" collective="false" import="true" targetId="76eb-8d89-723e-fa60" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9b7-7b85-459e-b87b" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="368d-1dce-3d5c-73bc" name="Thunder hammer" hidden="false" collective="false" import="true" targetId="0528-7cff-65ac-73f7" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="18">
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="18.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4462,9 +4607,19 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
         </entryLink>
         <entryLink id="f703-e7e3-7795-b969" name="Storm shield" hidden="false" collective="false" import="true" targetId="dcd7-2c59-d232-9579" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="15">
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="15.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="7.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1cac-4ecd-8a86-6833" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4494,16 +4649,37 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
           </constraints>
           <entryLinks>
             <entryLink id="42fb-35f9-760a-3525" name="Combi-flamer" hidden="false" collective="false" import="true" targetId="87cb-ba2f-b55c-b525" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f86-e661-f281-39c6" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="562a-2720-bbd7-4f22" name="Combi-melta" hidden="false" collective="false" import="true" targetId="9458-28fc-1037-5630" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd3e-a0f9-eb76-0cad" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="36f3-d3f0-4aeb-952d" name="Combi-plasma" hidden="false" collective="false" import="true" targetId="e86f-4313-7f7b-ca18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f15-3e38-8870-fa20" type="max"/>
               </constraints>
@@ -4522,6 +4698,13 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
         <selectionEntryGroup id="2dc1-dde0-2297-4675" name="Melee weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7295-3507-4e20-416a">
           <entryLinks>
             <entryLink id="b445-31ac-1b96-da68" name="Chainfist" hidden="false" collective="false" import="true" targetId="064b-e268-55e0-44b8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b47d-7e43-a755-01f5" type="max"/>
               </constraints>
@@ -4539,6 +4722,11 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
             <entryLink id="7295-3507-4e20-416a" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="eeb0-64c0-bc05-1303" value="0.0"/>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65fc-ae6c-d7af-99bf" type="max"/>
@@ -4570,11 +4758,25 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
               </constraints>
             </entryLink>
             <entryLink id="80ab-75cd-70df-3c97" name="Thunder hammer" hidden="false" collective="false" import="true" targetId="0528-7cff-65ac-73f7" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad8e-13f5-705a-7a6e" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="040b-1762-5cf8-6f4d" name="Storm shield" hidden="false" collective="false" import="true" targetId="dcd7-2c59-d232-9579" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f55c-b652-3084-eb4d" type="max"/>
               </constraints>
@@ -4602,13 +4804,34 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf70-98cf-c5af-0c7b" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="d9a1-17c9-642a-52b7" name="Heavy flamer" hidden="false" collective="false" import="true" targetId="cced-7b5b-2ab8-5ef5" type="selectionEntry"/>
-        <entryLink id="aa3c-98eb-6767-1c06" name="Assault cannon" hidden="false" collective="false" import="true" targetId="057b-28e0-2d61-a272" type="selectionEntry"/>
+        <entryLink id="d9a1-17c9-642a-52b7" name="Heavy flamer" hidden="false" collective="false" import="true" targetId="cced-7b5b-2ab8-5ef5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="aa3c-98eb-6767-1c06" name="Assault cannon" hidden="false" collective="false" import="true" targetId="057b-28e0-2d61-a272" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="0f6d-05fd-7274-37b6" name="Plasma cannon" hidden="false" collective="false" import="true" targetId="3b90-f949-81c3-e0ae" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6dc1-298a-5459-4a25" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4666,6 +4889,16 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0199-3abe-4bb3-bace" name="Melee weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="345b-8095-f041-afb9">
+      <modifiers>
+        <modifier type="set" field="66b9-6e34-baa1-d466" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b9-6e34-baa1-d466" type="min"/>
+      </constraints>
       <entryLinks>
         <entryLink id="e90f-4d35-53d6-baf5" name="Lightning claw" hidden="false" collective="false" import="true" targetId="fa76-651f-322a-dee3" type="selectionEntry">
           <constraints>

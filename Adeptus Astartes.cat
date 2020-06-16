@@ -6,6 +6,10 @@
     <categoryEntry id="8bff-754c-0487-c535" name="Reiver" hidden="false"/>
     <categoryEntry id="0323-8790-671c-6e7a" name="Scout" hidden="false"/>
     <categoryEntry id="193d-c0ec-09ea-28c3" name="Tactical Marine" hidden="false"/>
+    <categoryEntry id="89c8-38a3-20ad-d471" name="Боевое отделение" hidden="false"/>
+    <categoryEntry id="c62a-e310-8615-2e64" name="Разведывательный отряд" hidden="false"/>
+    <categoryEntry id="46d3-5d9e-9491-0668" name="Ветераны первой роты" hidden="false"/>
+    <categoryEntry id="d900-25e9-1654-d2ad" name="Штурмовое отделение" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="31b9-6ae7-0eb3-cc3c" name="Incursor Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -48,6 +52,137 @@
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="be62-2c21-eb91-40a2" name="Формация" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c5a-5eb7-8dec-0e49" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39d6-5280-4349-4921" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8935-c593-5821-fa6d" name="Configuration" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d632-cdc2-5e64-42ef" name="Формации" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f84-e633-6a0a-b7d4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f84d-b09e-1c6a-5c75" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf03-ea8a-2499-a517" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0f84-e633-6a0a-b7d4" name="Смешанная формация" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="9274-d4a2-d3f4-6895" name="Синергия с орденами" hidden="false">
+                  <description>Ультрамарины.</description>
+                </rule>
+                <rule id="07c0-d625-2bba-9d1e" name="Сложность координации" hidden="false">
+                  <description>Если в вашей истребительной команде некоторые (но не все) модели имеют или ключевое слово TERMINATOR, или ключевое слово PHOBOS (НО не REIVER), в начале игры и в первом раунде вы генерируете на D3+2 СР меньше.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="497a-6d8f-fbac-a3ac" name="Боевое отделение" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="8826-e40b-f5a9-a27a" name="Синергия с орденами" hidden="false">
+                  <description>Саламандры, Имперские Кулаки, Железные Руки.</description>
+                </rule>
+                <rule id="2aad-8acd-ec45-0a4b" name="Тактическое превосходство" hidden="false">
+                  <description>Вы можете перебрасывать ваши броски на инициативу.</description>
+                </rule>
+                <rule id="d7f3-a235-0e64-0d96" name="Священные болтеры" hidden="false">
+                  <description>Характеристика АР оружия ваших моделей, в названии которого есть слово &quot;bolt&quot;, улучшается на 1.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="97ec-7354-4aed-b691" name="Боевое отделение" hidden="false" targetId="89c8-38a3-20ad-d471" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3bcd-c4f3-bd45-153b" name="Разведывательный отряд" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="f152-4ebc-05d6-4934" name="Синергия с орденами" hidden="false">
+                  <description>Гвардия Ворона.</description>
+                </rule>
+                <rule id="e7c9-a6d9-c6dd-7a3c" name="Доктрина маскировки" hidden="false">
+                  <description>Тактика Outflank не требует СР для использования. Кроме того, в конце фазы движения вы можете переместить D3 ваших моделей, которые не совершали попытку нападения или не бежали, дополнительно на 3&quot; в любом направлении, если они находятся далее 6&quot; от моделей противника. Это перемещение происходит по правилам обычного движения.</description>
+                </rule>
+                <rule id="819b-b1e7-fe92-5b78" name="Диверсионная группа" hidden="false">
+                  <description>Если вы выиграли в миссии, вы можете выбрать: опустошить 1 территорию противника или лишить его 1 единицы материалов.</description>
+                </rule>
+                <rule id="ecec-d255-e4cd-142a" name="Цель секретной миссии" hidden="false">
+                  <description>Раз за игру в конце раунда вы можете получить дополнительно D3 победных очков за удержание цен тральной точки, если она есть. Если её нет, вы можете получить 1 победное очко за удержание любой точки.
+</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="3cd1-61dc-b427-e8f5" name="Разведывательный отряд" hidden="false" targetId="c62a-e310-8615-2e64" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="32de-0474-7349-9f6e" name="Ветераны первой роты" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="6f70-7646-c213-a76a" name="Синергия с орденами" hidden="false">
+                  <description>Тёмные Ангелы.</description>
+                </rule>
+                <rule id="65ce-7355-f2ac-b9aa" name="Доктрина телепортации" hidden="false">
+                  <description>Тактика Teleport strike не требует СР для использования. Кроме того, в конце фазы инициативы (но не в первый ход) вы можете убрать одну из ваших моделей с поля боя и снова выставить её в любом месте на столе, но дальше 5&quot; от моделей противника. Это действие не считается движением.</description>
+                </rule>
+                <rule id="26a4-a63e-cdf9-70b4" name="Героическая стойкость" hidden="false">
+                  <description>Ваши модели получают ФнП (5+). Если они уже имеют подобное правило, они выбирают одно из них и могут перебрасывать единицы. Кроме того, если ваш боец погиб в результате броска на последствия в конце миссии, бросьте D6. На 5+ боец выжил, получив тяжёлую травму (2 на D10). В ином случае боец погиб, а его доспех потерян для ордена - вы немедленно лишаетесь 1 единицы материалов. Если вашей тактикой ордена является ТНЕ FLESH IS WEAK, боец выживает при броске 4+.</description>
+                </rule>
+                <rule id="d5a3-57d7-4faf-77fa" name="Воплощение ордена" hidden="false">
+                  <description>Ваши модели получают бонусы, если используют знаковое для своего ордена оружие:
+	+ 1 к броскам на попадание:
+Storm bolter (знаковое для Имперских Кулаков)
+Thunder hammer (знаковое для Кровавых Ангелов)
+Power fist
+Lightning claw (знаковое для Чёрных Храмовников и Гвардии Ворона).
+	Два куба с выбором наибольшего на количество атак:
+Plasma cannon (знаковое для Тёмных Ангелов)
+Heavy flamer (Знаковое для Саламандр)
+	+1 атака:
+Chainfist, Power maul, Power ахе (выбрать одно, знаковые для Космических Волков).
+
+Если ваш орден не описан здесь и не является наследником одного из описанных, выберите оружие, которое лучше всего подходит к стилю сражения вашего ордена.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="2364-2a91-d3e4-1d94" name="Ветераны первой роты" hidden="false" targetId="46d3-5d9e-9491-0668" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9fb9-2cc4-e86b-8095" name="Штурмовое отделение" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="6d79-d8ce-471a-fc68" name="Синергия с орденами" hidden="false">
+                  <description>Кровавые Ангелы, Космические Волки, Белые Шрамы, Чёрные Храмовники.</description>
+                </rule>
+                <rule id="1c11-5683-e2d2-1d2f" name="Молниеносный штурм" hidden="false">
+                  <description>Ваши модели без ключевого слова JUMP РАСК могут объявлять нападение после совершения обычного движения, если они двигались на половину своей характеристики движения или меньше. Нападение должно быть заявлено сразу после движения.
+Модели с ключевым словом JUMP РАСК перед совершением броска на нападение могут выбрать один из двух вариантов:
+Бесконтрольный рывок. Прибавьте 2 к результату броска на нападение. В случае успешного нападения вычитайте 1 из всех бросков на попадание цели нападения до конца раунда. Такой бросок на нападение нельзя перебросить, и в случае провала ваша модель не может остаться на месте.
+Контролируемый рывок. Прибавьте 1 к результату броска на нападение. В случае успешного нападения ваша модель получает + 1 атаку до конца раунда.
+Десантная доктрина: Тактика Jump pack assault не требует СР для использования.</description>
+                </rule>
+              </rules>
+              <categoryLinks>
+                <categoryLink id="cfbb-29e0-cf17-51a4" name="Штурмовое отделение" hidden="false" targetId="d900-25e9-1654-d2ad" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="e898-7701-ec98-6a7a" name="Tactical Marine" hidden="false" collective="false" import="true" targetId="3004-28ce-dcee-638b" type="selectionEntry">
@@ -57,27 +192,89 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e2b7-94df-c4ff-cb8e" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ad52-29f0-73ec-fe0b" name="Tactical Marine" hidden="false" collective="false" import="true" targetId="3004-28ce-dcee-638b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="fbb5-b4bd-5998-2f89" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5fb6-1349-fd65-4554" name="Intercessor" hidden="false" collective="false" import="true" targetId="16e1-0fba-46bf-f340" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="fa29-bf2b-ad54-ffcf" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="81ca-74e3-0179-a4ad" name="Intercessor Gunner" hidden="false" collective="false" import="true" targetId="20cf-b3ea-c563-9f95" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="8092-7979-da9c-ff92" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fcd6-5160-8837-8789" name="Intercessor Sergeant" hidden="false" collective="false" import="true" targetId="c69c-7f77-d167-5481" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c58e-fafe-2de1-aebd" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
@@ -88,6 +285,17 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -101,6 +309,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="0683-6c0a-ae39-4352" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -113,12 +332,34 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="9175-91b4-d27a-39bf" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9e85-1c26-8647-fbee" name="Intercessor Sergeant" hidden="false" collective="false" import="true" targetId="c69c-7f77-d167-5481" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="4a5e-7210-3cc9-7b67" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
@@ -142,11 +383,33 @@
       </modifiers>
     </entryLink>
     <entryLink id="a606-9f5b-b487-04e7" name="Reiver Sergeant" hidden="false" collective="false" import="true" targetId="aa54-67ce-be24-b919" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="1105-d4a2-c099-7b29" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="afb1-a12f-db9e-55f8" name="Reiver Sergeant" hidden="false" collective="false" import="true" targetId="aa54-67ce-be24-b919" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="fe8d-405a-5000-3f65" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
@@ -158,12 +421,32 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="847c-4f50-7a29-95ab" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c917-53ca-7a79-7c4e" name="Reiver" hidden="false" collective="false" import="true" targetId="e126-7f82-8d53-033d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0039-77f1-0cc7-3c09" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
@@ -175,12 +458,33 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="4c93-fd6b-6a24-2923" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1e60-a13c-27e4-823a" name="Scout" hidden="false" collective="false" import="true" targetId="ce2c-0700-1680-aab5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="63ed-507b-46df-dcb6" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
@@ -192,12 +496,35 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2d29-a564-c18c-99ce" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="611c-0011-9d57-1914" name="Scout Gunner" hidden="false" collective="false" import="true" targetId="d12f-72d7-4202-c722" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="fc09-8005-278c-c441" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
@@ -208,6 +535,17 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -221,27 +559,86 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e0a1-68b2-fab9-5763" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="104b-e351-3b6c-1950" name="Scout Sergeant" hidden="false" collective="false" import="true" targetId="5317-f823-7ccf-eb5f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="063c-bb68-4664-61c6" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e0f4-3860-b4e8-e2d0" name="Scout Sergeant" hidden="false" collective="false" import="true" targetId="5317-f823-7ccf-eb5f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="56ab-4f74-4f8c-3b33" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bc41-7893-2b0a-6332" name="Tactical Marine Gunner" hidden="false" collective="false" import="true" targetId="f6e9-e8cb-9906-5c5d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c4e2-8cdf-782e-c87c" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f370-9660-04d4-3af0" name="Tactical Sergeant" hidden="false" collective="false" import="true" targetId="4590-24a8-380b-a130" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="201f-bc70-db40-dc34" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
@@ -252,6 +649,17 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -265,12 +673,34 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="7f1b-7b5d-5272-5f6e" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="de19-c73e-53f3-cf6e" name="Tactical Sergeant" hidden="false" collective="false" import="true" targetId="4590-24a8-380b-a130" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="cdc0-6f14-e49d-d821" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
       </categoryLinks>
@@ -299,12 +729,76 @@
         <categoryLink id="a38c-269d-8097-bdad" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1864-2c76-931d-7e40" name="Primaris Captain" hidden="false" collective="false" import="true" targetId="d243-c23e-8d48-bbb6" type="selectionEntry"/>
-    <entryLink id="1abc-d7fa-40f1-3571" name="Primaris Lieutenant" hidden="false" collective="false" import="true" targetId="78d1-d141-9d97-d2ee" type="selectionEntry"/>
-    <entryLink id="08f3-158b-5743-f46e" name="Primaris Chaplain" hidden="false" collective="false" import="true" targetId="846c-7d3e-e6cd-0217" type="selectionEntry"/>
-    <entryLink id="175b-3d67-60a5-89b7" name="Primaris Librarian" hidden="false" collective="false" import="true" targetId="4674-18d2-2bd6-a9d0" type="selectionEntry"/>
+    <entryLink id="1864-2c76-931d-7e40" name="Primaris Captain" hidden="false" collective="false" import="true" targetId="d243-c23e-8d48-bbb6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="1abc-d7fa-40f1-3571" name="Primaris Lieutenant" hidden="false" collective="false" import="true" targetId="78d1-d141-9d97-d2ee" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="08f3-158b-5743-f46e" name="Primaris Chaplain" hidden="false" collective="false" import="true" targetId="846c-7d3e-e6cd-0217" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="175b-3d67-60a5-89b7" name="Primaris Librarian" hidden="false" collective="false" import="true" targetId="4674-18d2-2bd6-a9d0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink id="1ee7-3a42-52a8-bbb3" name="Janus Draik" hidden="false" collective="false" import="true" targetId="51ae-59d9-809a-f5dc" type="selectionEntry"/>
     <entryLink id="f6a5-0df6-70f5-bba5" name="Captain in Phobos Armour" hidden="false" collective="false" import="true" targetId="f4e6-fc31-8475-2fda" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="6c60-7364-7ade-ba6b" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
       </categoryLinks>
@@ -319,6 +813,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1ee8-22a2-c4e0-50a2" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -326,6 +831,19 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="5a1e-36de-f722-4409" name="Infiltrator" hidden="false" collective="false" import="true" targetId="fd8b-3bfb-9ca9-5119" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="44dc-cd22-1747-12ae" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="643c-7be7-cef4-5e01" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -341,6 +859,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1192-48ce-ce53-f817" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -348,6 +877,19 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="df6d-6cbb-1bd3-cec2" name="Infiltrator Helix Adept" hidden="false" collective="false" import="true" targetId="0ab6-c95f-c30a-4140" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e033-993a-81cc-6a89" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="21cf-82e5-fe19-deec" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -357,6 +899,19 @@
       </entryLinks>
     </entryLink>
     <entryLink id="56fb-90fb-3291-a420" name="Infiltrator Sergeant" hidden="false" collective="false" import="true" targetId="2be3-576e-6e3e-6210" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="af5e-92c3-1f8a-d21e" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
         <categoryLink id="0262-16c2-9cb8-d1d9" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -372,6 +927,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3853-c520-a26c-219f" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -379,6 +945,19 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="0eb4-2d55-d69a-80fa" name="Infiltrator Sergeant" hidden="false" collective="false" import="true" targetId="2be3-576e-6e3e-6210" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="f8d7-121a-b1a8-bc5d" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="a747-4be0-017e-3d3d" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -394,6 +973,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1c80-05c4-f58a-95cc" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -401,6 +991,19 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="afe8-25d4-6c14-64cf" name="Eliminator" hidden="false" collective="false" import="true" targetId="64b0-a0f2-6647-1a01" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="fe17-35b4-c928-ab06" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="8e2e-5767-7e54-8847" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -410,6 +1013,19 @@
       </entryLinks>
     </entryLink>
     <entryLink id="a919-930e-588d-66c9" name="Eliminator Sergeant" hidden="false" collective="false" import="true" targetId="e6b4-4aa3-3a5e-b06d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="252e-eefe-8857-df11" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
         <categoryLink id="ddec-1e2b-1f21-67cc" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -425,6 +1041,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5424-05c4-838f-dfc2" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -432,6 +1059,19 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="bbd1-5238-258d-9c0e" name="Eliminator Sergeant" hidden="false" collective="false" import="true" targetId="e6b4-4aa3-3a5e-b06d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="b34b-4c98-759d-be90" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="14a1-809d-0eb3-a386" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -441,6 +1081,18 @@
       </entryLinks>
     </entryLink>
     <entryLink id="19ef-5f61-2253-5132" name="Captain in Terminator Armour" hidden="false" collective="false" import="true" targetId="1cac-4ecd-8a86-6833" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2f3c-dac7-190e-fd69" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
       </categoryLinks>
@@ -450,6 +1102,18 @@
       </entryLinks>
     </entryLink>
     <entryLink id="9a7e-db1a-da36-3167" name="Chaplain in Terminator Armour" hidden="false" collective="false" import="true" targetId="72df-333f-d44f-e598" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2a8b-5357-aa86-8b18" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
       </categoryLinks>
@@ -459,6 +1123,18 @@
       </entryLinks>
     </entryLink>
     <entryLink id="bab4-aba6-7c61-0746" name="Librarian in Phobos Armour" hidden="false" collective="false" import="true" targetId="0def-8e36-3a16-ab63" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="50e5-4939-b341-a4b5" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
       </categoryLinks>
@@ -467,6 +1143,18 @@
       </entryLinks>
     </entryLink>
     <entryLink id="8262-f482-814f-c8c1" name="Librarian in Terminator Armour" hidden="false" collective="false" import="true" targetId="337a-f2e3-2598-1b94" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="3c9b-99b2-4313-100e" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
       </categoryLinks>
@@ -505,6 +1193,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="d6ab-bb60-ee06-2049" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -520,6 +1218,16 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -537,6 +1245,16 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -560,6 +1278,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="ed39-d78f-8db0-a536" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -575,6 +1303,16 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -598,6 +1336,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="0166-fa66-0750-d55a" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -614,6 +1362,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="efe5-729c-7c07-b0f5" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
@@ -625,6 +1383,18 @@
       </entryLinks>
     </entryLink>
     <entryLink id="c814-3102-b7bb-33e4" name="Space Wolf Terminator" hidden="false" collective="false" import="true" targetId="5dfb-22dd-dee3-7841" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c9eb-a700-490a-5a6b" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="1dc7-b4f6-5077-ffcc" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -636,9 +1406,15 @@
     <entryLink id="5a68-c0bd-001e-170b" name="Space Wolf Terminator" hidden="false" collective="false" import="true" targetId="5dfb-22dd-dee3-7841" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -649,9 +1425,15 @@
     <entryLink id="5a98-63ca-08c0-7c84" name="Space Wolf Terminator Gunner" hidden="false" collective="false" import="true" targetId="f512-7b06-73fb-f089" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -660,6 +1442,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="dad1-6464-056d-8dbd" name="Space Wolf Terminator Gunner" hidden="false" collective="false" import="true" targetId="f512-7b06-73fb-f089" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9aa5-7191-c36a-94ab" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="8e39-8e3b-3492-a6e4" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -669,6 +1463,18 @@
       </entryLinks>
     </entryLink>
     <entryLink id="9b86-dfdd-45dc-23d6" name="Space Wolf Terminator Sergeant" hidden="false" collective="false" import="true" targetId="7a22-4e8b-6f21-a7d6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="8d91-531a-b63b-6c54" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="4068-cdd9-f23f-38df" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -680,9 +1486,15 @@
     <entryLink id="3c52-89ae-4eed-9b3f" name="Space Wolf Terminator Sergeant" hidden="false" collective="false" import="true" targetId="7a22-4e8b-6f21-a7d6" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -691,6 +1503,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="b7d9-6c0c-e59b-f5d5" name="Space Wolf Terminator Sergeant" hidden="false" collective="false" import="true" targetId="7a22-4e8b-6f21-a7d6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2d67-1915-22e2-b576" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
         <categoryLink id="e846-3686-b5ba-4aa4" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -715,6 +1539,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="66b3-8d47-244c-c248" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
@@ -736,6 +1571,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="9903-41aa-2a2e-0dbe" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -748,6 +1594,17 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -770,6 +1627,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="30f4-2fdd-30c0-5ac2" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -782,6 +1650,16 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -804,6 +1682,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5003-8c78-121c-d8c7" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -816,6 +1704,16 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -832,6 +1730,16 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -855,6 +1763,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1b0c-ff8c-cac9-e389" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -870,6 +1788,16 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -893,6 +1821,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="57e0-ae62-eeb7-13a9" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -908,6 +1846,16 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9e9-67e7-3016-380a" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -929,6 +1877,18 @@
       </modifiers>
     </entryLink>
     <entryLink id="3b5c-5286-ac24-36ec" name="Veteran Sergeant" hidden="false" collective="false" import="true" targetId="e868-203a-914d-e11d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="ced3-7781-f408-8ba0" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="301e-ab21-f8ea-e165" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -945,6 +1905,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="fe78-0c4d-6d19-11f2" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -955,6 +1925,18 @@
       </entryLinks>
     </entryLink>
     <entryLink id="7379-5b46-33aa-9c41" name="Veteran Sergeant" hidden="false" collective="false" import="true" targetId="e868-203a-914d-e11d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="38a6-3d7c-2a11-10f7" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
         <categoryLink id="2094-f239-66e6-72dd" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -965,6 +1947,18 @@
       </entryLinks>
     </entryLink>
     <entryLink id="7978-e43b-7f28-b787" name="Company Veteran" hidden="false" collective="false" import="true" targetId="50e6-375c-f7a3-2a9d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="ddf7-33e4-4b4f-bb65" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="5509-e6a2-b864-b275" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -980,6 +1974,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3eb0-ed19-d57d-697e" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -987,6 +1991,19 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="11d8-f6a4-6211-0070" name="Suppressor" hidden="false" collective="false" import="true" targetId="0788-7ccf-0597-5dc4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="76ef-e2c9-b867-ea29" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="9b8d-a41e-1489-c670" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -1002,6 +2019,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a074-5bcd-c6f3-43bd" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -1015,6 +2043,17 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="184b-decc-e483-aa02" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -1022,6 +2061,19 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="18cb-c1cf-f499-d431" name="Suppressor Sergeant" hidden="false" collective="false" import="true" targetId="13fe-7a85-f9ee-569c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7e25-8cc9-77ea-5d52" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="9ec1-2793-25e2-ab4b" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -1031,6 +2083,19 @@
       </entryLinks>
     </entryLink>
     <entryLink id="ec1f-9ff1-2060-6d5d" name="Suppressor Sergeant" hidden="false" collective="false" import="true" targetId="13fe-7a85-f9ee-569c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="35bf-e573-cc4b-7b0b" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
         <categoryLink id="6577-a267-1339-19b6" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -1052,6 +2117,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="2860-000c-4ca7-51b6" name="Lieutenant in Phobos Armour" hidden="false" collective="false" import="true" targetId="9bab-e586-46f1-a293" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9e0c-df28-2f7c-a7cf" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
       </categoryLinks>
@@ -1062,6 +2139,18 @@
     <entryLink id="3367-840b-a945-0e51" name="Inquisitor Eisenhorn" hidden="false" collective="false" import="true" targetId="0fd3-65bd-a18e-1a30" type="selectionEntry"/>
     <entryLink id="0d34-583f-e967-b575" name="Neyam Shai Murad" hidden="false" collective="false" import="true" targetId="a3c0-0ae0-be3f-712b" type="selectionEntry"/>
     <entryLink id="9f1c-b7c9-c95f-2cf1" name="Incursor" hidden="false" collective="false" import="true" targetId="91dc-d7a1-ba17-61b6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="b958-a5c2-3c72-85a2" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="e988-371a-3118-5038" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -1077,6 +2166,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6c4b-89d0-d1ca-1d11" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -1084,6 +2183,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="3957-4955-68f9-fa99" name="Incursor Sergeant" hidden="false" collective="false" import="true" targetId="2b01-d779-3708-a858" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="64a2-6734-dc6f-bafe" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
         <categoryLink id="a739-f3c0-10f0-e556" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -1099,6 +2210,16 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2f60-caa5-ff3e-ea89" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
@@ -1106,6 +2227,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="ca5b-ade8-8fa4-ddc6" name="Incursor Sergeant" hidden="false" collective="false" import="true" targetId="2b01-d779-3708-a858" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="d5ba-33bc-ef3e-c709" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
         <categoryLink id="5be0-8fd4-80d3-b0b4" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -1115,29 +2248,65 @@
       </entryLinks>
     </entryLink>
     <entryLink id="fa1b-4cf4-9f83-db93" name="Garran Branatar" hidden="false" collective="false" import="true" targetId="1791-4880-80c1-fca9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89c8-38a3-20ad-d471" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="db37-4fb0-883e-7d97" name="Salamanders" hidden="false" targetId="def9-9207-76e0-fefd" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9ed8-4f79-86d5-777f" name="Antor Delassio" hidden="false" collective="false" import="true" targetId="fcd8-47da-9822-245d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="8d8c-4f00-af7d-be10" name="Blood Angels" hidden="false" targetId="f7df-60bf-379d-8847" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d4e6-48e1-9930-95d7" name="Sergeant Tellion" hidden="false" collective="false" import="true" targetId="ddf4-4efd-801d-379a" type="selectionEntry"/>
+    <entryLink id="d4e6-48e1-9930-95d7" name="Sergeant Tellion" hidden="false" collective="false" import="true" targetId="ddf4-4efd-801d-379a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c62a-e310-8615-2e64" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="46d3-5d9e-9491-0668" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
-	<rules>
-		<rule id="89a7-4f74-b47f-3f09" name="Формации" hidden="false">
-			<description>В зависимости от композиции вашего командного ростера вы получаете эффекты от разных формаций. Одновременно может быть заявлена только одна формация, даже если командный ростер удовлетворяет требованиям нескольких. Формация выбирается в начале кампании и не может быть изменена, за исключением случаев изменения состава командного ростера, при котором он перестает удовлетворять требованиям текущей формации. В этом случае формация изменяется на Смешанную.</description>
-		</rule>
-		<rule id="ef8c-4902-b928-e208" name="Синергия с орденом" hidden="false">
-			<description>Если все модели в вашей истребительной команде принадлежат к соответствующей подфракции, в начале игры вы получаете дополнительно 1 СР.</description>
-		</rule>
-		<rule id="7758-4096-95de-9883" name="Групповые тренировки" hidden="false">
-			<description>Раз за игру в начале раунда вы можете потратить 1 единицу материалов и выбрать подряд три моделей из вашей истребительной команды.
+  <rules>
+    <rule id="ef8c-4902-b928-e208" name="Синергия с орденом" hidden="false">
+      <description>Если все модели в вашей истребительной команде принадлежат к соответствующей подфракции, в начале игры вы получаете дополнительно 1 СР.</description>
+    </rule>
+    <rule id="7758-4096-95de-9883" name="Групповые тренировки" hidden="false">
+      <description>Раз за игру в начале раунда вы можете потратить 1 единицу материалов и выбрать подряд три моделей из вашей истребительной команды.
 Первая из этих моделей может быть дважды выбрана в фазу движения, вторая может быть дважды выбрана в ближнего боя, третья может быть дважды выбрана в фазу стрельбы. На момент выбора первая и третья модель должны находиться дальше 1&quot; от моделей противника, а вторая модель должна находиться в 1&quot; от моделей противника.</description>
-		</rule>
-	</rules>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="e59b-c658-31c9-f6b9" name="Boltgun" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1950,8 +3119,16 @@
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="dacf-99ee-ef71-a91c" name="Melee weapon" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="4bcc-9f5a-8f5f-e2ae" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab3-6cbd-543b-cb6d" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bcc-9f5a-8f5f-e2ae" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="b1c3-e980-681e-f59b" name="Power fist" hidden="false" collective="false" import="true" targetId="39e7-f199-6e07-90ed" type="selectionEntry"/>
@@ -2015,7 +3192,19 @@
         <categoryLink id="0bc5-5a15-5da8-2341" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4b1f-b938-582c-42a4" name="Weapon option" hidden="false" collective="false" import="true" defaultSelectionEntryId="a283-7926-abb6-4557">
+        <selectionEntryGroup id="4b1f-b938-582c-42a4" name="Weapon option" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="0c1e-47e0-766d-381f" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a93c-0a50-bf23-5b89" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c1e-47e0-766d-381f" type="min"/>
@@ -2040,6 +3229,24 @@
         <entryLink id="dc27-b1ff-8a8e-5c76" name="Krak grenades" hidden="false" collective="false" import="true" targetId="14ce-31b4-2dd1-14f3" type="selectionEntry"/>
         <entryLink id="cac1-d0f2-11c6-62bb" name="Shock grenade" hidden="false" collective="false" import="true" targetId="cb80-3365-f752-7ff9" type="selectionEntry"/>
         <entryLink id="3b19-77b1-9f85-047e" name="Chapter" hidden="false" collective="false" import="true" targetId="72dc-01ba-36f1-563f" type="selectionEntryGroup"/>
+        <entryLink id="f228-9a99-d631-5a86" name="Combat knife" hidden="false" collective="false" import="true" targetId="5b58-0659-0abd-71d0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="bc04-e8ea-93c2-a6f1" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc04-e8ea-93c2-a6f1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae82-972e-e799-0c16" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
@@ -2135,7 +3342,18 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2118-b599-9412-3d8f" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="f258-3e9f-6080-e7f2" name="Combat knife" hidden="false" collective="false" import="true" targetId="5b58-0659-0abd-71d0" type="selectionEntry"/>
+            <entryLink id="f258-3e9f-6080-e7f2" name="Combat knife" hidden="false" collective="false" import="true" targetId="5b58-0659-0abd-71d0" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5cb5-edf3-3494-c6b7" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cb5-edf3-3494-c6b7" type="min"/>
+              </constraints>
+            </entryLink>
             <entryLink id="9138-2ae1-3f51-0d18" name="Heavy bolt pistol" hidden="false" collective="false" import="true" targetId="8eec-59f8-8c35-4a8f" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="e255-5964-3254-88ee" value="0.0"/>
@@ -2477,7 +3695,19 @@
         <categoryLink id="92e3-fce7-113f-8f56" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="386f-0734-ca46-704b" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="44fd-00ec-c6c8-3303">
+        <selectionEntryGroup id="386f-0734-ca46-704b" name="Weapon Options" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="cdd0-df6d-ac63-60c4" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1289-1c48-a07e-84ec" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd0-df6d-ac63-60c4" type="min"/>
@@ -2500,6 +3730,24 @@
         <entryLink id="49d5-cf32-1b82-4d8d" name="Frag grenades" hidden="false" collective="false" import="true" targetId="f748-797c-dbfd-b7a1" type="selectionEntry"/>
         <entryLink id="e4fe-4521-5bd5-62fc" name="Krak grenades" hidden="false" collective="false" import="true" targetId="14ce-31b4-2dd1-14f3" type="selectionEntry"/>
         <entryLink id="35f6-ca44-3449-f7c9" name="Chapter" hidden="false" collective="false" import="true" targetId="72dc-01ba-36f1-563f" type="selectionEntryGroup"/>
+        <entryLink id="6584-3064-d2bd-e675" name="Combat knife" hidden="false" collective="false" import="true" targetId="5b58-0659-0abd-71d0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="5daa-8b35-5b72-b95d" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5daa-8b35-5b72-b95d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2823-0afa-715f-a4d0" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
@@ -2650,7 +3898,19 @@
         <categoryLink id="2f19-7caf-f0f5-4fbc" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0665-a01a-3c95-51aa" name="Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="699a-dabd-5d5b-c64d">
+        <selectionEntryGroup id="0665-a01a-3c95-51aa" name="Weapon Options" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="d8c1-52b3-cb36-af40" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8c1-52b3-cb36-af40" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ded-8719-0694-6e26" type="max"/>
@@ -2673,6 +3933,24 @@
         <entryLink id="76d1-98b9-c7cd-d5b6" name="Frag grenades" hidden="false" collective="false" import="true" targetId="f748-797c-dbfd-b7a1" type="selectionEntry"/>
         <entryLink id="e0c5-6412-c985-a627" name="Krak grenades" hidden="false" collective="false" import="true" targetId="14ce-31b4-2dd1-14f3" type="selectionEntry"/>
         <entryLink id="2d80-a06f-eaa3-219f" name="Chapter" hidden="false" collective="false" import="true" targetId="72dc-01ba-36f1-563f" type="selectionEntryGroup"/>
+        <entryLink id="a019-1476-2436-42e6" name="Chainsword" hidden="false" collective="false" import="true" targetId="dea7-4730-9b4a-571c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="532f-d870-ccf8-f894" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d900-25e9-1654-d2ad" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="532f-d870-ccf8-f894" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1125-250e-5ab3-5e1a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
