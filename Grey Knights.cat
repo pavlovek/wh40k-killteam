@@ -76,7 +76,7 @@
     <entryLink id="c3cf-f4be-735d-8148" name="Brotherhood Champion" hidden="false" collective="false" import="true" targetId="5a7f-0a54-746b-6373" type="selectionEntry"/>
     <entryLink id="34d9-8a7f-024b-d6d8" name="Librarian" hidden="false" collective="false" import="true" targetId="976a-cb19-bc71-9e08" type="selectionEntry"/>
     <entryLink id="cc0f-566f-8705-48c0" name="Brother-captain" hidden="false" collective="false" import="true" targetId="020a-70ae-39ee-ff84" type="selectionEntry"/>
-    <entryLink id="ba8c-4c20-99da-b31c" name="Brother-captain Stern" hidden="false" collective="false" import="true" targetId="bca0-44db-927a-2cd9" type="selectionEntry"/>
+    <entryLink id="ba8c-4c20-99da-b31c" name="Brother-Captain Stern" hidden="false" collective="false" import="true" targetId="bca0-44db-927a-2cd9" type="selectionEntry"/>
     <entryLink id="2c65-2901-a105-13f1" name="Terminator" hidden="false" collective="false" import="true" targetId="e095-54aa-2db9-b498" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -201,21 +201,22 @@
         <categoryLink id="26c7-0896-bdaf-db88" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="7333-9f0b-ff02-6c70" name="Inquisitor Greyfax" hidden="false" collective="false" import="true" targetId="75ce-f4ed-7621-2c58" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="27d9-2035-a2df-c3c6" name="Brotherhood of Psykers" hidden="false">
       <description>When it is your turn to choose a PSYKER from your kill team to attempt to manifest psychic powers in this phase, you can choose up to two models from your kill team to do so. Resolve all of one model’s attempts before choosing the next model. In addition, you can add 1 to Psychic tests and Deny the Witch tests for models in your kill team.</description>
     </rule>
-	  <rule id="d2e0-4c71-96d7-0efd" name="Истребители демонов" hidden="false">
-		  <description>Ваши модели получат удвоенный опыт после миссий против фракции CHAOS DAEMONS, однако не получают опыт после миссий против фракций, не имеющих моделей с ключевым словом CHAOS.
+    <rule id="d2e0-4c71-96d7-0efd" name="Истребители демонов" hidden="false">
+      <description>Ваши модели получат удвоенный опыт после миссий против фракции CHAOS DAEMONS, однако не получают опыт после миссий против фракций, не имеющих моделей с ключевым словом CHAOS.
 В конце миссии с такой фракцией вы можете заплатить 1 единицу материалов, чтобы получить опыт как обычно.</description>
-	  </rule>
-	  <rule id="45ec-43cc-8816-4916" name="Психокинетический удар" hidden="false">
-		  <description>Когда эта модель выведена из строя, она может произвести психокинетический удар, если в этот раунд она не проявляла психосилы и не использовала оружие, усиленное тактикой "Высвобождение психической энергии".
+    </rule>
+    <rule id="45ec-43cc-8816-4916" name="Психокинетический удар" hidden="false">
+      <description>Когда эта модель выведена из строя, она может произвести психокинетический удар, если в этот раунд она не проявляла психосилы и не использовала оружие, усиленное тактикой &quot;Высвобождение психической энергии&quot;.
 Бросьте D6 за каждую модель противника в 2&quot; от данной модели. На 4+ вражеская модель получает 1 смертельную рану. Исполнение психокинетического удара уменьшает шансы на выживание вашего бойца. Вычитайте 2 из результата броска на последствия миссии для модели, использовавшей эту способность.
 Кроме того, психокинетический удар зачастую разрушает или сильно повреждает доспехи псайкера. Первое использование этой способности в миссии расходует 1 единицу материалов.
 		  </description>
-	  </rule>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="38a8-583b-e25a-a707" name="Grey Knight" hidden="false" collective="false" import="true" type="model">

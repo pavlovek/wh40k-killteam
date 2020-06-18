@@ -277,6 +277,8 @@
     <categoryEntry id="27d6-bd77-e429-99a0" name="Neurothrope" hidden="false"/>
     <categoryEntry id="b0e4-8077-8554-6c45" name="Abominant" hidden="false"/>
     <categoryEntry id="bf6f-423a-a01f-6ef8" name="Farsight" hidden="false"/>
+    <categoryEntry id="d3e6-c721-0c59-4f7c" name="Greyfax" hidden="false"/>
+    <categoryEntry id="1ca2-ccb5-a267-58d1" name="Ordo Hereticus" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">
@@ -9292,11 +9294,6 @@
             <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll hit rolls and wound rolls for this model for attacks that target enemy models with the AELDARI, NECRONS, ORK, T&apos;AU EMPIRE or TYRANIDS keyword or faction keyword.</characteristic>
           </characteristics>
         </profile>
-        <profile id="339c-e4e5-93d0-7e46" name="Unquestionable Wisdom" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-          <characteristics>
-            <characteristic name="Description" typeId="b373-019d-503a-1124">Friendly ADEPTUS ASTARTES, ASTRA MILITARUM or ADEPTUS MECHANICUM models within 6&quot; of this model can use this model&apos;s Leadership characteristic instead of their own.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="dc12-d1b7-92ca-7315" name="No Stranger to Pain" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
           <characteristics>
             <characteristic name="Description" typeId="b373-019d-503a-1124">Roll a D6 each time this model loses a wound; on a 6, that wound is not lost.</characteristic>
@@ -9310,6 +9307,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="e75e-ecb9-52d9-10ea" name="Unquestionable Wisdom" hidden="false" targetId="77e9-a369-f64c-4a3c" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e4b9-b12b-6e67-cdc1" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
         <categoryLink id="da9b-267e-3e38-6545" name="Faction: Adeptus Astartes" hidden="false" targetId="f0ef-d104-7cde-57ed" primary="false"/>
@@ -10089,37 +10089,6 @@
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1032-4f1c-8290-413a" name="Krak and Frag grenade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6443-449c-917c-f4b5" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562f-4654-ba0a-aaea" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="108a-4d68-9615-8cc8" name="Frag grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
-                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade D6</characteristic>
-                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">3</characteristic>
-                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
-                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="1e99-4c5a-abc1-e34d" name="Krak grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
-                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade 1</characteristic>
-                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
-                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
-                <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
-                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="2315-4be8-b854-9ae1" name="Zealot" hidden="false" collective="false" import="true" targetId="d2c4-34ca-f2cf-d2b2" type="selectionEntry">
@@ -10128,9 +10097,197 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="822c-49ba-be27-535a" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="386b-06a7-55c5-9fed" name="Krak and Frag grenade" hidden="false" collective="false" import="true" targetId="01e8-0b6e-0164-e64b" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="22.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="75ce-f4ed-7621-2c58" name="Inquisitor Greyfax" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="7f5c-bb9a-9004-1634" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="10.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32ef-fb0a-d404-f1ea" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="10.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a93-6219-2f28-9a37" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="15.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363a-fe8e-4043-4722" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7f5c-bb9a-9004-1634" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4bc2-41cb-64ba-1352" name="Inquisitor Greyfax" hidden="false" typeId="bb0a-aba1-abd0-beb3" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="0a65-6cb0-f00d-e414">6&quot;</characteristic>
+            <characteristic name="WS" typeId="99d4-2590-8bac-3ad3">3+</characteristic>
+            <characteristic name="BS" typeId="27ff-d5c5-5422-1614">3+</characteristic>
+            <characteristic name="S" typeId="d474-89b0-047c-4f3a">3</characteristic>
+            <characteristic name="T" typeId="803c-5453-20c4-4b94">3</characteristic>
+            <characteristic name="W" typeId="0c48-aed0-609b-9818">5</characteristic>
+            <characteristic name="A" typeId="d63d-20cc-db25-5dd5">4</characteristic>
+            <characteristic name="Ld" typeId="411b-5228-afed-8334">10</characteristic>
+            <characteristic name="Sv" typeId="c319-1a2d-3648-2294">3+</characteristic>
+            <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b1cd-6b5a-6b34-6e6c" name="Inquisitor Greyfax" hidden="false" typeId="201a-159a-7751-b85b" typeName="Psyker">
+          <characteristics>
+            <characteristic name="Manifest" typeId="998f-87b1-cc06-fb7e">1</characteristic>
+            <characteristic name="Deny" typeId="cb14-ded3-0978-88b8">2</characteristic>
+            <characteristic name="Powers known" typeId="67ce-9d6c-052c-d1eb">Psybolt and one psychic power from the Telethesia discipline</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2b1e-fb18-f1ca-72fc" name="Ordo Hereticus" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">When this model attack a CHAOS or PSYKER model, you can re-roll one hit roll and you can reroll one wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4ea6-99f7-a7a7-9f30" name="No Escape" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">This model can perform a Heroic Intervention if there are any enemy units within 6&quot; of them instead of 3&quot;, and when doing so can move up to 6&quot; instead of 3&quot;. When an enemy model within 1&quot; of this model is chosen to Fall Back, you can roll one D6, on a 4+ that model cannot Fall Back this turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="02c4-f212-30ac-97f1" name="Indomitable" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">When a Deny the Witch test is taken for this model, add 1 to the total.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e788-148a-5e46-392a" name="Unquestionable Wisdom" hidden="false" targetId="77e9-a369-f64c-4a3c" type="profile"/>
+        <infoLink id="31b2-c9b6-54ae-3177" name="Refractor Field" hidden="false" targetId="764c-d0e0-cf9b-af1f" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4048-faad-7e51-2fe1" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="936d-0093-d38f-f90f" name="Faction: Adepta Sororitas" hidden="false" targetId="995d-d712-dbb7-1ba1" primary="false"/>
+        <categoryLink id="a846-1868-b244-875a" name="Faction: Grey Knights" hidden="false" targetId="d1e8-be31-acc8-9eca" primary="false"/>
+        <categoryLink id="49e9-ffee-f4cc-1636" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="6be8-a22a-bf0e-ec66" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
+        <categoryLink id="9465-f4c1-8a3f-2320" name="Inquisitor" hidden="false" targetId="60d0-29b7-2d57-1164" primary="false"/>
+        <categoryLink id="3e83-c449-724b-6552" name="Psyker" hidden="false" targetId="9b50-1372-5ee7-b0d9" primary="false"/>
+        <categoryLink id="34a7-b9ff-74fc-7cb1" name="Greyfax" hidden="false" targetId="d3e6-c721-0c59-4f7c" primary="false"/>
+        <categoryLink id="a0d0-d2fd-7fde-c0dd" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="f414-5ef1-3bf1-0e81" name="Ordo Hereticus" hidden="false" targetId="1ca2-ccb5-a267-58d1" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f617-cb4c-b0d7-80d6" name="Master-crafted condemnor boltgun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edd8-145b-0676-a13d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8899-fa23-48b8-abbd" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="b29d-3c10-64b4-d805" name="Master-crafted condemnor boltgun" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">24&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Rapid Fire 1</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">4</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">When resolving an attack made with this weapon against a PSYKER unit, this weapon has a Damage characteristic of 3 for that attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="0b9a-0c12-d019-1383" name="Master-crafted power sword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="451e-421a-cea2-6d46" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6706-b12b-be6d-8bb2" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d955-c05f-bfda-17a4" name="Master-crafted power sword" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-3</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">2</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="6ea4-3597-d243-54be" name="Psyk-out grenades" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f49e-75dd-a59e-f0fe" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2890-9c20-a3cc-3b4b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="39a1-58dd-3192-cad5" name="Psyk-out grenades" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade D3</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">2</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">When resolving an attack made with this weapon against a PSYKER or DAEMON unit, on a hit roll of 6+ the target suffers 1 mortal wound and the attack sequence ends.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c53f-8e7f-aec4-4e2b" name="Commander Psychic Powers" hidden="false" collective="false" import="true" targetId="f1f5-3b33-9be9-6aec" type="selectionEntryGroup"/>
+        <entryLink id="8ab8-07ce-e70d-2b49" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ec7-be9e-f1d5-83c3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5d9-ac50-963f-6f62" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5298-1495-d68f-c417" name="Telethesia discipline" hidden="false" collective="false" import="true" targetId="a0c9-5d82-45c0-230b" type="selectionEntryGroup"/>
+        <entryLink id="1abe-e589-495d-ba51" name="Krak and Frag grenade" hidden="false" collective="false" import="true" targetId="01e8-0b6e-0164-e64b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="01e8-0b6e-0164-e64b" name="Krak and Frag grenade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ec6-cde9-07d7-f10d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1573-00a8-5d39-3fb4" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="41af-d4c2-8057-5819" name="Frag grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade D6</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">3</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">0</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7d20-0c6b-fe33-579d" name="Krak grenade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">6&quot;</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Grenade 1</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -11151,6 +11308,49 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="a0c9-5d82-45c0-230b" name="Telethesia discipline" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="3a2b-af3b-fba9-33dc" name="1. Terrify" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8186-9fa5-4842-b10b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7172-fe6b-35ac-5e9b" name="1. Terrify" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Terrify has a warp charge value of 6. If manifested, select one enemy model within 8&quot; of and visible to this psyker. Until the start of your next Psychic phase, subtract 1 from the Leadership characteristic of this model and that
+model cannot fire Overwatch.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="1289-565f-5b14-7661" name="2. Mental Interrogation" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b11-4a26-f3c8-7a3d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7e7a-187a-e70b-436d" name="2. Mental Interrogation" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Mental Interrogation has a warp charge value of 6. If manifested, select enemy
+COMMANDER or Leader specialist model within 12&quot; of and visible to this psyker. Until the start of your next Psychic phase, when resolving an attack made by that model, subtract 1 from the hit roll. Roll 3D6; if the result is equal to or greater than that model’s Leadership characteristic, you gain 1 Command Point.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="f41a-8951-a1dc-013a" name="3. Castigation" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9266-cf48-df7b-01b7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="27a1-0f09-ce34-3b7a" name="3. Castigation" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">Castigation has a warp charge value of 6. If manifested, select one enemy model within 12&quot; of and visible to this psyker and roll 3D6; if the total exceeds the Leadership characteristic of that model, that unit suffers D3 mortal
+wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="395a-f1e8-6355-4c47" name="Bold" publicationId="a467-5f42-pubN89361" page="68" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
@@ -11949,6 +12149,16 @@
     <profile id="dff6-48bd-9739-bf99" name="Transhuman Physiology" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">Ignore the penalty to this model&apos;s hit rolls from one flesh wound it has suffered.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="77e9-a369-f64c-4a3c" name="Unquestionable Wisdom" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">Friendly ADEPTUS ASTARTES, ASTRA MILITARUM or ADEPTUS MECHANICUM models within 6&quot; of this model can use this model&apos;s Leadership characteristic instead of their own.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="764c-d0e0-cf9b-af1f" name="Refractor Field" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+      <characteristics>
+        <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">This model has a 5+ invulnerable save.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

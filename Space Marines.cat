@@ -5212,9 +5212,14 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
     <profile id="e0fd-768f-c0f8-41d2" name="Special Issue Ammunition" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cafd-4fb1-ea01-0192" type="notInstanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -5224,9 +5229,14 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
     <profile id="ce35-d6c8-4064-98f2" name="Dragonfire bolt" hidden="false" typeId="6c15-6156-5ba7-10f3" typeName="Special Issue Ammunition">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cafd-4fb1-ea01-0192" type="notInstanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -5236,9 +5246,14 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
     <profile id="575d-2a48-6f10-d9b2" name="Hellfire round" hidden="false" typeId="6c15-6156-5ba7-10f3" typeName="Special Issue Ammunition">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cafd-4fb1-ea01-0192" type="notInstanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -5248,9 +5263,14 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
     <profile id="ea88-41e4-b032-0245" name="Kraken bolt" hidden="false" typeId="6c15-6156-5ba7-10f3" typeName="Special Issue Ammunition">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cafd-4fb1-ea01-0192" type="notInstanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
@@ -5260,9 +5280,14 @@ The Primed Haywire Mine is represented by the Primed Haywire Mine model, but doe
     <profile id="9f7b-8f7c-2fa1-fe10" name="Vengeance round" hidden="false" typeId="6c15-6156-5ba7-10f3" typeName="Special Issue Ammunition">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cafd-4fb1-ea01-0192" type="notInstanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7548-75cf-ab24-7e9c" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <characteristics>
