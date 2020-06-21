@@ -417,6 +417,16 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule id="129d-35a8-c03e-4774" name="Молчаливое воинство" hidden="false">
+      <description>Вы получаете 1 единицу материалов в конце каждой игры, в которой вашими моделями была выведена из строя хотя бы одна вражеская модель с ключевыми словами PSYKER или DAEMON.</description>
+    </rule>
+    <rule id="de4d-998a-bddf-facc" name="Нуль-бомбы" hidden="false">
+      <description>После расстановки вы можете заявить, что осуществляете сброс нуль-бомб на поле боя.
+Потратьте 1 единицу материалов и бросьте 2D6 за каждую модель противника на поле, прибавляя 1, если эта модель имеет ключевые слова PSYKER или DAEMON.
+На 9+ характеристика лидерства вражеской модели уменьшается на 1 до конца игры, на 10+ вражеская модель получает 1 смертельную рану, на 12+ вражеская модель немедленно становится потрясена (все эффекты кумулятивны).</description>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="b044-5642-0a19-8777" name="Witchseeker" publicationId="0621-0a84-d1db-3c49" page="72" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -968,18 +978,18 @@
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-	<sharedProfiles>
-		<profile id="1db2-7a6b-46e0-f197" name="Aegis of the Emperor" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-			<characteristics>
-				<characteristic name="Description" typeId="b373-019d-503a-1124">This model has a 5+ invulnerable save. In addition, roll a D6 each time a model with this ability suffers a mortal wound in the Psychic phase. On a 6 that mortal wound is ignored.</characteristic>
-			</characteristics>
-		</profile>
-		<profile id="d9ce-f040-90c9-d0d9" name="Superior Transhuman Physiology" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-			<characteristics>
-				<characteristic name="Description" typeId="b373-019d-503a-1124">Ignore the penalty to this model&apos;s hit rolls from flesh wounds.</characteristic>
-			</characteristics>
-		</profile>
-	</sharedProfiles>
+  <sharedProfiles>
+    <profile id="1db2-7a6b-46e0-f197" name="Aegis of the Emperor" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">This model has a 5+ invulnerable save. In addition, roll a D6 each time a model with this ability suffers a mortal wound in the Psychic phase. On a 6 that mortal wound is ignored.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d9ce-f040-90c9-d0d9" name="Superior Transhuman Physiology" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">Ignore the penalty to this model&apos;s hit rolls from flesh wounds.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup id="d481-5c91-8369-5a85" name="Sisters" hidden="false">
       <profiles>
