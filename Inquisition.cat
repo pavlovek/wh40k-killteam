@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cafd-4fb1-ea01-0192" name="Inquisition" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cafd-4fb1-ea01-0192" name="Inquisition" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="a486-00fc-27d4-1d2f" name="Battle Sister" publicationId="69e0-b697-c118-d32d" page="107" hidden="false"/>
     <categoryEntry id="a846-568e-8eaf-ae16" name="Arco-Flagellant" publicationId="69e0-b697-c118-d32d" page="108" hidden="false"/>
@@ -653,7 +653,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ef5f-e0ca-ea93-4eec" name="Battle Sister Gunner" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" type="model">
@@ -727,7 +727,7 @@
         <entryLink id="0d98-c4d7-31dd-cac3" name="Frag and krak grenades" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="c0eb-48a8-64a0-8635" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0212-45ab-4056-0a67" name="Simulacrum Imperialis" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" type="upgrade">
@@ -842,7 +842,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c6c2-1b35-8f5e-0c37" name="Arco Flails" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" type="upgrade">
@@ -1567,7 +1567,7 @@
         <entryLink id="4566-2b5b-e494-bffc" name="Deathwatch Weapons" hidden="false" collective="false" import="true" targetId="31da-cb72-0cd0-4450" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe35-3207-26cd-c3ce" name="Veteran Gunner" hidden="false" collective="false" import="true" type="model">
@@ -1620,7 +1620,7 @@
         <entryLink id="31f7-fad7-5f8a-5907" name="Deathwatch Weapons" hidden="false" collective="false" import="true" targetId="31da-cb72-0cd0-4450" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4713-0bf7-a9f9-4523" name="Deathwatch Veteran Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1701,7 +1701,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="db0b-99bf-7acc-bc81" name="Grey Knight Gunner" hidden="false" collective="false" import="true" type="model">
@@ -1772,7 +1772,7 @@
         <entryLink id="ee8b-d202-8870-6e85" name="Ranged weapon" hidden="false" collective="false" import="true" targetId="4417-48ba-4737-74ee" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="19.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="21.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bb38-55fb-b03d-8660" name="Grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -2029,6 +2029,11 @@
             <entryLink id="0aca-371a-4876-5ef5" name="Nemesis Daemon Hammer" hidden="false" collective="false" import="true" targetId="102f-58b4-d962-3290" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="5291-dc2c-cfa5-a77f" value="8.0"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="6ed1-c3cd-da8d-236e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e05a-5f38-692b-d949" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
             <entryLink id="509e-6037-0a7c-3f11" name="Power fist" hidden="false" collective="false" import="true" targetId="1689-c138-0775-3587" type="selectionEntry">
@@ -2204,6 +2209,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
