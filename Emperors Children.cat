@@ -15,6 +15,90 @@
     <categoryEntry id="fd3e-131d-7a3d-04ea" name="Emperor&apos;s Children" hidden="false"/>
   </categoryEntries>
   <entryLinks>
+	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="eaed-cb71-3935-e6db" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4954-b384-0b9e-dd4b" name="Гаситель эпмиреев" hidden="false" collective="false" import="true" targetId="4a8f-dec7-36cc-8262" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5f93-4d0c-9460-d645" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="761d-5e7f-959c-c366" name="Осадная мастерская" hidden="false" collective="false" import="true" targetId="e1a8-04c2-9969-efbf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c047-8934-b6c6-941e" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1b15-2115-8803-fb80" name="Полевая база" hidden="false" collective="false" import="true" targetId="bda8-c737-5127-f3d3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="52a9-ab78-c397-f7f5" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="09a4-fe8e-8d8c-ae58" name="Полевой гостпиталь" hidden="false" collective="false" import="true" targetId="454f-6678-64c5-5e6a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ea25-dadf-e8e1-4be7" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1d25-f367-f1ea-8972" name="Ресурсная установка" hidden="false" collective="false" import="true" targetId="77a7-1d3e-1e77-b15f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="48dd-ec5e-c245-6d89" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bfbf-f998-4141-93f0" name="Тренировочная площадка" hidden="false" collective="false" import="true" targetId="9106-471d-b224-1fcd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="017b-b057-1f9f-2d69" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="fe39-04a9-3456-5f56" name="Aspiring Champion" hidden="false" collective="false" import="true" targetId="9254-c2fe-8376-2bfd" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d41e-be5d-39cc-d2d4" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
