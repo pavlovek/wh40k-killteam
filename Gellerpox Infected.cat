@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b850-8976-bc1a-d579" name="Gellerpox Infected" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b850-8976-bc1a-d579" name="Gellerpox Infected" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1818-1561-421c-4b61" name="Nurgle" hidden="false"/>
     <categoryEntry id="f14a-6cc1-2f1c-4bfa" name="Nightmare Hulk" hidden="false"/>
@@ -15,91 +15,82 @@
     <categoryEntry id="d004-53f2-4e93-862e" name="Twisted Lord" hidden="false"/>
     <categoryEntry id="1bc8-a924-22a9-e69a" name="Poxwalker" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="9bd5-3bc1-5bcc-cedf" name="Ферма мух" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c1ab-08c4-ac38-c22e" name="Ферма мух" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Когда ваша INFANTRY модель выведена из строя, отметьте ее местоположение маркером. До конца раунда противник должен вычитать 1 из бросков на попадание по вашим моделям, находящимся в 2&quot; от центра маркера. Уберите маркер в конце раунда.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3066-7dd0-090a-e22e" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4831-53b9-572a-6099" name="Гнилой электрогенератор" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4292-f50c-1035-77b4" name="Гнилой электрогенератор" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Когда ваша модель Gellerpox mutant выведена из строя, отметьте ее местоположение маркером. В конце следующей фазы движения ближайшая модель противника в 3&quot; от маркера получит 1 смертельную рану. Уберите маркер в конце следующей фазы движения (после разрешения эффекта).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cd86-2a8a-5e33-6d88" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a27-c762-b1d9-b374" name="Барахлящий генератор пустотного щита" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="695f-117b-e94d-43aa" name="Барахлящий генератор пустотного щита" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">В начале раунда бросьте D6 и примените соответствующий эффект:
+1-2: Вычитайте 1 из всех бросков ФнП ваших моделей.
+З-5: Все ваши модели имеют 5+ непробиваемый спас -бросок.
+6: Все ваши модели имеют 4+ непробиваемый спас- бросок.
+Все эффекты действуют до конца раунда. При результате броска 6 генератор работает на полную мощность и в конце раунда отключается - в этой игре вы больше не можете получать эффект этого здания.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ddc2-26c7-bc5e-4b09" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="eaed-cb71-3935-e6db" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="4954-b384-0b9e-dd4b" name="Гаситель эпмиреев" hidden="false" collective="false" import="true" targetId="4a8f-dec7-36cc-8262" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="5f93-4d0c-9460-d645" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="761d-5e7f-959c-c366" name="Осадная мастерская" hidden="false" collective="false" import="true" targetId="e1a8-04c2-9969-efbf" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="c047-8934-b6c6-941e" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="1b15-2115-8803-fb80" name="Полевая база" hidden="false" collective="false" import="true" targetId="bda8-c737-5127-f3d3" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="52a9-ab78-c397-f7f5" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="09a4-fe8e-8d8c-ae58" name="Полевой гостпиталь" hidden="false" collective="false" import="true" targetId="454f-6678-64c5-5e6a" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="ea25-dadf-e8e1-4be7" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="1d25-f367-f1ea-8972" name="Ресурсная установка" hidden="false" collective="false" import="true" targetId="77a7-1d3e-1e77-b15f" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="48dd-ec5e-c245-6d89" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="bfbf-f998-4141-93f0" name="Тренировочная площадка" hidden="false" collective="false" import="true" targetId="9106-471d-b224-1fcd" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="017b-b057-1f9f-2d69" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="476a-8c62-c1cf-030e" name="Gnasher Screamer" hidden="false" collective="false" import="true" targetId="6ceb-ab72-7a43-f671" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="24c1-657c-473b-ee11" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
@@ -231,50 +222,50 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="bb7a-a983-2418-ec64" name="Poxwalker" hidden="false" collective="false" import="true" targetId="fb97-e62c-260c-d2e2" type="selectionEntry">
-	    <modifiers>
-		    <modifier type="set" field="hidden" value="true">
-			    <conditions>
-				    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
-			    </conditions>
-		    </modifier>
-	    </modifiers>
-	    <categoryLinks>
-		    <categoryLink id="3678-3d43-d717-ec4a" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
-	    </categoryLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3678-3d43-d717-ec4a" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="6ef2-62f9-2b05-f827" name="Poxwalker" hidden="false" collective="false" import="true" targetId="fb97-e62c-260c-d2e2" type="selectionEntry">
-	    <categoryLinks>
-		    <categoryLink id="6987-3c16-9cf5-c29a" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
-	    </categoryLinks>
+      <categoryLinks>
+        <categoryLink id="6987-3c16-9cf5-c29a" name="Specialist" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="2ec7-1a0e-d993-f08b" name="Poxwalker Fire Team" hidden="false" collective="false" import="true" targetId="36e2-282a-c55c-9080" type="selectionEntry">
-	    <modifiers>
-		    <modifier type="set" field="hidden" value="true">
-			    <conditions>
-				    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-			    </conditions>
-		    </modifier>
-	    </modifiers>
-	    <categoryLinks>
-		    <categoryLink id="cf6f-7243-16fa-4ddd" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
-	    </categoryLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cf6f-7243-16fa-4ddd" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
-	<rules>
-		<rule id="396d-4812-a5ff-1cab" name="Чума механизмов" hidden="false">
-			<description>В зависимости от количества зарезервированной под постройки территории противника вы получаете следующее бонусы на игру (эффекты суммируются):
+  <rules>
+    <rule id="396d-4812-a5ff-1cab" name="Чума механизмов" hidden="false">
+      <description>В зависимости от количества зарезервированной под постройки территории противника вы получаете следующее бонусы на игру (эффекты суммируются):
 1-2: В начале игры вы генерируете на 1CP больше.
 З-6: В начале игры бросьте D6, на 5+ вы получаете 1 материал.
 7+: Раз за игру в начале раунда (кроме первого) вы можете выбрать одно вражеское здание. До конца раунда противник не получает эффекта от этого здания.
 			</description>
-		</rule>
-		<rule id="2ad0-487d-b4bb-80f2" name="Ходячие мертвецы" hidden="false">
-			<description>Вы можете включать в свой командный ростер модели Poxwalker.
+    </rule>
+    <rule id="2ad0-487d-b4bb-80f2" name="Ходячие мертвецы" hidden="false">
+      <description>Вы можете включать в свой командный ростер модели Poxwalker.
 Кроме того, раз за игру в начале раунда вы можете потратить 1 единицу материалов, чтобы поднять мертвецов.
 Разместите в своей зоне расстановки, но далее 1&quot; от моделей противника до трех моделей Poxwalker. Они учитываются как модели вашей истребительной команды до конца игры.
 Не бросайте на последствия миссии для этих моделей и включайте в свой командный ростер.</description>
-		</rule>
-	</rules>
+    </rule>
+  </rules>
   <sharedSelectionEntries>
     <selectionEntry id="7e83-7a37-79ec-47a6" name="Nightmare Hulk" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -326,6 +317,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="31.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6ceb-ab72-7a43-f671" name="Gnasher-Screamer" hidden="false" collective="false" import="true" type="model">
@@ -397,6 +390,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -406,6 +401,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="31.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8cae-0c95-3377-c952" name="Nightmare Hulk Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -422,6 +419,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="449d-aae1-cbd2-5ef6" name="Hideous Mutations" hidden="false" collective="false" import="true" type="upgrade">
@@ -443,6 +442,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e165-e81c-69b7-1ed2" name="Gellerpox Mutant" hidden="false" collective="false" import="true" type="model">
@@ -513,6 +514,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -522,6 +525,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a985-48b9-543b-a488" name="Frag grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -543,6 +548,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="15e0-7a1c-2312-2ba2" name="Eyestinger Swarm" hidden="false" collective="false" import="true" type="model">
@@ -617,11 +624,15 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e5dd-a44e-7cc9-103f" name="Glitchling" hidden="false" collective="false" import="true" type="model">
@@ -703,6 +714,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -711,6 +724,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5a16-4599-db89-efb9" name="Glitchling Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -730,6 +745,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="35eb-1699-0306-0e03" name="Cursemite" hidden="false" collective="false" import="true" type="model">
@@ -801,11 +818,15 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="09f5-5f00-c197-962b" name="Sludge-grub" hidden="false" collective="false" import="true" type="model">
@@ -877,6 +898,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="65f6-e91f-cf85-cc1e" name="Fanged maw and stinger" hidden="false" collective="false" import="true" type="upgrade">
@@ -898,11 +921,15 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cd9d-8b37-0a1d-3554" name="Vulgrar Thrice-cursed" hidden="false" collective="false" import="true" type="model">
@@ -985,6 +1012,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6cce-df5b-1773-5c15" name="Fleshripper claws" hidden="false" collective="false" import="true" type="upgrade">
@@ -1006,6 +1035,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1014,6 +1045,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="65.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cbd2-d81f-f734-36dc" name="Gellerpox Mutant Fire Team" hidden="false" collective="false" import="true" type="upgrade">
@@ -1033,6 +1066,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb97-e62c-260c-d2e2" name="Poxwalker" hidden="false" collective="false" import="true" type="model">
@@ -1090,6 +1125,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1098,26 +1135,30 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="36e2-282a-c55c-9080" name="Poxwalker Fire Team" hidden="false" collective="false" import="true" type="unit">
-	  <constraints>
-		  <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e379-a408-ddbd-d671" type="max"/>
-	  </constraints>
-	  <selectionEntryGroups>
-		  <selectionEntryGroup id="be9b-d5bd-b2e4-0a1b" name="Models" hidden="false" collective="false" import="true">
-			  <entryLinks>
-				  <entryLink id="5c1b-e6b0-a38d-cec4" name="Poxwalker" hidden="false" collective="false" import="true" targetId="fb97-e62c-260c-d2e2" type="selectionEntry"/>
-			  </entryLinks>
-		  </selectionEntryGroup>
-	  </selectionEntryGroups>
-	  <entryLinks>
-		  <entryLink id="8950-d7c6-0c5f-b82d" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
-	  </entryLinks>
-	  <costs>
-		  <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-	  </costs>
-	</selectionEntry>
+    <selectionEntry id="36e2-282a-c55c-9080" name="Poxwalker Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e379-a408-ddbd-d671" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="be9b-d5bd-b2e4-0a1b" name="Models" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="5c1b-e6b0-a38d-cec4" name="Poxwalker" hidden="false" collective="false" import="true" targetId="fb97-e62c-260c-d2e2" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8950-d7c6-0c5f-b82d" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0c57-ef1a-f618-3990" name="Specialisms" hidden="false" collective="false" import="true">
