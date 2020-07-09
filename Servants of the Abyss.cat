@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2321-ee3c-7ef0-5c40" name="Servants of the Abyss" revision="8" battleScribeVersion="2.03" authorName="MadSpy" authorContact="@Madspy" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2321-ee3c-7ef0-5c40" name="Servants of the Abyss" revision="8" battleScribeVersion="2.03" authorName="MadSpy" authorContact="@Madspy" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="da06-53d5-c2fd-0607" name="Traitor Guardsmen" hidden="false"/>
     <categoryEntry id="fe8d-496a-755e-de4d" name="Chaos Beastmen" hidden="false"/>
@@ -33,6 +33,7 @@
       <costs>
         <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
         <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ca68-4e25-3ffc-85e1" name="База варбанды" hidden="false" collective="false" import="true" type="model">
@@ -42,7 +43,15 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="a161-d1cc-0f02-95c3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a161-d1cc-0f02-95c3" type="max"/>
+      </constraints>
       <profiles>
         <profile id="8fe4-0fc4-23fd-5a37" name="База варбанды" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
           <characteristics>
@@ -56,6 +65,7 @@
       <costs>
         <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
         <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ec6-6b16-db58-2834" name="Трон повелителя" hidden="false" collective="false" import="true" type="model">
@@ -69,10 +79,7 @@
       <profiles>
         <profile id="b207-3892-8671-88a7" name="Трон повелителя" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
           <characteristics>
-            <characteristic name="Description" typeId="4237-7545-6386-8885">Боевые способности вашего командира улучшаются:
-OBSIDIUS MALLEX, Обсидиановый молот: Характеристика урона оружия Thunder hammer увеличивается на 1.
-CULТIST FIREBRAND, Разрушитель: Дальность всего оружия дальнего боя увеличивается на З&quot;.
-ТRAIТOR COММISSAR, Мозгострел: В фазе стрельбы вы можете выбирать союзные модели в качестве цели для стрельбы из пистолета. Если ваша модель выведена из строя такой атакой, ближайшая к ней вражеская модель в 2&quot; получает 1 смертельную рану.</characteristic>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Боевые способности вашего командира улучшаются.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -82,6 +89,7 @@ CULТIST FIREBRAND, Разрушитель: Дальность всего ору
       <costs>
         <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
         <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9606-1caf-9024-6c27" name="Алтарь Хаоса Неделимого" hidden="false" collective="false" import="true" type="model">
@@ -91,7 +99,15 @@ CULТIST FIREBRAND, Разрушитель: Дальность всего ору
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="d24b-481a-8731-f4a4" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d24b-481a-8731-f4a4" type="max"/>
+      </constraints>
       <profiles>
         <profile id="c70a-27b0-c2de-d4d1" name="Алтарь Хаоса Неделимого" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
           <characteristics>
@@ -105,6 +121,7 @@ CULТIST FIREBRAND, Разрушитель: Дальность всего ору
       <costs>
         <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
         <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1360,6 +1377,18 @@ CULТIST FIREBRAND, Разрушитель: Дальность всего ору
             <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">This model has a 4+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
+        <profile id="3c09-4118-ece2-0887" name="Обсидиановый молот" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec6-6b16-db58-2834" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Характеристика урона оружия Thunder hammer увеличивается на 1.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="239a-6a1d-4373-9ed2" name=" Death to the False Emperor" hidden="false" targetId="9f56-5396-4bd7-c8f6" type="profile"/>
@@ -2019,6 +2048,18 @@ CULТIST FIREBRAND, Разрушитель: Дальность всего ору
             <characteristic name="Description" typeId="b373-019d-503a-1124">At the start of the Movement phase, you can pick one TRAITOR GUARDSMAN model from your kill team that is within 6&quot; of this model. Add 2 to the Advance and charge rolls made for that model until the end of the phase.</characteristic>
           </characteristics>
         </profile>
+        <profile id="fa03-6306-7265-de30" name="Мозгострел" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec6-6b16-db58-2834" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">В фазе стрельбы вы можете выбирать союзные модели в качестве цели для стрельбы из пистолета. Если ваша модель выведена из строя такой атакой, ближайшая к ней вражеская модель в 2&quot; получает 1 смертельную рану.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="4b39-bded-7e97-baac" name="New CategoryLink" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
@@ -2146,6 +2187,18 @@ CULТIST FIREBRAND, Разрушитель: Дальность всего ору
         <profile id="581f-4e4d-682e-abf5" name="Explosive Demise" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
           <characteristics>
             <characteristic name="Description" typeId="b373-019d-503a-1124">If this model is taken out of action, roll a dice before removing it from the battlefield; on a 5+ the warp energies contained within it burst out, and each model within 3&quot; suffers 1 mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c702-b2fd-5ca1-9a87" name="Разрушитель" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec6-6b16-db58-2834" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Дальность всего оружия дальнего боя увеличивается на З&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>

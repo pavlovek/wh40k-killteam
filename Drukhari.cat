@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3591-2aa0-250c-ddeb" name="Drukhari" revision="18" battleScribeVersion="2.03" authorName="MadSpy" authorContact="@Mad-Spy on Discord" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3591-2aa0-250c-ddeb" name="Drukhari" revision="19" battleScribeVersion="2.03" authorName="MadSpy" authorContact="@Mad-Spy on Discord" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4a23-eb9f-45cc-d6da" name="Wych" hidden="false"/>
     <categoryEntry id="b4b3-1353-2d65-cf24" name="Kabalite Warrior" hidden="false"/>
@@ -22,8 +22,104 @@
     <categoryEntry id="1045-c03e-b5bf-8c88" name="Kabal of the Flayed Skull" hidden="false"/>
     <categoryEntry id="6079-15c0-f7a3-18ed" name="Kabal of the Poisoned Tongue" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="6c0a-500e-de99-a6e7" name="Храм Иннеяда" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="6c62-f4ac-72e3-d3cb" name="Храм Иннеяда" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Все модели в вашей истребительной команде получают следующую способность:</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="81aa-802e-fb8c-96e9" name="Слуга Смерти" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Эта модель имеет ФнП (6+). Если она уже обладает подобным эффектом, вы выбираете один из них и можете перебрасывать единицы.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c57e-4c68-8fd4-3674" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe0c-3c6e-5911-fac9" name="Арена боли" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1451-bb11-b5df-5c11" name="Арена боли" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Все ваши модели, обладающие способностью Power from pain, получают следующую способность:</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4991-51dc-5a76-414f" name="Они страдали недостаточно!" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Эта модель получает +1 атаку за каждую вражескую модель с неполным показателем здоровья (ранами на ней) и / или легкими ранениями, находящуюся в З&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4b94-7e86-2e3d-ac8d" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0189-9c93-c0d6-4851" name="Покои Владыка" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c090-991c-72ec-fc27" name="Покои Владыка" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Ваша способность &quot;Порабощение &quot; улучшается в зависимости от вашего командира.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9552-7d50-4063-9017" name="&quot;Сдать его на опыты!&quot; (Гомункул)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Вы можете задействовать сразу оба эффекта способности, либо вы можете задействовать первый эффект без траты материалов.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6209-b0b1-49c7-b87d" name="&quot;Отведите в мой дворец!&quot; (Архонт)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">За каждую угнанную в рабство модель противника вы получаете 15 очков резерва дополнительно.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f5a6-d828-9a10-e7e3" name="&quot;Развлечемся на арене!&quot; (Суккуба)" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">За каждую вражескую модель, угнанную в рабство, одна из ваших моделей с ключевым словом WYTCH получает дополнительно одну единицу опыта.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ecdf-8dba-e633-9aaa" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+    <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -823,6 +919,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2c9a-b178-80bd-ff3b" name="Razorflails" hidden="false" collective="false" import="true" type="upgrade">
@@ -840,6 +938,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f69-aa49-7286-c17d" name="Power sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -857,6 +957,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="80c5-42c8-95a0-7173" name="Power lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -874,6 +976,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fcbb-4d7b-3823-5114" name="Hydra gauntlets" hidden="false" collective="false" import="true" type="upgrade">
@@ -891,6 +995,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5132-e141-6607-b85d" name="Hekatarii blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -908,6 +1014,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c08e-6dfe-4f06-ef76" name="Agonizer" hidden="false" collective="false" import="true" type="upgrade">
@@ -925,6 +1033,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1568-48e3-a0ca-681a" name="Shardcarabine" hidden="false" collective="false" import="true" type="upgrade">
@@ -942,6 +1052,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f00-8fa0-752b-cff9" name="Splinter rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -959,6 +1071,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ba92-16b7-6630-148b" name="Splinter pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -976,6 +1090,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="34e7-f5cc-252d-5ee6" name="Splinter cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -996,6 +1112,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="92f1-f976-0963-62c5" name="Shredder" hidden="false" collective="false" import="true" type="upgrade">
@@ -1016,6 +1134,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="133b-b340-201b-8879" name="Plasma grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -1033,6 +1153,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="08f1-181a-7b69-587d" name="Phantasm grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -1050,6 +1172,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="29a5-15dc-63c1-d748" name="Dark lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -1070,6 +1194,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="929c-bf89-7c96-46eb" name="Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -1090,6 +1216,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9101-49e6-957e-6d03" name="Heat lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -1110,6 +1238,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d00c-490e-9783-0086" name="Blast pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1127,6 +1257,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f12-9d40-1248-f67a" name="Hekatrix" hidden="false" collective="false" import="true" type="model">
@@ -1210,6 +1342,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="11e5-2ca6-c87b-fbff" name="Wych Fighter" hidden="false" collective="false" import="true" type="model">
@@ -1277,6 +1411,8 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1311,6 +1447,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8da1-5ea3-046c-2bd5" name="Wych" hidden="false" collective="false" import="true" type="model">
@@ -1368,6 +1506,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="35a3-8c8a-3e0a-3570" name="Sybarite" hidden="false" collective="false" import="true" type="model">
@@ -1441,6 +1581,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e855-16d1-d6be-38e2" name="Kabalite Gunner" hidden="false" collective="false" import="true" type="model">
@@ -1538,6 +1680,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eada-f83b-0853-5544" name="Kabalite Warrior" hidden="false" collective="false" import="true" type="model">
@@ -1580,6 +1724,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="53c5-45d2-c3b2-9748" name="Kabalite Warrior Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1627,6 +1773,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7169-992d-3b64-7b89" name="Wych Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1674,6 +1822,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6954-fa8e-6b5e-b7a4" name="Huskblade" hidden="false" collective="false" import="true" type="upgrade">
@@ -1691,6 +1841,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e502-1cf5-4c96-8d98" name="Venom blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -1708,6 +1860,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="401b-a8d1-aaaf-d933" name="Archon" hidden="false" collective="false" import="true" type="model">
@@ -1827,6 +1981,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="56.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="44c9-3d92-61bd-314a" name="Succubus" hidden="false" collective="false" import="true" type="model">
@@ -1920,6 +2076,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="48.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aa86-d72f-749c-9855" name="Archite glaive" hidden="false" collective="false" import="true" type="upgrade">
@@ -1937,6 +2095,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="acef-f35c-c102-d3fe" name="Haemonculus" hidden="false" collective="false" import="true" type="model">
@@ -2022,6 +2182,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2046,6 +2208,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d2c-0220-4311-cd7b" name="Wrack" hidden="false" collective="false" import="true" type="model">
@@ -2089,6 +2253,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9419-583f-6f38-2d86" name="Haemonculus tools" hidden="false" collective="false" import="true" type="upgrade">
@@ -2106,6 +2272,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d67-a6d2-81ff-fe91" name="Wrack Gunner" hidden="false" collective="false" import="true" type="model">
@@ -2168,6 +2336,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2188,6 +2358,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8734-4930-1897-0087" name="Acothyst" hidden="false" collective="false" import="true" type="model">
@@ -2250,6 +2422,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2283,6 +2457,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="510e-e0b4-d8a4-2a7d" name="Mindphase gauntlet" hidden="false" collective="false" import="true" type="upgrade">
@@ -2300,6 +2476,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ad56-fba9-441b-ec05" name="Scissorhand" hidden="false" collective="false" import="true" type="upgrade">
@@ -2317,6 +2495,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2342,6 +2522,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c814-793f-4d27-5909" name="Liquifier gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2359,6 +2541,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b3c-124f-40b6-94ab" name="Stinger pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -2376,6 +2560,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c32b-d5e7-c344-a1ea" name="Incubus" hidden="false" collective="false" import="true" type="model">
@@ -2417,6 +2603,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f7ee-e7d0-9bb0-9119" name="Klaive" hidden="false" collective="false" import="true" type="upgrade">
@@ -2438,6 +2626,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4604-408d-bb0a-7ac3" name="Scourge" hidden="false" collective="false" import="true" type="model">
@@ -2488,6 +2678,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="caec-4166-9812-0b55" name="Scourge Gunner" hidden="false" collective="false" import="true" type="model">
@@ -2597,6 +2789,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d0db-43e0-a331-fc02" name="Solarite" hidden="false" collective="false" import="true" type="model">
@@ -2674,6 +2868,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a641-4e7c-8e0b-030a" name="Scourge Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2721,6 +2917,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e556-6a87-b82b-6b1e" name="Wrack Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2768,6 +2966,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa2e-8cb8-6cc0-c30c" name="Klaivex" hidden="false" collective="false" import="true" type="model">
@@ -2814,6 +3014,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f4a6-5f17-705e-5606" name="Grotesque" hidden="false" collective="false" import="true" type="model">
@@ -2867,6 +3069,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2887,6 +3091,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="38.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eba8-5ef9-b213-0f73" name="Flesh gauntlet" hidden="false" collective="false" import="true" type="upgrade">
@@ -2904,6 +3110,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d5a9-fe89-67d6-b572" name="Grotesque Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2933,6 +3141,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9637-cbfa-7041-5185" name="Mandrake" hidden="false" collective="false" import="true" type="model">
@@ -2984,6 +3194,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="353b-45b8-060b-cc4a" name="Baleblast" hidden="false" collective="false" import="true" type="upgrade">
@@ -3005,6 +3217,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3013,6 +3227,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f152-21b3-d088-b22f" name="Nightfiend" hidden="false" collective="false" import="true" type="model">
@@ -3074,6 +3290,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="45d8-a7c1-a632-556c" name="Baleblast" hidden="false" collective="false" import="true" type="upgrade">
@@ -3095,6 +3313,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3103,6 +3323,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7a59-ce9c-9819-0d15" name="Mandrake Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3141,6 +3363,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="337e-6000-7e3d-5206" name="Incubus Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3179,6 +3403,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3436,6 +3662,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1693-4fdf-74ba-15eb" name="The Dark Creed" hidden="false" collective="false" import="true" type="upgrade">
@@ -3444,6 +3672,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="12de-4f33-f58f-5089" name="Coven of Twelve" hidden="false" collective="false" import="true" type="upgrade">
@@ -3452,11 +3682,15 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c1c9-bee4-3e78-50b6" name="*No Coven*" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3473,6 +3707,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d537-60a9-61dd-ff89" name="Kabal of the Flayed Skull" hidden="false" collective="false" import="true" type="upgrade">
@@ -3481,6 +3717,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1604-dae3-1497-969f" name="Kabal of the Poisoned Tongue" hidden="false" collective="false" import="true" type="upgrade">
@@ -3489,6 +3727,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b878-a3be-ad4c-4a7a" name="Kabal of the Obsidian Rose" hidden="false" collective="false" import="true" type="upgrade">
@@ -3497,11 +3737,15 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="60e0-ecee-3a78-5aa6" name="*No Kabal*" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3518,6 +3762,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0840-9308-2a87-5c01" name="Cult of the Cursed Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -3526,6 +3772,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5ab2-ee8c-4c9c-509c" name="Cult of the Red Grief" hidden="false" collective="false" import="true" type="upgrade">
@@ -3534,11 +3782,15 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c337-e8b8-4634-f2d7" name="*No Cult*" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

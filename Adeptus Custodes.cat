@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="419c-04e4-1bb5-3f36" name="Adeptus Custodes" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="419c-04e4-1bb5-3f36" name="Adeptus Custodes" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="fd32-3cc0-f4c3-c5e1" name="Custodian Guard" hidden="false"/>
     <categoryEntry id="0426-fe12-c4a0-3395" name="Allarus Custodian" hidden="false"/>
@@ -56,6 +56,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a331-fcb9-fad4-ad9c" name="Vigilator Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -104,6 +106,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2515-b1a4-3e62-c626" name="Prosecutor Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -152,11 +156,47 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="100a-a0a0-acb1-f86b" name="Палата испытаний" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="6722-f6c9-adae-d49b" name="Палата испытаний" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Вы получаете доступ к тактике &quot;Истинные сыновья Императора&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8119-d65e-9fe5-362a" name="Истинные сыновья Императора" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале психической фазы. Выберите один из эффектов:
+Противник должен вычитать 2 из лидерства моделей, находящихся в 6&quot; от любой вашей модели (кроме моделей с ключевым словом SISТERS OF SILENCE).
+Характеристика атак вражеских моделей, находящихся в З&quot; от любой вашей модели (кроме моделей с ключевым словом SISTERS OF SILENCE), уменьшается на 1 (до минимума в 1).
+Характеристика атак ваших моделей (кроме моделей с ключевым словом SISTERS OF SILENCE) увеличивается на 1.
+Эффект действует до конца раунда.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="612d-b5cd-3016-40b8" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+    <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -405,19 +445,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </entryLink>
-    <entryLink id="1160-590c-0b3a-c1ed" name="Witchseeker Superior" hidden="false" collective="false" import="true" targetId="5c3b-d7ee-dcb8-9fe6" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="3ae4-4931-0b75-e018" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="34a4-6371-2a28-f2e2" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2033-1a70-a3ef-6986" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4cf-a6fd-554a-a47c" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </entryLink>
     <entryLink id="83f6-fa17-5bea-e542" name="Vigilator" hidden="false" collective="false" import="true" targetId="65cd-a946-2d72-cf28" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -448,19 +475,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </entryLink>
-    <entryLink id="4894-48e9-30aa-5660" name="Vigilator Superior" hidden="false" collective="false" import="true" targetId="3648-5bda-d423-e048" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="5686-fd89-c15f-ab6d" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="4778-1d8f-8615-a628" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47d6-9f1d-dbe0-0eac" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c0a-cfe8-4fb5-7eac" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
     </entryLink>
     <entryLink id="65db-02f4-4275-1eb5" name="Vigilator Superior" hidden="false" collective="false" import="true" targetId="3648-5bda-d423-e048" type="selectionEntry">
       <modifiers>
@@ -524,19 +538,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </entryLink>
-    <entryLink id="6fd5-5da4-b3cd-36d3" name="Prosecutor Superior" hidden="false" collective="false" import="true" targetId="9e1f-3d05-d4bc-2162" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="5d3c-4a80-32c0-e85c" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="0df5-cc3f-4ca8-de30" name="Leader" hidden="false" collective="false" import="true" targetId="2abd-70f4-e7e8-4d18" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77c2-3e1c-46a2-c805" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d98-f739-0b68-a996" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </entryLink>
     <entryLink id="9f7c-24b5-b649-9800" name="Prosecutor Superior" hidden="false" collective="false" import="true" targetId="9e1f-3d05-d4bc-2162" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -573,19 +574,19 @@
     <rule id="65c1-84cd-7277-68ea" name="The Emperor&apos;s Chosen" hidden="false">
       <description>The invulnerable save of models in your kill team is improved by 1 (to a maximum of 3+).</description>
     </rule>
-	  <rule id="01a9-4ee2-be53-2a93" name="Вечное обучение" hidden="false">
-		  <description>После миссии вы можете потратить 1 единицу материалов, чтобы увеличить опыт любого своего специалиста, участвовавшего в миссии и имеющего ключевое слово ADEPTUS CUSTODES, на 1.</description>
-	  </rule>
-	  <rule id="48f2-4d6f-b1ce-dda7" name="Когти Императора" hidden="false">
-		  <modifiers>
-			  <modifier type="set" field="hidden" value="true">
-				  <conditions>
-					  <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="38e4-4333-873f-d3d2" type="equalTo"/>
-				  </conditions>
-			  </modifier>
-		  </modifiers>
-		  <description>Вы можете включать в свой командный ростер модели с ключевым словом SISTERS OF SILENCE, однако такие модели стоят для вас на 2 очка больше. Наличие таких моделей не запрещает вам использовать тактики Адептус Кустодес, но они сами не получают эффекта от таких тактик.</description>
-	  </rule>
+    <rule id="01a9-4ee2-be53-2a93" name="Вечное обучение" hidden="false">
+      <description>После миссии вы можете потратить 1 единицу материалов, чтобы увеличить опыт любого своего специалиста, участвовавшего в миссии и имеющего ключевое слово ADEPTUS CUSTODES, на 1.</description>
+    </rule>
+    <rule id="48f2-4d6f-b1ce-dda7" name="Когти Императора" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="38e4-4333-873f-d3d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <description>Вы можете включать в свой командный ростер модели с ключевым словом SISTERS OF SILENCE, однако такие модели стоят для вас на 2 очка больше. Наличие таких моделей не запрещает вам использовать тактики Адептус Кустодес, но они сами не получают эффекта от таких тактик.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="71ef-5547-b88f-bf2e" name="Shield-Captain" hidden="false" collective="false" import="true" type="model">
@@ -675,6 +676,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="118.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c885-caf3-47f9-d811" name="Castellan axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -707,6 +710,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d923-961e-712b-4424" name="Guardian spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -739,6 +744,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1dda-e564-250f-e2f0" name="Misericordia" hidden="false" collective="false" import="true" type="upgrade">
@@ -766,6 +773,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1dc6-a83f-916c-d1de" name="Storm shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -788,6 +797,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b79c-263a-424f-4db3" name="Sentinel blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -820,6 +831,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f81-71d1-bb20-a3eb" name="Custodian Guard" hidden="false" collective="false" import="true" type="model">
@@ -880,6 +893,8 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -894,6 +909,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="33.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="77fb-bd86-a771-ade1" name="Custodian Guard Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -915,6 +932,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8b95-f1a0-60a4-e61d" name="Allarus Custodian" hidden="false" collective="false" import="true" type="model">
@@ -978,6 +997,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -999,6 +1020,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="67.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c8b-a39f-4287-aaa5" name="Allarus Custodian Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1020,6 +1043,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="600f-4f58-8e58-9bca" name="Sagittarum Custodian" hidden="false" collective="false" import="true" type="model">
@@ -1092,6 +1117,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1101,6 +1128,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="33.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6276-4f70-8f51-68fc" name="Sagittarum Custodian Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1122,6 +1151,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b044-5642-0a19-8777" name="Witchseeker" page="" hidden="false" collective="false" import="true" type="model">
@@ -1156,6 +1187,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="57eb-8b7c-db1b-a23c" name="Psyk-out grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -1177,6 +1210,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c3b-d7ee-dcb8-9fe6" name="Witchseeker Superior" page="" hidden="false" collective="false" import="true" type="model">
@@ -1221,6 +1256,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="65cd-a946-2d72-cf28" name="Vigilator" hidden="false" collective="false" import="true" type="model">
@@ -1255,6 +1292,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="750f-bc9b-2cbd-f6e6" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -1276,6 +1315,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8ee7-a7b6-98a1-ce82" name="Executioner greatblade" hidden="false" collective="false" import="true" type="upgrade">
@@ -1297,6 +1338,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3648-5bda-d423-e048" name="Vigilator Superior" hidden="false" collective="false" import="true" type="model">
@@ -1341,6 +1384,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6fef-be23-3351-cc78" name="Prosecutor" hidden="false" collective="false" import="true" type="model">
@@ -1375,6 +1420,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="41ee-afc4-5115-21ff" name="Boltgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1396,6 +1443,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e1f-3d05-d4bc-2162" name="Prosecutor Superior" hidden="false" collective="false" import="true" type="model">
@@ -1440,6 +1489,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

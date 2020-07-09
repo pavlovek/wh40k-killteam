@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8f3b-d6fd-0ad8-06f2" name="Harlequins" revision="12" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8f3b-d6fd-0ad8-06f2" name="Harlequins" revision="13" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="cb52-a195-44b4-d87b" name="Player" hidden="false"/>
     <categoryEntry id="84f1-4be2-e1c7-0203" name="Troupe Master" hidden="false"/>
@@ -11,8 +11,111 @@
     <categoryEntry id="60f8-e0e7-a39f-a358" name="Soaring Spite" hidden="false"/>
     <categoryEntry id="8faf-e4ce-375d-9a4b" name="Veiled Path" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="1d0b-e865-c618-21b4" name="Храм Иннеяда" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4d18-6901-6cc0-e96f" name="Храм Иннеяда" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Все модели в вашей истребительной команде получают следующую способность:</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="68e6-ee2c-07a0-74e8" name="Слуга Смерти" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Эта модель имеет ФнП (6+ ). Если она уже обладает подобным эффектом, вы выбираете один из них и можете перебрасывать единицы.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e2db-e18e-9c9c-5e41" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d3c7-e246-0956-076e" name="Врата в Черную библиотеку" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="dd8a-3637-0aab-370f" name="Врата в Черную библиотеку" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Вы получаете доступ к одной из тактик (выбирайте в начале миссии): &quot;Фантасмагория&quot;, &quot;Смертельная шутка&quot;, &quot;... и все на ней - актеры&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2524-925b-ff29-c0d2" name="Фантасмагория" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">1/2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику, когда ваша модель (кроме командира) получает легкую рану. Выберите эффект:
+1СР. переместить модель на 3&quot;.
+2СР. игнорировать легкую рану и переместить модель на 3&quot;.
+Это перемещение происходит по правилам обычного движения.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3a09-fa41-ac35-960c" name="... и все на ней - актеры" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2/3</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в конце фазы движения. Выберите эффект:
+2СР. до двух вражеских моделей (находящихся дальше 1&quot; от ваших моделей) по вашему выбору должны переместиться на 2&quot; в указанном вами направлении.
+ЗС Р. до трёх вражеских моделей (находящихся дальше 1&quot; от ваших моделей) по вашему выбору должны переместиться на 3&quot; в указанном вами направлении.
+Это перемещение происходит по правилам обычного движения. Если во вражеской истребительной команде шесть или меньше моделей, эта тактика стоит на 1 СР дороже.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a3ca-1780-4f8c-e83c" name="Смертельная шутка" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2/3</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику, когда ваша модель выведена из строя в фазу ближнего боя.
+Выберите эффект:
+2 СР. вражеская модель, которая вывела из строя вашу, получает 1 смертельную рану.
+З СР. вражеская модель, которая вывела из строя вашу, получает 1 смертельную рану и штраф -1 ко всем броскам на попадание до конца игры.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2317-f7a3-56ac-60e4" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e1a2-51f9-e260-2afd" name="Генератор парадоксов" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="6e27-3745-8792-b213" name="Генератор парадоксов" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Трижды за игру, когда ваша модель выбрана целью атак, вы можете активировать генератор парадоксов. Если вы делаете это, при разрешении этих атак противник может прибавлять 2 к результату броска на попадание, но должен вычитать 2 из результата броска на ранение. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b8f3-114d-99a5-46ae" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+    <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -390,6 +493,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b5a9-4c89-1e04-85e3" name="Neuro disruptor" hidden="false" collective="false" import="true" type="upgrade">
@@ -407,6 +512,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a811-9e26-4b1b-3cd9" name="Harlequin&apos;s kiss" hidden="false" collective="false" import="true" type="upgrade">
@@ -424,6 +531,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d5f1-2c61-a5cb-737b" name="Harlequin&apos;s embrace" hidden="false" collective="false" import="true" type="upgrade">
@@ -441,6 +550,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1904-ff84-354d-da8d" name="Harlequin&apos;s caress" hidden="false" collective="false" import="true" type="upgrade">
@@ -458,6 +569,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2181-0a67-7fcc-b114" name="Harlequin&apos;s blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -475,6 +588,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="73a6-8bab-7135-49a6" name="Power sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -496,6 +611,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3c0f-7ba5-fe68-e0ea" name="Shuriken pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -513,6 +630,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d880-cf1d-86f9-095f" name="Plasma grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -534,6 +653,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fcf3-4b04-0570-6c02" name="Troupe Master" hidden="false" collective="false" import="true" type="model">
@@ -607,6 +728,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="853e-b6de-ea60-b17e" name="Player" hidden="false" collective="false" import="true" type="model">
@@ -670,6 +793,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="910d-8df8-5d4a-30a3" name="Player Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -705,6 +830,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f8e-40b9-3ed7-2fca" name="Shadowseer" hidden="false" collective="false" import="true" type="model">
@@ -795,6 +922,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6e84-66ea-0e44-4c03" name="Hallucinogen grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -816,6 +945,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -842,6 +973,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="65.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9697-4eab-ad47-4e7c" name="Great Harlequin" hidden="false" collective="false" import="true" type="model">
@@ -956,6 +1089,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="50.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d589-4a0f-a09c-8782" name="Solitaire" hidden="false" collective="false" import="true" type="model">
@@ -1046,6 +1181,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="94.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b4c-feda-4ce3-4df4" name="Death Jester" hidden="false" collective="false" import="true" type="model">
@@ -1146,6 +1283,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1155,6 +1294,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="24.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9c71-5ef3-7f6c-eb9a" name="Death Jester Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1178,6 +1319,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1335,6 +1478,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a9c7-d6bd-3e5b-9184" name="2. Webway Dance" hidden="false" collective="false" import="true" type="upgrade">
@@ -1350,6 +1495,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fec9-6409-e1b1-d639" name="3. Mirror of Minds" hidden="false" collective="false" import="true" type="upgrade">
@@ -1365,6 +1512,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1381,6 +1530,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4329-d624-7ad3-5782" name="Veiled Path" hidden="false" collective="false" import="true" type="upgrade">
@@ -1389,6 +1540,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fb99-e980-3a05-a275" name="Frozen Stars" hidden="false" collective="false" import="true" type="upgrade">
@@ -1397,6 +1550,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2d37-e7a1-ab6d-b653" name="Soaring Spite" hidden="false" collective="false" import="true" type="upgrade">
@@ -1405,6 +1560,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4b0e-c163-7b08-1093" name="Dreaming Shadow" hidden="false" collective="false" import="true" type="upgrade">
@@ -1413,6 +1570,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="514a-670a-6a5d-aa14" name="Silent Shroud" hidden="false" collective="false" import="true" type="upgrade">
@@ -1421,11 +1580,15 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f3a9-f0d0-b8a7-3e86" name="* No Masque*" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2110-1f2b-3df5-e161" name="Ynnari" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2110-1f2b-3df5-e161" name="Ynnari" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="efd1-273e-3910-f3e8" name="Warhost" hidden="false"/>
     <categoryEntry id="5bef-7545-be74-0e33" name="Guardian" hidden="false"/>
@@ -25,8 +25,98 @@
     <categoryEntry id="84f1-4be2-e1c7-0203" name="Troupe Master" hidden="false"/>
     <categoryEntry id="b17f-971b-0711-f8e8" name="Player" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="9fed-b46e-720a-c261" name="Храм Иннеяда" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="abb3-f9cc-d360-b378" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaf-798d-961f-353d" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="abb3-f9cc-d360-b378" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c7dc-467a-afdf-ccfb" name="Храм Иннеяда" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Все ваши модели получают ФнП (7+). Прибавляйте 1 к такому броску за каждую модель, выведенную из строя в этом раунде, до максимума бонуса в +3. Этот эффект нельзя использовать с другими эффектами ФнП, а подобный бросок не может быть переброшен.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="7646-4cec-a0b0-7939" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5433-cf66-36ef-8996" name="Алтарь возвращения" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="b36d-a292-bf07-3fdb" name="Алтарь возвращения" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Ваши модели с ключевым словом WRAITH CONSTRUCT увеличивают свое количество атак и характеристики лидерства и движения на 1, а также теряют способность Ghost Warrior.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b1fb-8aa6-741e-df7d" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16a4-e3a4-5199-7c1d" name="Колодец душ" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="39da-a20b-afda-c759" name="Колодец душ" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">На этапе набора истребительной команды выберите один из эффектов:
+Эффект действует на одну игру.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e28-4032-183a-b88d" name="Зарядка душ" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Когда любая модель погибает при броске на последствия миссии с вами, вы получаете ее стоимость в очках резерва (без учета снаряжения и наценки за уровень).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c627-2929-524c-bae2" name="Разрядка душ" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Вы можете потратить до 8 очков резерва (или до 14, если лимит очковой стоимости для вашей истребительной команды в этой миссии 200 или больше), чтобы увеличить лимит очковой стоимости для своей истребительной команды на соответствующее количество очков.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9e12-6b4f-f04b-da9d" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+    <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -867,6 +957,7 @@
         <infoLink id="4e37-86b7-e6bc-51b3" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="826b-a152-274d-6914" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="4712-ae61-8dca-22d2" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="c451-6667-f51b-5283" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7975-646e-ed04-69dc" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -889,6 +980,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="50aa-37f7-ff1c-c4fb" name="Heavy Weapons Platform" hidden="false" collective="false" import="true" type="model">
@@ -927,6 +1020,7 @@
         <infoLink id="4d8d-5c44-594b-8f9c" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="78d1-9e98-0738-41b4" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="381d-903b-4eb4-52d2" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="eb3b-db58-d2b2-2f1f" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b0aa-11f5-695c-7139" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -943,6 +1037,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4910-17dd-356a-4a7b" name="Storm Guardian Gunner" hidden="false" collective="false" import="true" type="model">
@@ -976,6 +1072,7 @@
         <infoLink id="3ab5-5757-8f44-804a" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="ac02-3deb-b643-0eaa" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="26cc-dd30-bbea-f1f7" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="de9d-0353-7212-1c09" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2c51-f404-fd6a-32fb" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -1000,6 +1097,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1974-291b-c1a7-954c" name="Shuriken Pistol &amp; Chainsword" hidden="false" collective="false" import="true" type="upgrade">
@@ -1009,6 +1108,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1024,6 +1125,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="755b-977f-2a38-6ce5" name="Shuriken pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1032,6 +1135,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cba9-26a8-af3c-0c4f" name="Shuriken cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1049,6 +1154,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="242f-0358-1e39-f9f4" name="Aeldari missile launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -1076,6 +1183,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c2d8-ff10-1ff3-ff8f" name="Bright lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -1093,6 +1202,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1e7c-6013-1726-97bb" name="Scatter laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -1110,6 +1221,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0efc-881e-0730-a2ef" name="Starcannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1127,6 +1240,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4270-6079-e9dc-4c56" name="Shuriken catapult" hidden="false" collective="false" import="true" type="upgrade">
@@ -1144,6 +1259,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c8b-242e-2cd1-b44b" name="Avenger shuriken catapult" hidden="false" collective="false" import="true" type="upgrade">
@@ -1161,6 +1278,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c1e-b33e-2027-2661" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -1178,6 +1297,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2ec8-cf36-d676-2a25" name="Fusion gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1195,6 +1316,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e020-7406-fcae-4d17" name="Plasma grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -1216,6 +1339,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ca9-e412-d0c4-fb6f" name="Aeldari blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -1224,6 +1349,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf61-80b8-da85-bf9a" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
@@ -1232,6 +1359,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="80c5-42c8-95a0-7173" name="Power lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -1249,6 +1378,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="52ca-794b-1bce-b44d" name="Storm Guardian" hidden="false" collective="false" import="true" type="model">
@@ -1272,6 +1403,7 @@
         <infoLink id="eda1-2abd-e76c-a7bd" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="b1e2-aadc-4d5f-5b81" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="3ad0-361a-f290-f66b" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="7a3a-f6eb-3d43-74b2" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5df5-4cfe-8a87-dbc7" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -1306,6 +1438,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ca1b-91ef-e78c-9733" name="Dire Avenger" hidden="false" collective="false" import="true" type="model">
@@ -1330,6 +1464,7 @@
         <infoLink id="af36-95fe-fe39-c479" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="4321-68f7-4332-4d2e" name="Defence Tactics" hidden="false" targetId="3527-9e0d-b1ef-fa3a" type="profile"/>
         <infoLink id="6e6f-7582-f58f-fe56" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="491d-427a-a4f3-c09c" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6b64-6478-7ee9-d5d3" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -1351,6 +1486,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7b4b-2371-1c46-e837" name="Dire Avenger Exarch" hidden="false" collective="false" import="true" type="model">
@@ -1390,6 +1527,7 @@
         <infoLink id="abae-33df-0770-a6e4" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="5413-113e-7dee-3332" name="Defence Tactics" hidden="false" targetId="3527-9e0d-b1ef-fa3a" type="profile"/>
         <infoLink id="b429-b200-2f40-7e6b" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="edbd-427c-5b51-9225" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cae9-9280-60b3-8996" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -1417,6 +1555,8 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6143-b6d6-d87f-d3ef" name="Shuriken Pistol &amp; Power Glaive" hidden="false" collective="false" import="true" type="upgrade">
@@ -1426,6 +1566,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5397-452b-cb04-096f" name="Shuriken Pistol &amp; Diresword" hidden="false" collective="false" import="true" type="upgrade">
@@ -1446,6 +1588,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cd4d-f6ad-b1c3-ced9" name="Shimmershield &amp; Power Glaive" hidden="false" collective="false" import="true" type="upgrade">
@@ -1461,6 +1605,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1475,6 +1621,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c476-e7c5-3a7d-b0fb" name="Ranger" hidden="false" collective="false" import="true" type="model">
@@ -1499,6 +1647,7 @@
         <infoLink id="ff0a-a701-a86a-3993" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="84d8-5402-d2bb-df5b" name="Cameleoline Cloak" hidden="false" targetId="d6fb-aea7-412d-ad89" type="profile"/>
         <infoLink id="498c-a7d9-fe66-dc77" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="d56b-4e6c-14bd-7041" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bc6c-1878-135c-e90e" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -1525,6 +1674,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1012-49b0-61a8-8148" name="Dire Avenger Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1563,6 +1714,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b32f-77ce-e24c-ffa6" name="Guardian Defender Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1586,6 +1739,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6e9c-54c6-1e6d-ca9e" name="Ranger Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1609,6 +1764,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7a2-122e-edb5-572d" name="Storm Guardian Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1647,6 +1804,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3ac8-622a-a3c3-c0d5" name="Ranger long rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1664,6 +1823,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c7ba-2b83-d7f8-92ad" name="Autarch" hidden="false" collective="false" import="true" type="model">
@@ -1724,6 +1885,7 @@
         <infoLink id="8a35-b1a1-912d-501b" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="967a-82c0-3f58-e72a" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="abc8-7b5f-e0b6-adb9" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="d42d-f808-2433-03ea" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f231-4192-57fb-7ca2" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -1751,6 +1913,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="57.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fcbd-d837-cab7-9f6c" name="Star glaive" hidden="false" collective="false" import="true" type="upgrade">
@@ -1759,6 +1923,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe2b-db4d-65e5-cf22" name="Sword, pistol &amp; wings" hidden="false" collective="false" import="true" type="upgrade">
@@ -1774,6 +1940,8 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="753f-393d-4c99-4e7d" name="Warlock" hidden="false" collective="false" import="true" type="model">
@@ -1830,6 +1998,7 @@
         <infoLink id="a679-bc2b-20d3-2973" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="be28-e540-549d-8c65" name="Rune Armour" hidden="false" targetId="f9ed-2c13-4384-c234" type="profile"/>
         <infoLink id="0147-1f30-ded6-156d" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="27b5-b216-cf05-42e5" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9c4d-277d-5844-3ca9" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -1880,6 +2049,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="22.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b018-e874-17d6-6d28" name="Witchblade" hidden="false" collective="false" import="true" type="upgrade">
@@ -1888,6 +2059,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f79c-78ff-ea49-2e05" name="Singing spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -1897,6 +2070,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8efb-7d87-0864-d3b6" name="Farseer" hidden="false" collective="false" import="true" type="model">
@@ -1963,6 +2138,7 @@
         <infoLink id="2f9a-7c8f-48bd-16bb" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="b855-d9d7-7fff-ec4d" name="Rune Armour" hidden="false" targetId="f9ed-2c13-4384-c234" type="profile"/>
         <infoLink id="296d-c5db-a709-7b88" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="dc7e-eb4e-aa3b-160b" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a8c8-5d60-705d-fef7" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2013,6 +2189,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="57.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e8fa-cf9c-7f13-15c7" name="1. Gaze of Ynnead" hidden="false" collective="false" import="true" type="upgrade">
@@ -2025,6 +2203,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f87d-d259-5bda-2ea6" name="2. Shield of Ynnead" hidden="false" collective="false" import="true" type="upgrade">
@@ -2037,6 +2217,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="13ef-9cd1-8473-6f7f" name="3. Word of Phoenix" hidden="false" collective="false" import="true" type="upgrade">
@@ -2049,6 +2231,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a3c5-153b-497a-d4b9" name="Amallyn Shadowguide" hidden="false" collective="false" import="true" type="model">
@@ -2102,6 +2286,8 @@
         <infoLink id="b87c-f158-0b6f-d7c9" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="2d5d-83dc-c49c-b36e" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="7429-b150-e5e3-7fe0" name="Cameleoline Cloak" hidden="false" targetId="d6fb-aea7-412d-ad89" type="profile"/>
+        <infoLink id="6edf-1746-17b0-146c" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="e641-82a4-0132-a684" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a148-1eea-6ebb-0061" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2133,6 +2319,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2153,6 +2341,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="32.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1b76-0440-e937-7545" name="Spiritseer" hidden="false" collective="false" import="true" type="model">
@@ -2209,6 +2399,7 @@
         <infoLink id="3f7b-07e0-bb25-e1b1" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="782a-b63c-fb29-cec8" name="Rune Armour" hidden="false" targetId="f9ed-2c13-4384-c234" type="profile"/>
         <infoLink id="75e5-9fdd-e49c-4c16" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="c00c-0ac3-bbe4-d4e2" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5e0f-8370-83b0-a843" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2240,6 +2431,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2259,6 +2452,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="63.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="36f5-f561-cf08-0dcd" name="Illic Nightspear" hidden="false" collective="false" import="true" type="model">
@@ -2301,6 +2496,8 @@
       <infoLinks>
         <infoLink id="4241-d9df-398b-4d40" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="c171-edb9-76f6-7e5d" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
+        <infoLink id="106c-6c29-6b3b-3386" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="799e-c0a5-009d-ba65" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2694-02d9-d9b6-5b8a" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2332,6 +2529,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="73a6-8bab-7135-49a6" name="Power sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2344,6 +2543,8 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2358,6 +2559,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="81.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="facf-f644-6b2e-9bb9" name="Wraithguard" hidden="false" collective="false" import="true" type="model">
@@ -2386,6 +2589,7 @@
         <infoLink id="6fbf-df68-126c-6394" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="7dbf-615b-014a-14aa" name="Ghost Warrior" hidden="false" targetId="e58c-5f94-e88f-eb44" type="profile"/>
         <infoLink id="7f48-3817-5b78-b05a" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="2fe7-07ef-1c90-db05" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="356b-cd0e-4503-041c" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2416,6 +2620,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2441,6 +2647,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7832-103a-586c-04d1" name="Wraithcannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2458,6 +2666,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2481,6 +2691,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="443e-8bbb-1e76-99ae" name="Heavy" hidden="false" collective="false" import="true" type="upgrade">
@@ -2489,6 +2701,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2b39-6ac3-99c9-c19b" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
@@ -2497,6 +2711,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2504,6 +2720,8 @@
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="43.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e286-0a0a-b9d4-1456" name="Wraithblade" hidden="false" collective="false" import="true" type="model">
@@ -2532,6 +2750,7 @@
         <infoLink id="a99d-b2f4-e2e4-5b6d" name="Ancient Doom" hidden="false" targetId="7f28-44d7-55b3-e7ef" type="profile"/>
         <infoLink id="1d11-b615-d98b-9e10" name="Ghost Warrior" hidden="false" targetId="e58c-5f94-e88f-eb44" type="profile"/>
         <infoLink id="eb35-f7dd-a54f-0ae7" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="9068-2c5e-3f82-4bf2" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="60c7-d319-877c-494a" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2562,6 +2781,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="eda0-87ed-1e2e-8575" name="Zealot" hidden="false" collective="false" import="true" type="upgrade">
@@ -2570,6 +2791,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0546-378a-438e-8c3e" name="Veteran" hidden="false" collective="false" import="true" type="upgrade">
@@ -2578,6 +2801,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2608,6 +2833,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a056-88a7-5e8d-0184" name="Ghostswords" hidden="false" collective="false" import="true" type="upgrade">
@@ -2625,6 +2852,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2632,6 +2861,8 @@
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="38.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1465-1e52-d404-1126" name="Wraithguard Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2661,6 +2892,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f3fc-4a07-3309-5266" name="Wraithblade Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2690,6 +2923,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8ecc-35c8-fec2-56da" name="Striking Scorpion" hidden="false" collective="false" import="true" type="model">
@@ -2715,6 +2950,7 @@
         <infoLink id="a9af-68b3-11be-e8b6" name="Mandiblasters" hidden="false" targetId="99f5-b276-7e83-742e" type="profile"/>
         <infoLink id="d941-8fd9-4cf6-59de" name="Shadow Strike" hidden="false" targetId="a715-abb6-c35a-d61e" type="profile"/>
         <infoLink id="12e1-38e9-a8f0-f2cc" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="6ecb-b435-e667-db73" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3dfa-02a5-acd7-e1ee" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2742,6 +2978,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bb55-1df2-b071-3eca" name="Scorpion chainsword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2759,6 +2997,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="69b9-d1bc-9133-0d11" name="Striking Scorpion Exarch" hidden="false" collective="false" import="true" type="model">
@@ -2799,6 +3039,7 @@
         <infoLink id="04f7-1501-a3f7-81a6" name="Mandiblasters" hidden="false" targetId="99f5-b276-7e83-742e" type="profile"/>
         <infoLink id="5735-d92c-a65f-f11a" name="Shadow Strike" hidden="false" targetId="a715-abb6-c35a-d61e" type="profile"/>
         <infoLink id="a876-24a0-d0a8-ee95" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="350c-9316-1b1b-f9ea" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="305f-cb1e-24b1-23b6" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2845,6 +3086,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2873,6 +3116,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2887,6 +3132,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb5a-3317-0e87-ab6e" name="Striking Scorpion Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2925,6 +3172,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0cc9-79fe-f820-8d29" name="Howling Banshee" hidden="false" collective="false" import="true" type="model">
@@ -2950,6 +3199,7 @@
         <infoLink id="2bc6-6195-a773-ea91" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="8d2e-1b3e-da3f-3347" name="Banshee Mask" hidden="false" targetId="c576-8ebe-1379-6c04" type="profile"/>
         <infoLink id="060a-de6d-f28a-f217" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="76b3-6998-a0d1-9020" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f698-81bb-ec8a-327c" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -2970,6 +3220,8 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2984,6 +3236,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c659-96f4-4e43-291e" name="Howling Banshee Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3022,6 +3276,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="57a9-51be-0cc3-32d8" name="Howling Banshee Exarch" hidden="false" collective="false" import="true" type="model">
@@ -3062,6 +3318,7 @@
         <infoLink id="7eab-8787-1115-5d3d" name="Battle Focus" hidden="false" targetId="08ff-da0f-de4b-d1b7" type="profile"/>
         <infoLink id="2614-dc9e-d09a-43a6" name="Banshee Mask" hidden="false" targetId="c576-8ebe-1379-6c04" type="profile"/>
         <infoLink id="2462-d763-e0f8-c01c" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="aa1c-6f40-6beb-a071" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2e71-226d-04b8-d3cf" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -3085,6 +3342,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3e4b-ce0a-94cd-6708" name="Mirrorswords" hidden="false" collective="false" import="true" type="upgrade">
@@ -3102,6 +3361,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="585f-fb82-d9d8-519b" name="Executioner and shuriken pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -3122,6 +3383,8 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3132,6 +3395,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ff76-4e06-aae9-071f" name="Death Spinner" hidden="false" collective="false" import="true" type="upgrade">
@@ -3149,6 +3414,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fc30-4a05-b29a-d2aa" name="Powerblades" hidden="false" collective="false" import="true" type="upgrade">
@@ -3170,6 +3437,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6735-4684-8f03-22d1" name="Warp Spider" hidden="false" collective="false" import="true" type="model">
@@ -3196,6 +3465,7 @@
         <infoLink id="599d-440d-8c2c-bcb0" name="Warp Jump Generator" hidden="false" targetId="5093-4346-9fa3-d1b3" type="profile"/>
         <infoLink id="dde6-4fe1-a632-15f6" name="Iron Resolve" hidden="false" targetId="c5ec-4255-a54c-18f8" type="profile"/>
         <infoLink id="e3dc-4107-a568-b06d" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="964b-d4a7-4b2a-7683" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8a21-4d0d-bb1e-62ab" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -3216,6 +3486,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="de53-4be1-9084-8e04" name="Warp Spider Exarch" hidden="false" collective="false" import="true" type="model">
@@ -3252,6 +3524,7 @@
         <infoLink id="52f1-493b-b521-2ca0" name="Warp Jump Generator" hidden="false" targetId="5093-4346-9fa3-d1b3" type="profile"/>
         <infoLink id="e0b1-465b-9e61-ae14" name="Iron Resolve" hidden="false" targetId="c5ec-4255-a54c-18f8" type="profile"/>
         <infoLink id="c7a1-4455-b5a0-8eed" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="cf0f-0970-c9d1-d3c4" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dfe9-4d67-a9ca-c7eb" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -3279,6 +3552,8 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3297,6 +3572,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="812a-4762-ad73-6f8e" name="Warp Spider Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3335,6 +3612,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7195-407f-66fe-ad37" name="Incubus" hidden="false" collective="false" import="true" type="model">
@@ -3357,6 +3636,7 @@
       <infoLinks>
         <infoLink id="564f-9be4-c67b-b396" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
         <infoLink id="d2e0-c47f-2dc1-2747" name="Tormentors" hidden="false" targetId="404c-ebe1-3e3b-fd6b" type="profile"/>
+        <infoLink id="0142-3d8c-1d91-e1bb" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="740b-3e0d-4c88-c98d" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -3371,6 +3651,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9fa4-c91e-2dfe-ad4d" name="Klaive" hidden="false" collective="false" import="true" type="upgrade">
@@ -3392,6 +3674,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="54a2-c4e4-4ac8-2eef" name="Klaivex" hidden="false" collective="false" import="true" type="model">
@@ -3429,6 +3713,7 @@
       <infoLinks>
         <infoLink id="ba7f-eee5-047f-9728" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
         <infoLink id="b312-ed58-f07e-762f" name="Tormentors" hidden="false" targetId="404c-ebe1-3e3b-fd6b" type="profile"/>
+        <infoLink id="3b06-32ac-ff68-0786" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e1d7-4c05-8f1a-1095" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -3443,6 +3728,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1d00-ab44-1c1c-6a12" name="Incubus Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3481,6 +3768,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4598-6786-0f7c-51a8" name="Agonizer" hidden="false" collective="false" import="true" type="upgrade">
@@ -3498,6 +3787,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c923-5a4c-d1a6-f063" name="Blast pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -3515,6 +3806,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0799-c185-899a-40ad" name="Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -3535,6 +3828,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d50c-0742-ba49-9336" name="Dark lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -3555,6 +3850,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9101-49e6-957e-6d03" name="Heat lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -3575,6 +3872,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62e2-c003-430e-944b" name="Hekatarii blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -3592,6 +3891,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6c2e-41b0-c4ff-f290" name="Huskblade" hidden="false" collective="false" import="true" type="upgrade">
@@ -3609,6 +3910,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dd62-1dd0-118a-9b96" name="Hydra gauntlets" hidden="false" collective="false" import="true" type="upgrade">
@@ -3626,6 +3929,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b8b-0830-a0bc-4955" name="Power sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -3634,6 +3939,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="95a5-dd30-2a35-858d" name="Razorflails" hidden="false" collective="false" import="true" type="upgrade">
@@ -3651,6 +3958,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1d14-f24a-2d88-98a4" name="Shardnet and Impaler" hidden="false" collective="false" import="true" type="upgrade">
@@ -3668,6 +3977,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f18-f8f9-f5f6-1163" name="Shredder" hidden="false" collective="false" import="true" type="upgrade">
@@ -3688,6 +3999,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3223-b8f0-20d6-8321" name="Splinter cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3708,6 +4021,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c61b-028e-7b99-838f" name="Splinter pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -3725,6 +4040,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="851e-f7d0-c1ec-15be" name="Splinter rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -3742,6 +4059,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1568-48e3-a0ca-681a" name="Shardcarabine" hidden="false" collective="false" import="true" type="upgrade">
@@ -3759,6 +4078,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="135f-3ec2-eaa2-ca91" name="Venom blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -3776,6 +4097,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="32fe-7a6a-0929-2bb6" name="Kabalite Warrior" hidden="false" collective="false" import="true" type="model">
@@ -3798,6 +4121,8 @@
       <infoLinks>
         <infoLink id="0edf-1c20-beeb-82f0" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
         <infoLink id="cc15-3ba3-baef-e054" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="3afd-3635-9e37-ffcc" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="a067-841c-cb53-a1b6" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8efa-be2b-ada9-b5c7" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -3817,6 +4142,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="156f-bca7-3c75-85a7" name="Kabalite Gunner" hidden="false" collective="false" import="true" type="model">
@@ -3849,6 +4176,8 @@
       <infoLinks>
         <infoLink id="ebb9-6bef-79d3-6a8b" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
         <infoLink id="e165-9ef0-1dcb-4d25" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="0967-dc51-774e-c578" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
+        <infoLink id="120f-a1c7-3102-5588" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="963c-5a8b-a4a7-732c" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -3909,6 +4238,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fe8-8e85-4708-9d98" name="Sybarite" hidden="false" collective="false" import="true" type="model">
@@ -3941,6 +4272,8 @@
       <infoLinks>
         <infoLink id="376a-3f82-a52c-5eea" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
         <infoLink id="0cdd-056b-c5c8-cfd2" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="8253-e79b-ce0e-4b5d" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
+        <infoLink id="1f52-07e1-500e-0aca" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="44d9-f051-f1a8-407f" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -3981,6 +4314,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="34b4-f195-47f8-9626" name="Phantasm grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -3998,6 +4333,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eb29-5ec9-066c-27ae" name="Kabalite Warrior Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4045,6 +4382,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da24-d2a5-1ae7-bd30" name="Wych" hidden="false" collective="false" import="true" type="model">
@@ -4070,6 +4409,9 @@
         <infoLink id="1892-da69-a591-a1cc" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
         <infoLink id="79e2-1abf-5508-19be" name="Dodge" hidden="false" targetId="c510-4fed-098e-d452" type="profile"/>
         <infoLink id="b0f7-e1d2-ab28-fe96" name="No Escape" hidden="false" targetId="40f2-2c41-f19c-1a90" type="profile"/>
+        <infoLink id="faaf-9f9b-0293-c956" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="584b-884b-93ad-b165" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
+        <infoLink id="2703-f164-c0f6-3c51" name="Combat Drugs" hidden="false" targetId="717f-2870-5265-fab2" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8db1-f821-8e27-ca77" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4096,6 +4438,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4f41-38a3-8436-86dc" name="Wych Fighter" hidden="false" collective="false" import="true" type="model">
@@ -4131,6 +4475,9 @@
         <infoLink id="3391-43ef-0cb5-7070" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
         <infoLink id="b76a-a597-df34-20e8" name="Dodge" hidden="false" targetId="c510-4fed-098e-d452" type="profile"/>
         <infoLink id="2745-3b8c-4028-5529" name="No Escape" hidden="false" targetId="40f2-2c41-f19c-1a90" type="profile"/>
+        <infoLink id="6660-7cc4-88b6-42e7" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="e549-23e8-8e2e-a718" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
+        <infoLink id="95e4-901f-caf3-f59b" name="Combat Drugs" hidden="false" targetId="717f-2870-5265-fab2" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0dee-4a7c-766e-efb7" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4163,6 +4510,8 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4191,6 +4540,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d50-b032-ebbb-de0a" name="Hekatrix" hidden="false" collective="false" import="true" type="model">
@@ -4226,6 +4577,9 @@
         <infoLink id="0f59-c40b-3323-1cc4" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
         <infoLink id="8487-4ffe-4e8f-dbba" name="Dodge" hidden="false" targetId="c510-4fed-098e-d452" type="profile"/>
         <infoLink id="159d-da8c-b7c4-0a39" name="No Escape" hidden="false" targetId="40f2-2c41-f19c-1a90" type="profile"/>
+        <infoLink id="9088-c7df-a9ec-5b68" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="e6a3-04f5-fae8-92a3" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
+        <infoLink id="1a2d-461f-3a61-7acd" name="Combat Drugs" hidden="false" targetId="717f-2870-5265-fab2" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a75d-295d-fbea-a410" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4268,6 +4622,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1593-7909-a560-eff2" name="Wych Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4315,6 +4671,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4604-408d-bb0a-7ac3" name="Scourge" hidden="false" collective="false" import="true" type="model">
@@ -4337,6 +4695,7 @@
       <infoLinks>
         <infoLink id="9110-40cb-bbfe-151c" name="Ghostplate Armour" hidden="false" targetId="ad60-4ca1-9c44-0174" type="profile"/>
         <infoLink id="9fec-47f0-825c-0ffc" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
+        <infoLink id="a4ef-0645-7aa0-ead2" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ec26-4e48-a486-8ff8" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4364,6 +4723,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="17.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="caec-4166-9812-0b55" name="Scourge Gunner" hidden="false" collective="false" import="true" type="model">
@@ -4396,6 +4757,7 @@
       <infoLinks>
         <infoLink id="79de-4d24-b2ef-ab4f" name="Ghostplate Armour" hidden="false" targetId="ad60-4ca1-9c44-0174" type="profile"/>
         <infoLink id="e399-4e69-be20-4eae" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
+        <infoLink id="9adf-336a-67e9-9b9a" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2239-495f-837e-6b67" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4472,6 +4834,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d0db-43e0-a331-fc02" name="Solarite" hidden="false" collective="false" import="true" type="model">
@@ -4504,6 +4868,7 @@
       <infoLinks>
         <infoLink id="ca63-4ab8-821f-9765" name="Ghostplate Armour" hidden="false" targetId="ad60-4ca1-9c44-0174" type="profile"/>
         <infoLink id="3f83-4717-9ff9-7564" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
+        <infoLink id="74fd-479b-ffb0-da60" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2034-4513-b060-42ec" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4548,6 +4913,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="18.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a641-4e7c-8e0b-030a" name="Scourge Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4595,6 +4962,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8226-843b-0b79-dcee" name="Succubus" hidden="false" collective="false" import="true" type="model">
@@ -4649,6 +5018,9 @@
         <infoLink id="615e-1af6-eda3-a90e" name="Combat Drugs" hidden="false" targetId="220f-7f18-ece4-3462" type="rule"/>
         <infoLink id="0128-9f45-a573-9d65" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
         <infoLink id="34e6-d06d-cfd1-2d33" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="cbe0-b087-880c-6f24" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="5df6-aa7f-8ba1-a343" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
+        <infoLink id="dbc6-623a-3194-bd0c" name="Combat Drugs" hidden="false" targetId="717f-2870-5265-fab2" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5f8e-0164-e4df-3ccd" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4674,6 +5046,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4691,6 +5065,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="50.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="29e6-3964-633a-d4f8" name="Archon" hidden="false" collective="false" import="true" type="model">
@@ -4743,6 +5119,8 @@
       <infoLinks>
         <infoLink id="ab77-50b6-f9fe-8b0e" name="Power From Pain" hidden="false" targetId="880b-043b-643a-3b0b" type="rule"/>
         <infoLink id="0b5b-fd6c-e13c-02e5" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="868e-0381-38ca-fc41" name="Power From Pain" hidden="false" targetId="0788-98c5-774f-84fd" type="profile"/>
+        <infoLink id="82b2-deee-5e12-4b91" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7bae-2ced-4b54-1557" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4799,6 +5177,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="58.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d174-cf51-54ea-07c9" name="Fusion pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -4807,6 +5187,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="725e-dfbf-424a-21ae" name="Harlequin&apos;s blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -4824,6 +5206,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7cd3-d769-fc36-e0e1" name="Harlequin&apos;s caress" hidden="false" collective="false" import="true" type="upgrade">
@@ -4841,6 +5225,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="28e2-e051-3309-225d" name="Harlequin&apos;s embrace" hidden="false" collective="false" import="true" type="upgrade">
@@ -4858,6 +5244,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0af4-0807-ed97-5670" name="Harlequin&apos;s kiss" hidden="false" collective="false" import="true" type="upgrade">
@@ -4875,6 +5263,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ade6-5a3a-a5b9-2411" name="Neuro disruptor" hidden="false" collective="false" import="true" type="upgrade">
@@ -4892,6 +5282,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2278-9859-628f-02f7" name="Player" hidden="false" collective="false" import="true" type="model">
@@ -4912,10 +5304,11 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="30c1-077c-db5d-f0e7" name="Flip Belt" hidden="false" targetId="0d8c-eca8-0cb8-619d" type="rule"/>
-        <infoLink id="ca0b-9652-791b-af95" name="Holo-suit" hidden="false" targetId="36a6-ba45-18a2-bf1b" type="rule"/>
-        <infoLink id="93f7-fa5c-59a6-7950" name="Rising Crescendo" hidden="false" targetId="d4d1-1e00-f47e-01f2" type="rule"/>
         <infoLink id="d8f4-8828-856b-0dd0" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="62f8-4eff-fdbc-76f4" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="d943-c0df-06a3-42c0" name="Flip Belt" hidden="false" targetId="4441-e560-b15e-35d6" type="profile"/>
+        <infoLink id="3fc3-e230-5295-7350" name="Rising Crescendo" hidden="false" targetId="7224-e351-18fd-18ee" type="profile"/>
+        <infoLink id="0141-74d2-6078-a921" name="Holo-suit" hidden="false" targetId="8973-5f8d-8a38-47ca" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c4d3-3e64-c6c2-ac46" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -4955,6 +5348,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fcf3-4b04-0570-6c02" name="Troupe Master" hidden="false" collective="false" import="true" type="model">
@@ -4986,9 +5381,10 @@
       </profiles>
       <infoLinks>
         <infoLink id="dce1-4b8a-4ac4-a399" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
-        <infoLink id="e895-1798-bc44-a9df" name="Flip Belt" hidden="false" targetId="0d8c-eca8-0cb8-619d" type="rule"/>
-        <infoLink id="694b-89c6-10c4-7893" name="Holo-suit" hidden="false" targetId="36a6-ba45-18a2-bf1b" type="rule"/>
-        <infoLink id="b262-a214-1f40-6cfb" name="Rising Crescendo" hidden="false" targetId="d4d1-1e00-f47e-01f2" type="rule"/>
+        <infoLink id="8435-16cc-934e-c472" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="79cd-be33-0ea8-d265" name="Flip Belt" hidden="false" targetId="4441-e560-b15e-35d6" type="profile"/>
+        <infoLink id="8bb0-fca5-f474-37e3" name="Rising Crescendo" hidden="false" targetId="7224-e351-18fd-18ee" type="profile"/>
+        <infoLink id="db1f-b283-2edb-a325" name="Holo-suit" hidden="false" targetId="8973-5f8d-8a38-47ca" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="54a4-ff0d-9f49-2aa6" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -5029,6 +5425,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a01f-cd47-edda-b89d" name="Player Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -5067,6 +5465,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="845b-69a2-92a2-577a" name="Shadowseer" hidden="false" collective="false" import="true" type="model">
@@ -5119,10 +5519,11 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="dbea-d27c-f54f-5002" name="Flip Belt" hidden="false" targetId="0d8c-eca8-0cb8-619d" type="rule"/>
-        <infoLink id="5b34-5553-266d-00d6" name="Holo-suit" hidden="false" targetId="36a6-ba45-18a2-bf1b" type="rule"/>
-        <infoLink id="e679-9cfc-52fe-117a" name="Rising Crescendo" hidden="false" targetId="d4d1-1e00-f47e-01f2" type="rule"/>
         <infoLink id="9496-bdcd-f79b-14f5" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
+        <infoLink id="90b0-e2b8-3dfc-fbb0" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="c318-ba33-3d53-a6e7" name="Holo-suit" hidden="false" targetId="8973-5f8d-8a38-47ca" type="profile"/>
+        <infoLink id="4e9d-3230-12c3-3ce7" name="Rising Crescendo" hidden="false" targetId="7224-e351-18fd-18ee" type="profile"/>
+        <infoLink id="64c8-aaf0-6c7a-8001" name="Flip Belt" hidden="false" targetId="4441-e560-b15e-35d6" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="395d-2ccd-5c4d-2044" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -5153,6 +5554,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="80fd-ba3d-8f36-eb43" name="Miststave" hidden="false" collective="false" import="true" type="upgrade">
@@ -5174,6 +5577,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5199,6 +5604,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="67.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9697-4eab-ad47-4e7c" name="Great Harlequin" hidden="false" collective="false" import="true" type="model">
@@ -5245,9 +5652,10 @@
       </profiles>
       <infoLinks>
         <infoLink id="86e2-3435-5353-513a" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
-        <infoLink id="b21b-7a7b-c4c7-ed1f" name="Flip Belt" hidden="false" targetId="0d8c-eca8-0cb8-619d" type="rule"/>
-        <infoLink id="4a48-2260-f383-02a6" name="Holo-suit" hidden="false" targetId="36a6-ba45-18a2-bf1b" type="rule"/>
-        <infoLink id="2fd5-a0ba-ca31-db6d" name="Rising Crescendo" hidden="false" targetId="d4d1-1e00-f47e-01f2" type="rule"/>
+        <infoLink id="7600-3531-c867-97a9" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="52a8-143b-c270-3749" name="Flip Belt" hidden="false" targetId="4441-e560-b15e-35d6" type="profile"/>
+        <infoLink id="c043-f54c-6e74-21d2" name="Holo-suit" hidden="false" targetId="8973-5f8d-8a38-47ca" type="profile"/>
+        <infoLink id="b0f3-e9d4-4c47-5ba9" name="Rising Crescendo" hidden="false" targetId="7224-e351-18fd-18ee" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="54a4-ff0d-9f49-2aa6" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -5318,6 +5726,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="52.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b4c-feda-4ce3-4df4" name="Death Jester" hidden="false" collective="false" import="true" type="model">
@@ -5360,9 +5770,10 @@ Each time you make a wound roll of 6+ for ranged attack, that hit is resolved wi
       </profiles>
       <infoLinks>
         <infoLink id="9db5-3465-0c3c-ae61" name="Strength from Death" hidden="false" targetId="b95d-66ca-a17b-a3d8" type="rule"/>
-        <infoLink id="df71-c2c3-bce6-db11" name="Flip Belt" hidden="false" targetId="0d8c-eca8-0cb8-619d" type="rule"/>
-        <infoLink id="d702-909e-5513-9c29" name="Holo-suit" hidden="false" targetId="36a6-ba45-18a2-bf1b" type="rule"/>
-        <infoLink id="0a29-e91d-7e28-16c8" name="Rising Crescendo" hidden="false" targetId="d4d1-1e00-f47e-01f2" type="rule"/>
+        <infoLink id="9cfa-1a96-a85a-cec2" name="Strength from Death" hidden="false" targetId="4390-9c21-a395-0b02" type="profile"/>
+        <infoLink id="d40d-37b2-9f0e-eac6" name="Flip Belt" hidden="false" targetId="4441-e560-b15e-35d6" type="profile"/>
+        <infoLink id="c7e4-025e-2b38-7535" name="Holo-suit" hidden="false" targetId="8973-5f8d-8a38-47ca" type="profile"/>
+        <infoLink id="ecdb-2306-f331-9d57" name="Rising Crescendo" hidden="false" targetId="7224-e351-18fd-18ee" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6bfa-3290-5be7-7106" name="Aeldari" hidden="false" targetId="435f-8dce-6770-d39a" primary="false"/>
@@ -5416,6 +5827,8 @@ Each time you make a wound roll of 6+ for ranged attack, that hit is resolved wi
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5424,6 +5837,8 @@ Each time you make a wound roll of 6+ for ranged attack, that hit is resolved wi
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="26.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9c71-5ef3-7f6c-eb9a" name="Death Jester Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -5447,6 +5862,8 @@ Each time you make a wound roll of 6+ for ranged attack, that hit is resolved wi
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5931,15 +6348,6 @@ When resolving an attack made with a melee weapon by a model that is drawing str
 5 - Serpentin: +1 to Weapon Skill characteristic (eg WS 3+ becomes a WS 2+)
 6 - Splintermind: +2 to Leadership characteristic.</description>
     </rule>
-    <rule id="0d8c-eca8-0cb8-619d" name="Flip Belt" hidden="false">
-      <description>This model can move across other models as if they were not there, and it can climb any distance vertically (up or down) when it moves – do not measure the distance moved in this way. In addition, it never suffers falling damage, and never falls on another model. If it would, instead place this model as close as possible to the point where it would have landed. This can bring it within 1&quot; of an enemy model.</description>
-    </rule>
-    <rule id="36a6-ba45-18a2-bf1b" name="Holo-suit" hidden="false">
-      <description>This model has a 4+ invulnerable save.</description>
-    </rule>
-    <rule id="d4d1-1e00-f47e-01f2" name="Rising Crescendo" hidden="false">
-      <description>You may roll 3D6 instead of 2D6 for this model when making a charge roll, and may choose an enemy model with 18&quot; of this model as the target of a charge, rather than 12&quot;.</description>
-    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="6833-6001-63ff-3745" name="Shuriken pistol" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
@@ -5999,12 +6407,12 @@ When resolving an attack made with a melee weapon by a model that is drawing str
     </profile>
     <profile id="5093-4346-9fa3-d1b3" name="Warp Jump Generator" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
-        <characteristic name="Description" typeId="b373-019d-503a-1124">When this model moves in the Movement phase, it can use their warp jump generators. If they they do, they cannot Advance and must substract 1 from hit rolls in shooting phase, but their Move characteristic is increased by 4D6" and they can FLY until the end of the phase. A model that uses warp jump generators to Fall Back can still shoot in its Shooting phase.</characteristic>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">When this model moves in the Movement phase, it can use their warp jump generators. If they they do, they cannot Advance and must substract 1 from hit rolls in shooting phase, but their Move characteristic is increased by 4D6&quot; and they can FLY until the end of the phase. A model that uses warp jump generators to Fall Back can still shoot in its Shooting phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="c5ec-4255-a54c-18f8" name="Iron Resolve" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
-        <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll Morale tests for this model within 3" from a Warp Spider Exarch.</characteristic>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">You can re-roll Morale tests for this model within 3&quot; from a Warp Spider Exarch.</characteristic>
       </characteristics>
     </profile>
     <profile id="3527-9e0d-b1ef-fa3a" name="Defence Tactics" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
@@ -6138,6 +6546,36 @@ When resolving an attack made with a melee weapon by a model that is drawing str
     <profile id="ad60-4ca1-9c44-0174" name="Ghostplate Armour" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
       <characteristics>
         <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">Models in this unit have a 6+ invulnerable save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4441-e560-b15e-35d6" name="Flip Belt" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">This model can move across other models as if they were not there, and it can climb any distance vertically (up or down) when it moves – do not measure the distance moved in this way. In addition, it never suffers falling damage, and never falls on another model. If it would, instead place this model as close as possible to the point where it would have landed. This can bring it within 1&quot; of an enemy model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8973-5f8d-8a38-47ca" name="Holo-suit" hidden="false" typeId="0883-432d-b2ca-f11a" typeName="Wargear">
+      <characteristics>
+        <characteristic name="Ability" typeId="8b56-49a8-40e5-242a">This model has a 4+ invulnerable save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7224-e351-18fd-18ee" name="Rising Crescendo" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">You may roll 3D6 instead of 2D6 for this model when making a charge roll, and may choose an enemy model with 18&quot; of this model as the target of a charge, rather than 12&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="717f-2870-5265-fab2" name="Combat Drugs" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">(see table below)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0788-98c5-774f-84fd" name="Power From Pain" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">(see table below)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4390-9c21-a395-0b02" name="Strength from Death" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">(see rule below)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

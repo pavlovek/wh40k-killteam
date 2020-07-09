@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6112-edb9-977c-198e" name="Adeptus Astartes" revision="31" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6112-edb9-977c-198e" name="Adeptus Astartes" revision="32" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="51fd-2592-44bd-2226" name="Intercessor" hidden="false"/>
     <categoryEntry id="200c-8203-0e5a-0f41" name="Primaris" hidden="false"/>
@@ -50,6 +50,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be62-2c21-eb91-40a2" name="Формация" hidden="false" collective="false" import="true" type="upgrade">
@@ -78,6 +80,8 @@
               </rules>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="497a-6d8f-fbac-a3ac" name="Боевое отделение" hidden="false" collective="false" import="true" type="upgrade">
@@ -97,6 +101,8 @@
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3bcd-c4f3-bd45-153b" name="Разведывательный отряд" hidden="false" collective="false" import="true" type="upgrade">
@@ -120,6 +126,8 @@
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="32de-0474-7349-9f6e" name="Ветераны первой роты" hidden="false" collective="false" import="true" type="upgrade">
@@ -154,6 +162,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9fb9-2cc4-e86b-8095" name="Штурмовое отделение" hidden="false" collective="false" import="true" type="upgrade">
@@ -174,6 +184,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -181,11 +193,136 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e306-e891-5563-0936" name="Реликварий" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1f87-cf87-68a6-7166" name="Реликварий" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является CHAPLAIN, вы получаете доступ к тактикам &quot;Мастерски исполненная броня&quot; и &quot;Мастерски исполненное оружие&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c8ef-a560-543e-f07f" name="Мастерски исполненное оружие" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале игры. Выберите вашу модель. До конца игры одно оружие этой модели получает + 1 к характеристике урона и улучшает характеристику АР на 1.
+Эту тактику можно применить только один раз за игру.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f5bb-7e1b-8661-7a88" name="Мастерски исполненная броня" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале игры. Выберите вашу модель. До конца игры она улучшает характеристику спас.броска на 1, а также получает 5+ непробиваемый спас.бросок. 
+Эту тактику можно применить только один раз за игру.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b57d-8eee-59e2-472e" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ddde-e505-1839-43a2" name="Архив Ордена" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="b78d-49ad-de74-d75a" name="Архив Ордена" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является LIВRARIAN, вы получаете доступ к тактикам &quot;Древний защитный фолиант&quot; и &quot;Древний фолиант разрушения&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="18ce-03e4-213b-0613" name="Древний защитный фолиант" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале психической фазы. До конца фазы ваши модели игнорируют Опасности Варпа, а дубль единиц на пси-тесте для вашей модели означает успешное его прохождение, независимо от сложности психосилы.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5242-3186-9a9a-b9b2" name="Древний фолиант разрушения" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику перед тем как сделать бросок на пси-тест (нельзя использовать эту тактику в тот же раунд, что и Древний защитный фолиант). Если эта психосила требует выбрать целью вражескую модель, вместо этого вы можете выбрать целью две вражеские модели и добавить 1 к результату пси.теста, однако любые дубли, а не только 1-1 и 6-6 вызывают последствия, как описано в Опасностях Варпа. Перебросить такой пси-тест нельзя.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ef39-842f-2bbe-cf75" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6b56-09a4-1900-4a67" name="Фехтовальная арена" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="cf94-24b9-e60f-af52" name="Фехтовальная арена" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является LIEUTENANT, ваши командир и лидер получают следующую способность.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="17c9-604c-1935-c193" name="Мастер ближнеrо боя" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Эта модель имеет 4+ непробиваемый спас-бросок, когда находится в 1&quot; от вражеских моделей.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e302-336b-6596-b069" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="468c-98eb-c6a4-e5d2" name="Стратегиум" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ae24-72ab-7452-8f0b" name="Стратегиум" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является CAPTAIN, в начале игры вы получаете дополнительно 1 СР.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f7d8-33be-aac0-a9f4" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="4.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+    <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -2401,6 +2538,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f748-797c-dbfd-b7a1" name="Frag grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -2422,6 +2561,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c2d-238d-3deb-1427" name="Bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -2442,6 +2583,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="14ce-31b4-2dd1-14f3" name="Krak grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -2463,6 +2606,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b58-0659-0abd-71d0" name="Combat knife" hidden="false" collective="false" import="true" type="upgrade">
@@ -2483,6 +2628,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f9fd-bdcb-3db6-f7a5" name="Astartes shotgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2503,6 +2650,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62c5-ddf4-a580-e914" name="Sniper rifle and Camo cloak" hidden="false" collective="false" import="true" type="upgrade">
@@ -2528,6 +2677,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ddea-3b2e-550b-650b" name="Auto bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2548,6 +2699,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9541-2d66-d340-bec4" name="Bolt carbine" hidden="false" collective="false" import="true" type="upgrade">
@@ -2568,6 +2721,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ef44-757e-1951-0795" name="Bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2588,6 +2743,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="454b-822f-e7a2-02cd" name="Combi-flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -2601,6 +2758,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f173-0744-7129-fb0a" name="Combi-grav" hidden="false" collective="false" import="true" type="upgrade">
@@ -2614,6 +2773,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9ffe-8c86-28b6-3bc6" name="Combi-melta" hidden="false" collective="false" import="true" type="upgrade">
@@ -2627,6 +2788,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ae5-09a8-6c13-100d" name="Combi-plasma" hidden="false" collective="false" import="true" type="upgrade">
@@ -2641,6 +2804,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="50fd-ba5e-9232-d2cc" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -2652,6 +2817,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f13-c5f6-d98d-83a4" name="Grav-gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2663,6 +2830,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b0bb-e78b-78ed-b834" name="Grav-pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -2683,6 +2852,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8eec-59f8-8c35-4a8f" name="Heavy bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -2703,6 +2874,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f13b-b2f7-6d9d-9ab2" name="Heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
@@ -2723,6 +2896,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e071-fcb4-e907-0acc" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2734,6 +2909,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="acc8-767e-9cab-3b8d" name="Missile launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -2769,6 +2946,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62b9-a4cf-c9bc-0518" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2781,6 +2960,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="224f-0702-b84b-5381" name="Plasma pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -2811,6 +2992,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb80-3365-f752-7ff9" name="Shock grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -2832,6 +3015,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="14f7-ba94-00b6-e47e" name="Stalker bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2852,6 +3037,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dea7-4730-9b4a-571c" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2869,6 +3056,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="39e7-f199-6e07-90ed" name="Power fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -2889,6 +3078,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="469b-cbae-45fd-ecc7" name="Power sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2909,6 +3100,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3004-28ce-dcee-638b" name="Tactical Marine" hidden="false" collective="false" import="true" type="model">
@@ -2964,6 +3157,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="16e1-0fba-46bf-f340" name="Intercessor" hidden="false" collective="false" import="true" type="model">
@@ -3017,6 +3212,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c321-a1b9-ec3e-82e1" name="Intercessor Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3040,6 +3237,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="20cf-b3ea-c563-9f95" name="Intercessor Gunner" hidden="false" collective="false" import="true" type="model">
@@ -3100,6 +3299,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3118,6 +3319,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c69c-7f77-d167-5481" name="Intercessor Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -3193,6 +3396,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3236,6 +3441,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e126-7f82-8d53-033d" name="Reiver" hidden="false" collective="false" import="true" type="model">
@@ -3334,6 +3541,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="30dd-8804-249b-4e7f" name="Grapnel Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -3349,6 +3558,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c1a1-3086-11ef-4958" name="Grav-chute" hidden="false" collective="false" import="true" type="upgrade">
@@ -3364,6 +3575,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aa54-67ce-be24-b919" name="Reiver Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -3460,6 +3673,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="17.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b93c-7b91-bb81-c677" name="Reiver Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3482,6 +3697,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f6e9-e8cb-9906-5c5d" name="Tactical Marine Gunner" hidden="false" collective="false" import="true" type="model">
@@ -3589,6 +3806,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4590-24a8-380b-a130" name="Tactical Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -3667,6 +3886,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                    <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                    <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3719,6 +3940,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+                        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -3741,6 +3964,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="13.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ce2c-0700-1680-aab5" name="Scout" hidden="false" collective="false" import="true" type="model">
@@ -3835,6 +4060,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d12f-72d7-4202-c722" name="Scout Gunner" hidden="false" collective="false" import="true" type="model">
@@ -3899,6 +4126,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+                    <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                    <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3912,6 +4141,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3936,6 +4167,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5317-f823-7ccf-eb5f" name="Scout Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -4038,6 +4271,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="11.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f93f-b633-fae9-3ab0" name="Tactical Marine Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4058,6 +4293,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="70fa-de51-ea2e-173d" name="Scout Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4078,6 +4315,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9c80-128a-37c7-05a6" name="Auspex" hidden="false" collective="false" import="true" type="upgrade">
@@ -4097,6 +4336,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d243-c23e-8d48-bbb6" name="Primaris Captain" hidden="false" collective="false" import="true" type="model">
@@ -4186,6 +4427,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a734-4212-441c-11f9" name="Master-crafted stalker bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -4203,6 +4446,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4226,6 +4471,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="76.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="78d1-d141-9d97-d2ee" name="Primaris Lieutenant" hidden="false" collective="false" import="true" type="model">
@@ -4310,6 +4557,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="91f3-9d2a-52bf-88f5" name="Master-crafted stalker bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -4327,6 +4576,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4352,6 +4603,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="46.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="846c-7d3e-e6cd-0217" name="Primaris Chaplain" hidden="false" collective="false" import="true" type="model">
@@ -4439,6 +4692,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5e51-cc6a-4371-706f" name="Crozius arcanum" hidden="false" collective="false" import="true" type="upgrade">
@@ -4460,6 +4715,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4471,6 +4728,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="63.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4674-18d2-2bd6-a9d0" name="Primaris Librarian" hidden="false" collective="false" import="true" type="model">
@@ -4566,6 +4825,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4587,6 +4848,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="81.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0cb9-3adf-ec25-8bcb" name="Infiltrator Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4625,6 +4888,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d44-fdd9-ac52-45d7" name="Eliminator Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4658,6 +4923,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e5b3-e896-cef2-e2f5" name="Terminator Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4777,6 +5044,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0b60-ea49-8925-e95d" name="Veteran Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4879,6 +5148,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="12d3-3aae-bc64-4086" name="Suppressor Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -4912,6 +5183,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ddf4-4efd-801d-379a" name="Sergeant Tellion" hidden="false" collective="false" import="true" type="model">
@@ -4981,6 +5254,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4996,6 +5271,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="70.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5317,6 +5594,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="42ed-7252-155b-71bb" name="2. Might of Heroes" hidden="false" collective="false" import="true" type="upgrade">
@@ -5332,6 +5611,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ec7c-51f5-8a47-1224" name="3. Null Zone" hidden="false" collective="false" import="true" type="upgrade">
@@ -5347,6 +5628,8 @@ Chainfist, Power maul, Power ахе (выбрать одно, знаковые �
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

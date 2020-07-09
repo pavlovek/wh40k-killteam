@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="27" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c51-0669-1f79-d8aa" name="Astra Militarum" revision="28" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="23ec-80ab-7550-fb7e" name="Astra Militarum Orders">
       <characteristicTypes>
@@ -43,8 +43,84 @@
     <categoryEntry id="6831-48b6-b517-6414" name="Wyrdvane Psyker" hidden="false"/>
     <categoryEntry id="25f5-3964-aeaf-285a" name="Crusader" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="2a0f-52d6-f62c-5935" name="Плац" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="6cfd-99fd-fdfc-39fb" name="Плац" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Вы получаете бонус в соответствии с полковой доктриной вашего командира (если у него нет полковой доктрины - в соответствии с доктриной вашего лидера на поле боя в конкретной миссии). Модели, имеющие ключевое слово MILITARUM TEMPESTUS могут получить только бонус Ветераны среди ветеранов. Модели, которые не могут получать полковые доктрины, не получают и эти бонусы.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="64ff-35ca-df7d-e699" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="2.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c57a-759e-3464-bae0" name="Бункер" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="cc83-40d6-902e-7142" name="Бункер" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Вы игнорируете эффект опустошения одной территории.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0247-b7d6-74ff-2ec4" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="1.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="acba-a516-41e5-000b" name="Схола Ауксилла" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="8fec-c9b4-fc13-5bc5" name="Схола Ауксилла" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">В начале игры выберите одну модель из своей истребительной команды с ключевым словом OGRYN. До конца игры модель получает следующую способность:</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2280-eb1d-1f63-616c" name="Огрин-телохранитель" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Пока эта модель находится в 2&quot; от вашего командира (или лидера, если командир не участвует в миссии), она улучшает на 1 свои характеристики спас-броска (до максимума в 2+) и BS, получает 1 дополнительную атаку и ФнП (5+). Кроме того, когда в вашего командира (или лидера) в 2&quot; от этой модели попадает вражеская атака оружием дальнего боя, вы можете перехватить её. Бросьте D6: на 1-2 перехват атаки не удался, продолжайте отыгрывать её по командиру (лидеру); на 3-5 атака успешно перехвачена, отыгрывайте оставшуюся последовательность по этой модели; на 6 атака успешно отражена, её последовательность прерывается. Вы не можете использовать такой перехват в ту же фазу, что и тактику Look out, sir!.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cb9e-b002-98d6-cba9" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+    <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -444,7 +520,6 @@
     <entryLink id="0bc9-4815-ae7d-63dd" name="Inquisitor Eisenhorn" hidden="false" collective="false" import="true" targetId="0fd3-65bd-a18e-1a30" type="selectionEntry"/>
     <entryLink id="06c7-41e7-7c10-16e2" name="Neyam Shai Murad" hidden="false" collective="false" import="true" targetId="a3c0-0ae0-be3f-712b" type="selectionEntry"/>
     <entryLink id="c25e-6c9f-1d21-b6a1" name="Aradia Madellan" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="ae32-e0c3-d0b2-d00c" type="selectionEntry"/>
-    <entryLink id="67d3-98c5-684b-51f9" name="Tempestor Prime" hidden="false" collective="false" import="true" targetId="a939-0338-9f05-86ec" type="selectionEntry"/>
     <entryLink id="5ad9-418a-a641-3492" name="Taddeus the Purifier" hidden="false" collective="false" import="true" targetId="f478-68da-2b34-2a6c" type="selectionEntry">
       <entryLinks>
         <entryLink id="c74a-91cb-cb47-1742" name="Regiment" hidden="false" collective="false" import="true" targetId="0698-0499-9840-7475" type="selectionEntryGroup"/>
@@ -895,6 +970,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a4eb-e3e6-6f86-82b8" name="Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -912,6 +989,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d5bc-71b5-c24f-4e96" name="Guardsman" hidden="false" collective="false" import="true" type="model">
@@ -968,6 +1047,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0e48-4b39-f955-7e20" name="Special Weapons Guardsman" hidden="false" collective="false" import="true" type="model">
@@ -1031,6 +1112,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aee3-c869-bfe7-2ec8" name="Grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -1058,6 +1141,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f8c-8784-485a-5063" name="Scion" hidden="false" collective="false" import="true" type="model">
@@ -1120,6 +1205,8 @@
           </entryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1154,6 +1241,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="9.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="50ef-fb32-c203-d964" name="Lasgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1171,6 +1260,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d2bb-54e6-2f81-1af6" name="Frag Grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -1192,6 +1283,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="afe5-6341-ec59-0444" name="Laspistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1209,6 +1302,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b4d3-1d1f-0ebd-19ab" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
@@ -1233,6 +1328,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="88b5-f187-242f-12fd" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1250,18 +1347,20 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fc67-291e-8fe8-c2db" name="Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3">
+        <modifier type="set" field="5291-dc2c-cfa5-a77f" value="3.0">
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="0f4d-d9b8-0b0d-7ce5" name="Plasma Pistol (standard" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+        <profile id="0f4d-d9b8-0b0d-7ce5" name="Plasma Pistol (standard)" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">12&quot;</characteristic>
             <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Pistol 1</characteristic>
@@ -1284,6 +1383,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1bf3-d672-3330-4d53" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -1308,6 +1409,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7598-2c68-319a-4264" name="Power Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -1332,6 +1435,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="561c-06f4-152a-84a1" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1349,6 +1454,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa7c-c8e0-db11-a4ee" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1376,6 +1483,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a039-d1c0-a6cf-1eeb" name="Hot-shot lasgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1393,6 +1502,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5685-5d66-9c9b-faf4" name="Guardsman Gunner" hidden="false" collective="false" import="true" type="model">
@@ -1462,6 +1573,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d63-9ed2-1596-d8e6" name="Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -1550,6 +1663,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f520-cbcd-b611-d169" name="Vox Caster" hidden="false" collective="false" import="true" type="upgrade">
@@ -1562,6 +1677,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="44fc-d939-c092-6d18" name="Hot-shot volley gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1579,6 +1696,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c01f-945c-7d58-34fd" name="Krak Grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -1600,6 +1719,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d863-7299-321c-ccec" name="Special Weapons Gunner" hidden="false" collective="false" import="true" type="model">
@@ -1681,6 +1802,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b091-39d9-f78c-b993" name="Display Voice of Command Orders" hidden="false" collective="false" import="true" type="upgrade">
@@ -1721,6 +1844,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1896-6dfe-2a22-7878" name="Tempestor" hidden="false" collective="false" import="true" type="model">
@@ -1817,6 +1942,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3092-d4ca-7c11-034a" name="Scion Gunner" hidden="false" collective="false" import="true" type="model">
@@ -1893,6 +2020,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e154-8aab-36af-e719" name="Hot-shot laspistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1910,6 +2039,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="90ff-92bf-17b3-38fd" name="Infantry Squad Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1933,6 +2064,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8180-84cd-518d-ca33" name="Special Weapons Squad Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1955,6 +2088,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="87be-b807-4a4c-f756" name="Militarum Tempestus Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1978,6 +2113,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="848b-0b99-3a1c-ece0" name="Commissar" hidden="false" collective="false" import="true" type="model">
@@ -2067,6 +2204,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eb61-fa41-5d1f-a052" name="Refractor Field" hidden="false" collective="false" import="true" type="upgrade">
@@ -2090,6 +2229,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7206-4819-ffd3-1f3f" name="Lord Commissar" hidden="false" collective="false" import="true" type="model">
@@ -2180,6 +2321,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="25.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5dc9-5992-cb96-1a85" name="Platoon Commander" hidden="false" collective="false" import="true" type="model">
@@ -2275,6 +2418,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47a3-e8da-fa5e-8196" name="Boltgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2292,6 +2437,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="234d-fd85-b46d-5257" name="Company Commander" hidden="false" collective="false" import="true" type="model">
@@ -2392,6 +2539,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a939-0338-9f05-86ec" name="Tempestor Prime" hidden="false" collective="false" import="true" type="model">
@@ -2492,6 +2641,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="25.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f10-7d2a-3950-8fa4" name="Tempestus Command Rod" hidden="false" collective="false" import="true" type="upgrade">
@@ -2504,6 +2655,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e8e8-a9d2-c808-4b74" name="Rein" hidden="false" collective="false" import="true" type="model">
@@ -2584,6 +2737,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c133-4d20-a5e6-b4bd" name="Stub pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -2601,6 +2756,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c9f0-8364-2337-d8eb" name="Raus" hidden="false" collective="false" import="true" type="model">
@@ -2681,6 +2838,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2694,6 +2853,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5186-cfe5-4c64-9b03" name="Espern Locarno" hidden="false" collective="false" import="true" type="model">
@@ -2794,6 +2955,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2815,6 +2978,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="30.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f62-fb20-3e75-4bb9" name="Severina Raine" hidden="false" collective="false" import="true" type="model">
@@ -2901,6 +3066,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="13f4-383f-0508-890b" name="Evenfall" hidden="false" collective="false" import="true" type="upgrade">
@@ -2922,6 +3089,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2935,6 +3104,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="53ad-9fd8-5262-f513" name="Sly Marbo" hidden="false" collective="false" import="true" type="model">
@@ -3022,6 +3193,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2acc-a945-999f-d53f" name="Envenomed blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -3043,6 +3216,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3052,6 +3227,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="55.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9ceb-415f-7053-2514" name="Ogryn" hidden="false" collective="false" import="true" type="model">
@@ -3097,6 +3274,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="26.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f6da-4a84-57d4-4521" name="Ripper gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -3133,6 +3312,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="85f7-28ec-e419-70c9" name="Frag bombs" hidden="false" collective="false" import="true" type="upgrade">
@@ -3154,6 +3335,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="92d0-899a-1577-0552" name="Ogryn Bone &apos;ead" hidden="false" collective="false" import="true" type="model">
@@ -3207,6 +3390,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="27.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2187-0934-5670-9753" name="Ogryn Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3229,6 +3414,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4d1d-b7ac-85d7-982e" name="Bullgryn" hidden="false" collective="false" import="true" type="model">
@@ -3296,6 +3483,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="37.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="70de-aeb7-5104-6c3e" name="Bullgryn Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3318,6 +3507,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="39ac-9b42-4c3b-aa4e" name="Grenadier gauntlet" hidden="false" collective="false" import="true" type="upgrade">
@@ -3335,6 +3526,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="61b0-47de-8273-958c" name="Bullgryn maul" hidden="false" collective="false" import="true" type="upgrade">
@@ -3355,6 +3548,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="defa-8057-be33-764e" name="Slab shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -3370,6 +3565,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5785-9eca-b77a-0c26" name="Brute shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -3385,6 +3582,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4517-6428-dbc1-b4ad" name="Bullgryn Bone &apos;ead" hidden="false" collective="false" import="true" type="model">
@@ -3460,6 +3659,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="38.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2b81-f65f-7a29-b357" name="Force Stave" hidden="false" collective="false" import="true" type="upgrade">
@@ -3481,6 +3682,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae32-e0c3-d0b2-d00c" name="Aradia Madellan" hidden="false" collective="false" import="true" type="model">
@@ -3574,6 +3777,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="70.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6ce0-4ff9-8e37-0c5e" name="Primaris Psyker" hidden="false" collective="false" import="true" type="model">
@@ -3664,6 +3869,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9518-4f92-9ed4-c9a2" name="Wyrdvane Psyker" hidden="false" collective="false" import="true" type="model">
@@ -3738,6 +3945,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3765,6 +3974,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d0e8-4221-a9ed-33c7" name="Wyrdvane Psyker Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3786,6 +3997,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ced-474d-8616-11af" name="Sergeant &apos;Stonetooth&apos; Harker" hidden="false" collective="false" import="true" type="model">
@@ -3859,6 +4072,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3884,6 +4099,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4106,73 +4323,126 @@
         <selectionEntry id="39d2-4f09-6952-19c5" name="*No Regiment*" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0b4d-3353-d8d0-b6aa" name="Cadian" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="9728-6f43-13cc-ab9b" name="Не сломленные (Кадия)" hidden="false" targetId="030c-3d6e-8b47-a906" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="a77d-f530-da90-3526" name="Cadia" hidden="false" targetId="a901-d251-4a19-f093" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="86b7-9c59-197a-d155" name="Catachan" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="1a88-fbb7-4e6a-94ff" name="Охотники на монстров (Катачан)" hidden="false" targetId="1e0d-6e55-ef6e-ed77" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="a7b8-8d0e-47e0-4f86" name="Catachan" hidden="false" targetId="0b10-2e90-052d-8f3d" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="04ad-e70b-cb6e-4a7f" name="Valhallan" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="a0be-1ddf-53ab-e4b7" name="Ни шагу назад! (Вальхалла)" hidden="false" targetId="dbb6-63dc-2b84-2e6b" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="c447-8b4a-44a1-ff6b" name="Valhallan" hidden="false" targetId="745d-eb46-1636-13a8" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b12a-91cf-50eb-a8d0" name="Vostroyan" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="2f4d-0c8f-e762-58e7" name="Изделия мастеров (Востроя)" hidden="false" targetId="315b-799d-49b8-2d41" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="56b4-412a-4667-89fc" name="Vostroyan" hidden="false" targetId="9d69-b25f-975b-83e3" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="23d9-77a7-2e45-4951" name="Armageddon" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="126d-7beb-cf54-6f8c" name="Поиск укрытий (Армагеддон)" hidden="false" targetId="67c2-266b-436d-76cf" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="3790-2092-8db1-456d" name="Armageddon" hidden="false" targetId="104b-8483-d793-6650" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1d62-8ee3-757a-64ba" name="Tallarn" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="e13f-05b0-df3c-0bf1" name="Дети пустыни (Талларн)" hidden="false" targetId="2851-4241-a8b1-673f" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="f8a9-a318-bd0f-4850" name="Tallarn" hidden="false" targetId="1d6f-ab14-4f1f-bcc4" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5516-eaf1-87d6-cced" name="Mordian" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="c018-2e5d-b654-eb20" name="Отточенное взаимодействие (Мордия)" hidden="false" targetId="6e1b-53c2-f20d-452a" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="7d6e-648d-1bfc-78ca" name="Mordian" hidden="false" targetId="ce52-01a9-272b-0a1b" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d0be-327d-815b-78f8" name="Krieg" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="d7ae-65d9-37c1-3667" name="Долг превыше смерти (Корпус Смерти Крига)" hidden="false" targetId="533d-46e9-00ff-b449" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="4452-4633-18cc-3d60" name="Krieg" hidden="false" targetId="07b0-41e6-8d93-fff0" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="29d3-fcbc-4849-b1a3" name="Elysian" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="1dc1-9fff-77e4-a385" name="Занять плацдарм (Элизианские штурмовики)" hidden="false" targetId="78fe-cbd6-bc9c-b1ca" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="2a7f-0c72-b92d-5aeb" name="Elysian" hidden="false" targetId="08b5-456a-a9a8-b634" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -4183,23 +4453,477 @@
       </constraints>
       <selectionEntries>
         <selectionEntry id="421a-28c1-189c-a069" name="Krieg" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="3464-e3d9-3276-4931" name="Долг превыше смерти (Корпус Смерти Крига)" hidden="false" targetId="533d-46e9-00ff-b449" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="40aa-f934-392c-578a" name="Krieg" hidden="false" targetId="07b0-41e6-8d93-fff0" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6aa4-9135-a367-5f3f" name="Elysian" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="f732-a06a-051e-51bd" name="Занять плацдарм (Элизианские штурмовики)" hidden="false" targetId="78fe-cbd6-bc9c-b1ca" type="rule"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="9eb9-c1cb-ff7e-c58d" name="Elysian" hidden="false" targetId="08b5-456a-a9a8-b634" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e558-be1e-1bb7-3c3f" name="Militarum Tempestus" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="279f-591d-f6e5-f3bc" name="Ветераны среди ветеранов (Милитарум Темпестус)" hidden="false" targetId="0210-9951-7fef-0985" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="030c-3d6e-8b47-a906" name="Не сломленные (Кадия)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a901-d251-4a19-f093" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Вы можете перебрасывать проваленные броски на слом вашей истребительной команды.</description>
+    </rule>
+    <rule id="1e0d-6e55-ef6e-ed77" name="Охотники на монстров (Катачан)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b10-2e90-052d-8f3d" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Оружие ближнего боя ваших моделей с АР 0 (включая и базовое) вместо этого имеет АР -1.</description>
+    </rule>
+    <rule id="dbb6-63dc-2b84-2e6b" name="Ни шагу назад! (Вальхалла)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="745d-eb46-1636-13a8" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>В начале игры вы можете заявить общевойсковой приказ &quot;Ни шагу назад!&quot;. До конца игры ваша истребительная команда автоматически проходит тесты на слом, однако каждая ваша модель на поле боя должна заканчивать свою активацию в фазе движения ближе к ближайшей вражеской модели, чем была в начале активации. Если в начале активации ваша модель находится в 1&quot; от вражеской, она должна
+оставаться на месте.</description>
+    </rule>
+    <rule id="315b-799d-49b8-2d41" name="Изделия мастеров (Востроя)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d69-b25f-975b-83e3" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>В начале игры выберите до трех моделей. Их оружие Lasgun получает +1 к характеристике урона и улучшает показатель АР на 1.</description>
+    </rule>
+    <rule id="67c2-266b-436d-76cf" name="Поиск укрытий (Армагеддон)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="104b-8483-d793-6650" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Если целью вражеской стрелковой атаки выбрана ваша модель, скрытая от вражеской участком местности (но не другой моделью) и находящаяся в 1&quot; от этого участка местности, игнорируйте АР -1 для данной атаки. Если ваша модель не двигалась в этом раунде, игнорируйте также АР -2.</description>
+    </rule>
+    <rule id="2851-4241-a8b1-673f" name="Дети пустыни (Талларн)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d6f-ab14-4f1f-bcc4" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Тактика Outflank не требует СР для использования. Ваши модели не подвержены действию сложной и опасной местности. Кроме того, если ваша модель заканчивает движение нападения в 1&quot; от вражеской модели и результат броска на нападение 10+, эта вражеская модель получает одну смертельную рану.</description>
+    </rule>
+    <rule id="0210-9951-7fef-0985" name="Ветераны среди ветеранов (Милитарум Темпестус)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="986c-5d9c-6459-1a66" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Ваши модели получают + 1 к характеристике лидерства, лидер и командир вместо этого получают +2.</description>
+    </rule>
+    <rule id="6e1b-53c2-f20d-452a" name="Отточенное взаимодействие (Мордия)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce52-01a9-272b-0a1b" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Ваши модели, находящиеся в базовом контакте с целью нападения, могут объявлять реакцию, как если бы они тоже были целью нападения.</description>
+    </rule>
+    <rule id="533d-46e9-00ff-b449" name="Долг превыше смерти (Корпус Смерти Крига)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="07b0-41e6-8d93-fff0" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Если ваша модель выведена из строя, она может совершить одну последнюю атаку стрелковым оружием или оружием ближнего боя как если бы это была соответствующая фаза раунда. Такая атака попадает на 5+ независимо от модификаторов или специальных правил цели.</description>
+    </rule>
+    <rule id="78fe-cbd6-bc9c-b1ca" name="Занять плацдарм (Элизианские штурмовики)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a0f-52d6-f62c-5935" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="08b5-456a-a9a8-b634" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c25-5825-9054-44a7" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c25-5825-9054-44a7" type="greaterThan"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d912-2ed8-746d-ccd7" type="notInstanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ba4-0136-d018-f5fa" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e733-222e-fb4b-5f22" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8646-8755-99e7-083d" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7f5-09f4-86d3-cfb0" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0fd3-65bd-a18e-1a30" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d187-b1b2-ccab-93c1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="306d-58df-88c7-bad3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <description>Тактика Aerial Drop не требует СР для использования. Кроме того, ваши модели могут перебрасывать единицы при бросках на попадание в ход, когда они были выставлены на поле при помощи этой тактики.</description>
+    </rule>
+  </sharedRules>
   <sharedProfiles>
     <profile id="187d-ae71-be5a-3f34" name="Voice of Command" hidden="true" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <modifiers>

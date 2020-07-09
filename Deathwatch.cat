@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7548-75cf-ab24-7e9c" name="Deathwatch" revision="19" battleScribeVersion="2.03" authorName="@MadSpy" authorUrl="https://github.com/BSData/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7548-75cf-ab24-7e9c" name="Deathwatch" revision="20" battleScribeVersion="2.03" authorName="@MadSpy" authorUrl="https://github.com/BSData/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7548-75cf-pubN65537" name="Warhammer 40,000 - Kill Team - Core Manual"/>
   </publications>
@@ -16,8 +16,134 @@
     <categoryEntry id="f9cc-54d5-6a6b-55d7" name="Intercessor" hidden="false"/>
     <categoryEntry id="faaf-ba3e-797f-0c06" name="Reiver" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="2886-8a5b-8e81-fd95" name="Арсенал крепости" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="ba8e-0676-9dd8-ce63" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba8e-0676-9dd8-ce63" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1964-56d4-c457-b6d8" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4e44-6057-da4e-d129" name="Configuration" hidden="false" targetId="f868-bdfd-567c-3eac" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e185-676b-97c0-68c7" name="Увеличение арсенала" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="6009-503b-09bc-6ef3" name="Реликварий" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4b1f-f714-18c7-2414" name="Реликварий" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является CHAPLAIN, вы получаете доступ к тактикам &quot;Мастерски исполненная броня&quot; и &quot; Мастерски исполненное оружие&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0829-06dd-c117-872f" name="Мастерски исполненная броня" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале игры. Выберите вашу модель. До конца игры она улучшает характеристику спас.броска на 1, а также получает 5+ непробиваемый спас.бросок. 
+Эту тактику можно применить только один раз за игру.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="07a2-9aa0-5652-208e" name="Мастерски исполненное оружие" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале игры. Выберите вашу модель. До конца игры одно оружие этой модели получает + 1 к характеристике урона и улучшает характеристику АР на 1.
+Эту тактику можно применить только один раз за игру.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="49bc-815f-67b6-ae7f" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6541-2a16-000c-fefa" name="Архив караула" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="786e-93c0-ade6-9d4e" name="Архив караула" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является LIBRARIAN, вы получаете доступ к тактикам = &quot;Древний защитный фолиант&quot; и &quot;Древний фолиант разрушения&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6965-1d96-f2ad-178f" name="Древний защитный фолиант" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале психической фазы. До конца фазы ваши модели игнорируют Опасности Варпа, а дубль единиц на пси-тесте для вашей модели означает успешное его прохождение, независимо от сложности психосилы.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1601-08cb-c29a-d0bc" name="Древний фолиант разрушения" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику перед тем как сделать бросок на пси-тест (нельзя использовать эту тактику в тот же раунд, что и Древний защитный фолиант). Если эта психосила требует выбрать целью вражескую модель, вместо этого вы можете выбрать целью две вражеские модели и добавить 1 к результату пси.теста, однако любые дубли, а не только 1-1 и 6-6 вызывают последствия, как описано в Опасностях Варпа. Перебросить такой пси-тест нельзя.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="ffdb-6987-3da9-06e7" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a5f5-8b64-0903-233b" name="База караула" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="f332-4a03-0b6f-8c89" name="База караула" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Раз за игру в начале раунда вы можете выбрать способность подфракции из раздела правил Адептус Астартес. До конца раунда все ваши специалисты получают эффект этой способности.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2bc5-4561-814b-5be3" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="3.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+    <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -475,14 +601,14 @@
     <rule id="6c39-c66b-0b15-60bb" name="Mission Tactics" hidden="false">
       <description>At the beginning of the first battle round, choose a datasheet to be your kill team’s priority target (e.g. Tyranid Warrior). You can re-roll wound rolls of 1 for attacks made by models in your kill team that target a model from the datasheet that is your kill team’s priority target (so if you chose Tyranid Warrior, this ability would apply to attacks that targeted Tyranid Warriors and Tyranid Warrior Gunners).</description>
     </rule>
-	  <rule id="3e8c-4e66-99fb-6b0d" name="Истребители ксеносов" hidden="false">
-		  <description>В начале кампании выберите ключевое слово фракции ксеносов (NECRONS, ASURYANI и т.д. ).
+    <rule id="3e8c-4e66-99fb-6b0d" name="Истребители ксеносов" hidden="false">
+      <description>В начале кампании выберите ключевое слово фракции ксеносов (NECRONS, ASURYANI и т.д. ).
 Ваши модели получают удвоенный опыт после миссий против такой фракции, однако не получают опыта после миссий против фракций Империума и Хаоса.
 В конце миссии против этих фракций вы можете заплатить 1 единицу материалов, чтобы получить опыт как обычно.</description>
-	  </rule>
-	  <rule id="88fb-4884-b4bf-7a59" name="Арсенал крепости" hidden="false">
-		  <description>В начале кампании характеристика Мах вашей модели Veteran Gunner равна 2. Вы можете потратить 3 единицы материалов, чтобы увеличить эту характер и стику и характеристику Мах вашей модели Black Shield на 1.</description>
-	  </rule>
+    </rule>
+    <rule id="88fb-4884-b4bf-7a59" name="Арсенал крепости" hidden="false">
+      <description>В начале кампании характеристика Мах вашей модели Veteran Gunner равна 2. Вы можете потратить 3 единицы материалов, чтобы увеличить эту характеристику и характеристику Мах вашей модели Black Shield на 1.</description>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="bdd0-e085-dacc-1f66" name="Veteran" hidden="false" collective="false" import="true" type="model">
@@ -528,18 +654,30 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe35-3207-26cd-c3ce" name="Veteran Gunner" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="822d-22dc-828a-e4ae" value="2">
+        <modifier type="set" field="822d-22dc-828a-e4ae" value="4.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
+        <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1.0">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="822d-22dc-828a-e4ae" value="2.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="notEqualTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="822d-22dc-828a-e4ae" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e185-676b-97c0-68c7" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -581,11 +719,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7bf0-9686-9554-6193" name="Black Shield" page="90" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="0170-1b6d-8eda-a8c5" value="1">
+        <modifier type="set" field="0170-1b6d-8eda-a8c5" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0f7-c442-b695-bf07" type="equalTo"/>
           </conditions>
@@ -593,6 +733,11 @@
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
           <repeats>
             <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f8-563e-ab5d-8e63" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="0170-1b6d-8eda-a8c5" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e185-676b-97c0-68c7" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -639,6 +784,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3a43-b32d-507b-c8d3" name="Watch Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -692,6 +839,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b9cb-fbbf-51e9-41e5" name="Boltgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -708,6 +857,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cc75-b2ca-11ae-5e7f" name="Frag and krak grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -739,6 +890,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4713-0bf7-a9f9-4523" name="Deathwatch Veteran Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -763,6 +916,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="07d5-2fb7-ab3c-64dd" name="Intercessor" hidden="false" collective="false" import="true" type="model">
@@ -811,6 +966,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be83-2d58-a86b-c773" name="Intercessor Gunner" hidden="false" collective="false" import="true" type="model">
@@ -872,6 +1029,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -884,6 +1043,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf1d-d0f5-b708-5bca" name="Intercessor Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -975,6 +1136,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -993,6 +1156,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="83cd-6b72-2282-9826" name="Reiver" hidden="false" collective="false" import="true" type="model">
@@ -1060,6 +1225,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9864-ccc9-9751-806f" name="Reiver Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -1144,6 +1311,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="17.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f9c1-0d03-a6be-c7aa" name="Intercessor Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1167,6 +1336,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f8d2-61ce-0792-2eca" name="Reiver Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -1189,6 +1360,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2455-819c-8571-9dda" name="Bolt carbine" hidden="false" collective="false" import="true" type="upgrade">
@@ -1216,6 +1389,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0ec3-47fa-dfc1-1398" name="Heavy bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1243,6 +1418,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d524-db7a-cc6d-c960" name="Combat knife" hidden="false" collective="false" import="true" type="upgrade">
@@ -1263,6 +1440,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="de4d-afc7-7672-1a32" name="Grapnel Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -1278,6 +1457,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d4ce-279c-aaa9-f7de" name="Grav-chute" hidden="false" collective="false" import="true" type="upgrade">
@@ -1293,6 +1474,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3fe3-a784-dc29-cc33" name="Shock grenades" hidden="false" collective="false" import="true" type="upgrade">
@@ -1314,6 +1497,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfb4-7791-2e49-9f10" name="Bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1335,6 +1520,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0591-71c0-964e-7617" name="Auspex" hidden="false" collective="false" import="true" type="upgrade">
@@ -1351,6 +1538,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7e8-a22b-56f9-93a2" name="Primaris Captain" hidden="false" collective="false" import="true" type="model">
@@ -1438,6 +1627,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1463,6 +1654,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="18e3-1977-e1aa-e31c" name="Master-crafted stalker bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1480,6 +1673,8 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1496,6 +1691,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="76.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="109f-9823-a9f6-e6f0" name="Primaris Chaplain" hidden="false" collective="false" import="true" type="model">
@@ -1588,6 +1785,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cafa-79a8-fb36-2c16" name="Crozius arcanum" hidden="false" collective="false" import="true" type="upgrade">
@@ -1609,6 +1808,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1618,6 +1819,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="63.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="448a-c69d-5f36-bca0" name="Primaris Librarian" hidden="false" collective="false" import="true" type="model">
@@ -1718,6 +1921,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1737,6 +1942,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="81.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="020c-93ca-a5b5-2957" name="Watch Master" hidden="false" collective="false" import="true" type="model">
@@ -1840,6 +2047,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1849,6 +2058,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="125.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="36d4-44f3-8b82-ca92" name="Watch Captain Artemis" hidden="false" collective="false" import="true" type="model">
@@ -1957,6 +2168,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8186-4bd0-b346-7451" name="Stasis Bomb" hidden="false" collective="false" import="true" type="upgrade">
@@ -1978,6 +2191,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a761-45a5-a4ed-d0b3" name="Power sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -1999,6 +2214,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2013,6 +2230,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="70.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9eaf-a6a5-3a42-1c9f" name="Terminator Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2048,6 +2267,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c4b2-a796-c564-64de" name="Veteran Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2073,6 +2294,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4fd5-97ec-a360-9b25" name="Auto bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2100,6 +2323,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="68da-1d94-e214-6391" name="Bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2127,6 +2352,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1adb-10d2-c501-9343" name="Stalker bolt rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2154,6 +2381,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2224,6 +2453,8 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="12ee-bb86-0a21-3a0e" name="Combi-plasma" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2261,6 +2492,8 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f282-5e67-15ef-f915" name="Stalker pattern boltgun" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2288,6 +2521,8 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="051e-74c7-0d7e-4b0c" name="Power sword" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2308,6 +2543,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="27ac-d621-8ad8-79e8" name="Power maul" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2328,6 +2565,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2e4d-4881-26bf-1a90" name="Storm shield" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2343,6 +2582,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ae7e-fd20-9a88-15ec" name="Xenophase blade" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2370,6 +2611,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f40a-44e2-965f-aa57" name="Deathwatch shotgun" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2422,6 +2665,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dcb3-c830-19bc-ed4d" name="Heavy thunder hammer" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2449,6 +2694,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9b4f-71a7-f7ae-7d19" name="Deathwatch frag cannon" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2491,6 +2738,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d4c7-b87a-40d2-8599" name="Infernus heavy bolter" page="91" hidden="false" collective="false" import="true" type="upgrade">
@@ -2533,6 +2782,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="2.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2772,6 +3023,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e61a-5590-f57c-09e2" name="2. Might of Heroes" hidden="false" collective="false" import="true" type="upgrade">
@@ -2787,6 +3040,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c2a7-25cf-188e-e78a" name="3. Null Zone" hidden="false" collective="false" import="true" type="upgrade">
@@ -2802,6 +3057,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

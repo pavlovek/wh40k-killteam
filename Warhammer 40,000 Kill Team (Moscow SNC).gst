@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9fa6-346c-a8b0-d98d" name="Warhammer 40,000 Kill Team (Moscow SNC)" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9fa6-346c-a8b0-d98d" name="Warhammer 40,000 Kill Team (Moscow SNC)" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="a467-5f42-pubN89361" name="Core Manual"/>
     <publication id="a467-5f42-pubN90767" name="Rogue Trader"/>
@@ -293,6 +293,7 @@
     <categoryEntry id="d3e6-c721-0c59-4f7c" name="Greyfax" hidden="false"/>
     <categoryEntry id="1ca2-ccb5-a267-58d1" name="Ordo Hereticus" hidden="false"/>
     <categoryEntry id="f085-da27-14ef-e07d" name="Building" hidden="false"/>
+    <categoryEntry id="e9fb-6b57-4908-806c" name="Superior Commander" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="cf61-9e5a-51cd-b4d2" name="Kill Team List" hidden="false">

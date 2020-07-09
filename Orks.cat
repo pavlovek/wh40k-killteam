@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="28" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a34e-d16c-80ff-06bf" name="Orks" revision="29" battleScribeVersion="2.03" authorUrl="https://battlescribedata.appspot.com/#/repo/wh40k-killteam" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-	<categoryEntry id="24a4-4b2e-aa1e-fc52" name="Stormboy" hidden="false"/>
-	<categoryEntry id="2a73-3eb4-3c77-db12" name="Ork Boy" hidden="false"/>
+    <categoryEntry id="24a4-4b2e-aa1e-fc52" name="Stormboy" hidden="false"/>
+    <categoryEntry id="2a73-3eb4-3c77-db12" name="Ork Boy" hidden="false"/>
     <categoryEntry id="d9e4-66e2-9d74-a149" name="Burna Boy" hidden="false"/>
     <categoryEntry id="9154-0e71-6fa2-2234" name="Gretchin" hidden="false"/>
     <categoryEntry id="5512-42ad-65db-312e" name="Kommando" hidden="false"/>
@@ -94,6 +94,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="143b-819b-303e-6a8e" name="Icon of da Revolushun" hidden="false" collective="false" import="true" type="upgrade">
@@ -115,6 +117,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -130,11 +134,174 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="43.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="468a-4fd4-d5a5-540a" name="Мастерская Мека" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="0d2d-a069-90e3-64e4" name="Мастерская Мека" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является BIG МЕК, вы получаете доступ к тактикам &quot;Лутай их стрилялы!&quot; и &quot;Лутай их броню!&quot;</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="80c5-28cc-bd84-445e" name="Лутай их стрилялы!" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">1</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику, когда ваша модель выводит вражескую из строя в ближнем бою. Она может немедленно совершить стрелковую атаку одним оружием выведенной из строя модели на выбор, как если бы это была фаза стрельбы. Совершить такую атаку можно даже находясь в 1&quot; от вражеских моделей.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c75d-ae7f-2ded-7102" name="Лутай их броню!" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">1</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику, когда ваша модель выводит вражескую из строя в ближнем бою. До конца игры она получает характеристику спас-броска на 1 хуже, чем у выведенной из строя модели.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="d878-3956-806c-c704" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a276-850b-c7c4-313d" name="Трон Варбосса" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="0d50-8913-e46c-d745" name="Трон Варбосса" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является WARBOSS, вы получаете доступ к тактике &quot;Боевой клич&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bd5e-2610-3d9c-2d95" name="Боевой клич" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале фазы ближнего боя. До конца фазы получайте бонусы за количество вражеских моделей, выведенных из строя вашими моделям и в эту фазу:
+1 модель - показатель АР оружия ближнего боя ваших моделей улучшается на 1.
+2 модели - ваши модели получают + 1 к броскам на попадание.
+3 модели - ваши модели получают + 1 к броскам на ранение.
+4 и более моделей. ваши модели получают + 1 к броскам на повреждение.
+Все бонусы кумулятивны.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9b5b-0a04-2ffb-b8f8" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7db-f0a3-be37-9622" name="Хижина дока" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="7112-84e7-902a-f506" name="Хижина дока" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Когда ваша модель погибает при броске на последствия миссии, вы получаете половину (округление вверх) ее стоимости (без учета снаряжения) в виде очков резерва, если вашим командиром является PAINBOY.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e454-a5e5-b663-8857" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="be31-1be0-c084-6357" name="Тотем ВАААГХ!" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ef50-6cae-1ab3-7b93" name="Тотем ВАААГХ!" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">Если вашим командиром является WЕIRDВОY, вы получаете доступ к тактике &quot;Варповая башка&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0395-4fae-f544-969f" name="Варповая башка" hidden="false" typeId="ed03-270e-d2fd-04f6" typeName="Tactic">
+          <characteristics>
+            <characteristic name="CP" typeId="af8b-aec7-a213-1ee2">2</characteristic>
+            <characteristic name="Description" typeId="9c71-728a-4b47-611c">Используйте эту тактику в начале первого раунда. Ваша модель Weirdboy может немедленно изучить одну дополнительную психосилу из дисциплины Power of the Waagh!, а также может проявлять дополнительно одну психосилу в каждую психическую фазу.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1017-0a9f-41f2-231f" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="56b2-3a65-76cb-fbc2" name="Боевые барабаны" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="0705-d457-621a-8920" name="Боевые барабаны" hidden="false" typeId="5f07-5ef0-9e30-efbd" typeName="Building">
+          <characteristics>
+            <characteristic name="Description" typeId="4237-7545-6386-8885">В начале игры выберите одну модель из вашей истребительной команды, эта модель будет являться барабанщиком. В начале каждого раунда, если барабанщик на поле, вы можете выбрать один из эффектов.
+Эффект действует до конца раунда. Вы можете потратить 1 единицу материалов, чтобы удвоить радиус ауры.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0b98-3167-5259-1f3b" name="Походный марш" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Характеристика движения всех ваших моделей в 6&quot; от барабанщика увеличивается на 1&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2d0-29bb-c85f-ced0" name="Легкий боевой марш" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Ваши модели в 3 &quot; от барабанщика должны немедленно пройти нерв-тест. Если этот тест пройден успешно, характеристика силы этих моделей увеличивается на 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c654-6ec6-9768-6140" name="Тяжелый боевой марш" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Ваши модели в 1 &quot; от барабанщика увеличивают свою характеристику силы и количество атак на 2, однако в конце фазы морали эти модели автоматически становятся потрясены.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="34ad-1b4d-3fe5-2118" name="Building" hidden="false" targetId="f085-da27-14ef-e07d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="3.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="4.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-	  <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
+    <entryLink id="4d0d-3960-3180-e199" name="Аналитический центр" hidden="false" collective="false" import="true" targetId="159b-79bf-f48e-2f3e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -655,55 +822,55 @@
     <entryLink id="e9f5-425f-8668-d72b" name="Weirdboy" hidden="false" collective="false" import="true" targetId="65a6-e6b6-fc27-0eb6" type="selectionEntry"/>
     <entryLink id="d5cc-4bf6-b554-f0c7" name="Boss Zagstruk" hidden="false" collective="false" import="true" targetId="5fe6-4c75-967b-5b06" type="selectionEntry"/>
     <entryLink id="a36c-4aa7-90a1-97f1" name="Stormboy" hidden="false" collective="false" import="true" targetId="3621-4452-be7c-67aa" type="selectionEntry">
-	    <modifiers>
-		    <modifier type="set" field="hidden" value="true">
-			    <conditions>
-				    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
-			    </conditions>
-		    </modifier>
-	    </modifiers>
-	    <categoryLinks>
-		    <categoryLink id="22de-488a-9875-0d18" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
-	    </categoryLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="22de-488a-9875-0d18" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="49ee-49cc-ae7f-eb71" name="Stormboy" hidden="false" collective="false" import="true" targetId="3621-4452-be7c-67aa" type="selectionEntry">
-	    <categoryLinks>
-		    <categoryLink id="d6b5-48e0-abc4-56ad" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
-	    </categoryLinks>
+      <categoryLinks>
+        <categoryLink id="d6b5-48e0-abc4-56ad" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="7bdd-4057-a9f3-ea19" name="Stormboy Boss Nob" hidden="false" collective="false" import="true" targetId="8e38-4007-b498-ab63" type="selectionEntry">
-	    <categoryLinks>
-		    <categoryLink id="ec91-488e-b627-d3b0" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
-	    </categoryLinks>
+      <categoryLinks>
+        <categoryLink id="ec91-488e-b627-d3b0" name="New CategoryLink" hidden="false" targetId="29e7-d60f-5acd-4d99" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="1f7c-4474-bcb9-c1ae" name="Stormboy Boss Nob" hidden="false" collective="false" import="true" targetId="8e38-4007-b498-ab63" type="selectionEntry">
-	    <categoryLinks>
-		    <categoryLink id="3531-4d74-b786-5920" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
-	    </categoryLinks>
+      <categoryLinks>
+        <categoryLink id="3531-4d74-b786-5920" name="New CategoryLink" hidden="false" targetId="ade4-0710-e40e-be3f" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="26ef-4331-810d-9670" name="Stormboy Boss Nob" hidden="false" collective="false" import="true" targetId="8e38-4007-b498-ab63" type="selectionEntry">
-	    <modifiers>
-		    <modifier type="set" field="hidden" value="true">
-			    <conditions>
-				    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
-			    </conditions>
-		    </modifier>
-	    </modifiers>
-	    <categoryLinks>
-		    <categoryLink id="4ae0-4e6f-bffd-1c87" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
-	    </categoryLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4ae0-4e6f-bffd-1c87" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="0191-4d63-a98e-8e32" name="Stormboy Fire Team" hidden="false" collective="false" import="true" targetId="2323-4dac-9fe9-d5a2" type="selectionEntry">
-	    <modifiers>
-		    <modifier type="set" field="hidden" value="true">
-			    <conditions>
-				    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
-			    </conditions>
-		    </modifier>
-	    </modifiers>
-	    <categoryLinks>
-		    <categoryLink id="4285-4c2b-85ab-5282" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
-	    </categoryLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c0b-7da1-facd-d326" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4285-4c2b-85ab-5282" name="New CategoryLink" hidden="false" targetId="79c6-76fc-47ee-c005" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <rules>
@@ -925,11 +1092,11 @@
       </modifiers>
       <description>Roll a dice each time a model in your kill team loses a wound. On a 6 the would is not lost. If a model already has a similar ability, choose which effect applies, and re-roll 1s when making these rolls.</description>
     </rule>
-	  <rule id="eadc-4d46-af48-aade" name="Дикие Орки" hidden="false">
-		  <description>Раз за игру в начале раунда вы можете потратить 1 единицу материалов, чтобы призвать диких орков.
+    <rule id="eadc-4d46-af48-aade" name="Дикие Орки" hidden="false">
+      <description>Раз за игру в начале раунда вы можете потратить 1 единицу материалов, чтобы призвать диких орков.
 Выставьте в вашей зоне расстановки, но дальше 1&quot; от любых моделей противника до двух моделей Огk bоу, вооруженных стандартным оружием. Они учитываются как модели вашей истребительной команды до конца игры (в том числе могут получать культуру клана).
 Не бросайте на последствия миссии для этих моделей и не включайте их в свой командный ростер.</description>
-	  </rule>
+    </rule>
   </rules>
   <sharedSelectionEntries>
     <selectionEntry id="a2f7-b7aa-039d-55f4" name="Kombi-weapon with Rokkit Launcha" hidden="false" collective="false" import="true" type="upgrade">
@@ -960,6 +1127,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0c99-5e98-562a-b334" name="Grot Blasta" hidden="false" collective="false" import="true" type="upgrade">
@@ -977,6 +1146,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e99-ade3-1839-3621" name="Burna" hidden="false" collective="false" import="true" type="upgrade">
@@ -1010,6 +1181,8 @@
       </rules>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f0a-a880-0cbc-22f2" name="Burna Boy" hidden="false" collective="false" import="true" type="model">
@@ -1063,6 +1236,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3cbf-8f19-2f43-b9fb" name="Big Shoota" hidden="false" collective="false" import="true" type="upgrade">
@@ -1080,6 +1255,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e3b-9ea0-e2d2-e0c6" name="Deffgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1097,6 +1274,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8fad-e5b9-1b41-ba1e" name="Stikkbombs" hidden="false" collective="false" import="true" type="upgrade">
@@ -1118,6 +1297,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="940a-b9fd-1bc8-85ba" name="Slugga" hidden="false" collective="false" import="true" type="upgrade">
@@ -1126,6 +1307,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e300-4083-c2af-e564" name="Shoota" hidden="false" collective="false" import="true" type="upgrade">
@@ -1143,6 +1326,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ee8-9c61-7312-76b6" name="Rokkit Launcha" hidden="false" collective="false" import="true" type="upgrade">
@@ -1160,6 +1345,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9ff6-3988-c031-98bc" name="Kustom Mega-blasta" hidden="false" collective="false" import="true" type="upgrade">
@@ -1177,6 +1364,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4e96-6242-1ba5-cd58" name="Kombi-weapon with Skorcha" hidden="false" collective="false" import="true" type="upgrade">
@@ -1214,6 +1403,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="307e-6966-5e6b-64c7" name="Power Klaw" hidden="false" collective="false" import="true" type="upgrade">
@@ -1231,6 +1422,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e6ad-7425-f9d8-2373" name="Choppa" hidden="false" collective="false" import="true" type="upgrade">
@@ -1239,6 +1432,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b54c-8a0c-bbff-387d" name="Big Choppa" hidden="false" collective="false" import="true" type="upgrade">
@@ -1256,6 +1451,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="026a-c710-eb0b-06f3" name="Burna Spanner" hidden="false" collective="false" import="true" type="model">
@@ -1324,6 +1521,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="92c6-fec5-4112-23bf" name="Gretchin" hidden="false" collective="false" import="true" type="model">
@@ -1372,6 +1571,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3621-4452-be7c-67aa" name="Stormboy" hidden="false" collective="false" import="true" type="model">
@@ -1410,19 +1611,19 @@
         <categoryLink id="a426-439e-9a50-b904" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
         <categoryLink id="7609-4c24-9a5f-8e2f" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
-	  <entryLinks>
+      <entryLinks>
         <entryLink id="30a1-42a0-8bd6-6112" name="Specialism" hidden="false" collective="false" import="true" targetId="f283-dca5-da62-3f8a" type="selectionEntryGroup"/>
         <entryLink id="7366-4a6d-8d7f-d6f7" name="Slugga" hidden="false" collective="false" import="true" targetId="940a-b9fd-1bc8-85ba" type="selectionEntry">
-	        <constraints>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5b9-4efd-9698-f788" type="min"/>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62a5-4bd7-94fa-ea1c" type="max"/>
-	        </constraints>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5b9-4efd-9698-f788" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62a5-4bd7-94fa-ea1c" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="79db-4f24-b446-7d2e" name="Choppa" hidden="false" collective="false" import="true" targetId="e6ad-7425-f9d8-2373" type="selectionEntry">
-	        <constraints>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5be0-4340-bf2f-88b9" type="min"/>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eedf-4899-a9d7-a18a" type="max"/>
-	        </constraints>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5be0-4340-bf2f-88b9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eedf-4899-a9d7-a18a" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="a75e-4d67-a13a-3024" name="Stikkbombs" hidden="false" collective="false" import="true" targetId="8fad-e5b9-1b41-ba1e" type="selectionEntry">
           <constraints>
@@ -1434,6 +1635,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e38-4007-b498-ab63" name="Stormboy Boss Nob" hidden="false" collective="false" import="true" type="model">
@@ -1473,15 +1676,15 @@
         <infoLink id="a432-44ad-9443-f617" name="Full Throttle" hidden="false" targetId="3a49-485e-8ae4-06c4" type="profile"/>
       </infoLinks>
       <categoryLinks>
-	      <categoryLink id="a198-4fe9-af11-594c" name="Faction: Orks" hidden="false" targetId="3630-39cf-f986-6209" primary="false"/>
-	      <categoryLink id="1f3a-42d6-a395-00f4" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
-	      <categoryLink id="6af7-41d1-951c-5ac9" name="Stormboy" hidden="false" targetId="24a4-4b2e-aa1e-fc52" primary="false"/>
-	      <categoryLink id="d112-454b-82fe-cfc5" name="Jump Pack" hidden="false" targetId="d613-8c70-cfc2-6582" primary="false"/>
-	      <categoryLink id="0b85-4c34-83e1-26ff" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
-	      <categoryLink id="ca22-4566-8cdf-4657" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
+        <categoryLink id="a198-4fe9-af11-594c" name="Faction: Orks" hidden="false" targetId="3630-39cf-f986-6209" primary="false"/>
+        <categoryLink id="1f3a-42d6-a395-00f4" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
+        <categoryLink id="6af7-41d1-951c-5ac9" name="Stormboy" hidden="false" targetId="24a4-4b2e-aa1e-fc52" primary="false"/>
+        <categoryLink id="d112-454b-82fe-cfc5" name="Jump Pack" hidden="false" targetId="d613-8c70-cfc2-6582" primary="false"/>
+        <categoryLink id="0b85-4c34-83e1-26ff" name="Fly" hidden="false" targetId="5976-3b31-eca7-9828" primary="false"/>
+        <categoryLink id="ca22-4566-8cdf-4657" name="Model" hidden="false" targetId="50dd-a755-e02d-1c30" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6fe0-40f5-a1bc-ad6c" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0a45-e420-f9b5-599c">
+        <selectionEntryGroup id="6fe0-40f5-a1bc-ad6c" name="Ranged Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2303-4fa1-ade6-d1a6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c9e-4ac1-88b7-8b97" type="min"/>
@@ -1493,7 +1696,7 @@
             <entryLink id="4a68-40db-af50-4da6" name="Kombi-weapon with Skorcha" hidden="false" collective="false" import="true" targetId="4e96-6242-1ba5-cd58" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="630f-4dfe-aad3-87af" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e5ed-6761-538b-31b1">
+        <selectionEntryGroup id="630f-4dfe-aad3-87af" name="Melee Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9408-404d-91e7-675b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c678-45ea-910f-b87a" type="max"/>
@@ -1519,30 +1722,34 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="14.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="2323-4dac-9fe9-d5a2" name="Stormboy Fire Team" hidden="false" collective="false" import="true" type="unit">
-	  <constraints>
-		  <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ed30-4c53-b43a-10de" type="max"/>
-	  </constraints>
-	  <selectionEntryGroups>
-		  <selectionEntryGroup id="3146-434e-b982-3941" name="Units" hidden="false" collective="false" import="true">
-			  <constraints>
-				  <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4b2e-4f57-97f1-94bd" type="min"/>
-			  </constraints>
-			  <entryLinks>
-				  <entryLink id="4243-4f52-a54e-1320" name="Stormboy Boss Nob" hidden="false" collective="false" import="true" targetId="8e38-4007-b498-ab63" type="selectionEntry"/>
-				  <entryLink id="5a68-421a-8ffd-9e25" name="Stormboy" hidden="false" collective="false" import="true" targetId="3621-4452-be7c-67aa" type="selectionEntry"/>
-			  </entryLinks>
-		  </selectionEntryGroup>
-	  </selectionEntryGroups>
-	  <entryLinks>
-		  <entryLink id="1e8a-4454-9d5e-f3ec" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
-	  </entryLinks>
-	  <costs>
-		  <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-	  </costs>
-	</selectionEntry>
+    <selectionEntry id="2323-4dac-9fe9-d5a2" name="Stormboy Fire Team" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ed30-4c53-b43a-10de" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3146-434e-b982-3941" name="Units" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4b2e-4f57-97f1-94bd" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4243-4f52-a54e-1320" name="Stormboy Boss Nob" hidden="false" collective="false" import="true" targetId="8e38-4007-b498-ab63" type="selectionEntry"/>
+            <entryLink id="5a68-421a-8ffd-9e25" name="Stormboy" hidden="false" collective="false" import="true" targetId="3621-4452-be7c-67aa" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1e8a-4454-9d5e-f3ec" name="Fire Team Advances" hidden="false" collective="false" import="true" targetId="ed6d-4175-51ed-c1d3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="613e-9476-9f7f-8225" name="Ork Boy" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="5291-dc2c-cfa5-a77f" value="1">
@@ -1600,6 +1807,8 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b9d3-4e17-cf5e-8393" name="Shoota" hidden="false" collective="false" import="true" type="upgrade">
@@ -1613,6 +1822,8 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1630,6 +1841,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b607-ad76-1669-9052" name="Ork Boy Gunner" hidden="false" collective="false" import="true" type="model">
@@ -1697,6 +1910,8 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+                <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+                <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1718,6 +1933,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f673-5da0-38c6-bfb6" name="Boss Nob (Boyz)" hidden="false" collective="false" import="true" type="model">
@@ -1797,6 +2014,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a133-fad0-c433-6bc8" name="Kommando" hidden="false" collective="false" import="true" type="model">
@@ -1857,6 +2076,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="8.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62c7-08ab-4aa7-a123" name="Kommando Boss Nob" hidden="false" collective="false" import="true" type="model">
@@ -1931,6 +2152,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6b76-a43f-6105-5e03" name="Loota" hidden="false" collective="false" import="true" type="model">
@@ -1984,6 +2207,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="12.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed83-4b83-7f92-099b" name="Loota Spanner" hidden="false" collective="false" import="true" type="model">
@@ -2052,6 +2277,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="10.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5da3-cc64-b9df-e63c" name="Gretchin Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2073,6 +2300,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a7f8-a08d-3167-9ce7" name="Ork Boy Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2096,6 +2325,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="854a-71ba-dc0f-7e47" name="Kommando Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2118,6 +2349,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1189-7cbd-cf31-82f0" name="Burna Boy Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2140,6 +2373,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5e39-99df-8b2c-24d2" name="Loota Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2162,6 +2397,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="203d-5b8c-d669-c101" name="Warboss" hidden="false" collective="false" import="true" type="model">
@@ -2277,6 +2514,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="62.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="000d-f451-1e50-4345" name="Kustom Shoota" hidden="false" collective="false" import="true" type="upgrade">
@@ -2294,6 +2533,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d98b-afab-a51a-63d1" name="Attack Squig" hidden="false" collective="false" import="true" type="upgrade">
@@ -2311,6 +2552,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="6.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="70b5-fe8b-19b8-48a9" name="Big Mek" hidden="false" collective="false" import="true" type="model">
@@ -2377,6 +2620,8 @@
           </constraints>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2436,6 +2681,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb9b-5657-151c-8d39" name="Kustom Mega-Slugga" hidden="false" collective="false" import="true" type="upgrade">
@@ -2453,6 +2700,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b9da-98f2-34f8-bc60" name="Shokk Attack Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2470,6 +2719,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="27.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3978-99f8-3a85-cb98" name="Painboy" hidden="false" collective="false" import="true" type="model">
@@ -2550,6 +2801,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="20.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="df4a-a9fc-f2f2-08d1" name="&apos;Urty Syringe" hidden="false" collective="false" import="true" type="upgrade">
@@ -2567,6 +2820,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b5a8-c094-9144-6849" name="Nob" hidden="false" collective="false" import="true" type="model">
@@ -2613,6 +2868,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="15.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e875-7935-1b8e-004c" name="Cybork body" hidden="false" collective="false" import="true" type="upgrade">
@@ -2629,6 +2886,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf8d-83cc-3e72-8832" name="Killsaw" hidden="false" collective="false" import="true" type="upgrade">
@@ -2644,6 +2903,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="5.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="13b3-8dd9-14c2-8732" name="Boss Nob (Nobs)" hidden="false" collective="false" import="true" type="model">
@@ -2698,6 +2959,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="16.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f4aa-aa83-7c77-cb77" name="Nob Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -2721,6 +2984,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="67b3-323e-b1dd-c72a" name="Ammo Runt" hidden="false" collective="false" import="true" type="model">
@@ -2766,6 +3031,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="3.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0e59-018b-4a73-9792" name="Meganob" hidden="false" collective="false" import="true" type="model">
@@ -2813,6 +3080,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="37.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ce3-7a64-9063-ef4e" name="Boss Meganob" hidden="false" collective="false" import="true" type="model">
@@ -2866,6 +3135,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="41.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d4b-2cf8-324f-f759" name="Flash Git" hidden="false" collective="false" import="true" type="model">
@@ -2913,6 +3184,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="23.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8392-8be7-7d4f-4879" name="Kaptin" hidden="false" collective="false" import="true" type="model">
@@ -2969,6 +3242,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="24.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9564-1a01-6286-31b9" name="Snazzgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2990,6 +3265,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5555-14bf-47cd-f0f2" name="Gitfinda Squig" hidden="false" collective="false" import="true" type="upgrade">
@@ -3013,6 +3290,8 @@
       </profiles>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="4.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="03d5-f89c-c9ad-e706" name="Slugga" hidden="false" collective="false" import="true" type="upgrade">
@@ -3037,6 +3316,8 @@
       </infoLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd45-bd7b-b41f-b463" name="Flash Gitz Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3059,6 +3340,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc34-1cf4-bb1f-14e5" name="Meganob Fire Team" hidden="false" collective="false" import="true" type="unit">
@@ -3081,6 +3364,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="177b-0582-4ebb-4a42" name="Boss Snikrot" hidden="false" collective="false" import="true" type="model">
@@ -3150,6 +3435,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3160,6 +3447,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="82.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="65a6-e6b6-fc27-0eb6" name="Weirdboy" hidden="false" collective="false" import="true" type="model">
@@ -3210,17 +3499,17 @@
             <characteristic name="Powers known" typeId="67ce-9d6c-052c-d1eb">Psybolt and one powers from the Power of the Waaagh!</characteristic>
           </characteristics>
         </profile>
-	    <profile id="5cce-48f8-b2b1-a41a" name="Waaagh! Energy" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-		  <characteristics>
-		    <characteristic name="Description" typeId="b373-019d-503a-1124">Add 1 to any Psychic test rolls made for this model for every 3 friendly ORK models, excluding gretchin, within 6&quot; of it when the roll is made, to a maximum of +3. However, if result of the test is 12+, this model immediately suffers Perils of the Warp.</characteristic>
-		  </characteristics>
-	    </profile>
+        <profile id="5cce-48f8-b2b1-a41a" name="Waaagh! Energy" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Add 1 to any Psychic test rolls made for this model for every 3 friendly ORK models, excluding gretchin, within 6&quot; of it when the roll is made, to a maximum of +3. However, if result of the test is 12+, this model immediately suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="1d4e-9aae-e84a-ce74" name="&apos;Ere We Go" hidden="false" targetId="643c-ab4a-a943-c268" type="profile"/>
       </infoLinks>
       <categoryLinks>
-	    <categoryLink id="df55-84b5-1993-b35d" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
+        <categoryLink id="df55-84b5-1993-b35d" name="Commander" hidden="false" targetId="6c25-5825-9054-44a7" primary="true"/>
         <categoryLink id="a75b-69a4-d52b-839a" name="Faction: Orks" hidden="false" targetId="3630-39cf-f986-6209" primary="false"/>
         <categoryLink id="aefe-fc9c-15e5-7d83" name="Infantry" hidden="false" targetId="96c1-32dc-d9dc-4678" primary="false"/>
         <categoryLink id="bc58-5161-ca52-8158" name="Weirdboy" hidden="false" targetId="7528-4c85-ae5b-d3ca" primary="false"/>
@@ -3247,6 +3536,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3261,6 +3552,8 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="45.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fe6-4c75-967b-5b06" name="Boss Zagstruk" hidden="false" collective="false" import="true" type="model">
@@ -3294,11 +3587,11 @@
             <characteristic name="Max" typeId="44ec-172b-6381-4908">1</characteristic>
           </characteristics>
         </profile>
-	    <profile id="8c41-4305-91cd-08be" name="Cybork Body" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-		  <characteristics>
-		    <characteristic name="Description" typeId="b373-019d-503a-1124">Each time this model loses a wound, roll a D6; on a roll of 5+, that wound is not lost. </characteristic>
-		  </characteristics>
-	    </profile>
+        <profile id="8c41-4305-91cd-08be" name="Cybork Body" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="b373-019d-503a-1124">Each time this model loses a wound, roll a D6; on a roll of 5+, that wound is not lost. </characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="f056-4e3e-a8d3-91d7" name="&apos;Ere We Go" hidden="false" targetId="643c-ab4a-a943-c268" type="profile"/>
@@ -3333,64 +3626,72 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
-	    <selectionEntry id="7315-4657-ba0c-c42d" name="Blitz Missiles" hidden="false" collective="false" import="true" type="upgrade">
-		  <constraints>
-		    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9892-43b2-8cf2-2499" type="min"/>
-		    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12cd-4582-98b1-c991" type="max"/>
-		  </constraints>
-		  <profiles>
-		    <profile id="6f2f-4d82-88a4-c2f1" name="Blitz Missiles" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-			  <characteristics>
-			    <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">18&quot;</characteristic>
-			    <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault 1</characteristic>
-			    <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
-			    <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
-			    <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
-			    <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-			  </characteristics>
-		    </profile>
-		  </profiles>
-		  <costs>
-		    <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
-		  </costs>
-	    </selectionEntry>
+        <selectionEntry id="7315-4657-ba0c-c42d" name="Blitz Missiles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9892-43b2-8cf2-2499" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12cd-4582-98b1-c991" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6f2f-4d82-88a4-c2f1" name="Blitz Missiles" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">18&quot;</characteristic>
+                <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Assault 1</characteristic>
+                <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">6</characteristic>
+                <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-1</characteristic>
+                <characteristic name="D" typeId="cc1f-e463-c014-2251">D3</characteristic>
+                <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="597b-45df-9e77-1cf5" name="Slugga" hidden="false" collective="false" import="true" targetId="03d5-f89c-c9ad-e706" type="selectionEntry"/>
         <entryLink id="0262-438a-bc00-5002" name="Choppa" hidden="false" collective="false" import="true" targetId="e6ad-7425-f9d8-2373" type="selectionEntry">
-	        <constraints>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e274-40d8-8c79-7593" type="min"/>
-		        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="337d-4ca9-b61e-078c" type="max"/>
-	        </constraints>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e274-40d8-8c79-7593" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="337d-4ca9-b61e-078c" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="42a5-483e-9e3e-9c22" name="Legendary Hunter - Level 2" hidden="false" collective="false" import="true" targetId="2f39-9bac-6c2f-f48b" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="105.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="4987-f5ed-6606-0dd7" name="Power stabba" hidden="false" collective="false" import="true" type="upgrade">
-	  <constraints>
-		  <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb0b-16fe-cfff-5137" type="max"/>
-	  </constraints>
-	  <profiles>
-		  <profile id="4e87-734a-fe74-aacf" name="Power stabba" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
-			  <characteristics>
-				  <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
-				  <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
-				  <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
-				  <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
-				  <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
-				  <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
-			  </characteristics>
-		  </profile>
-	  </profiles>
-	  <costs>
-		  <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
-	  </costs>
-	</selectionEntry>
+    <selectionEntry id="4987-f5ed-6606-0dd7" name="Power stabba" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb0b-16fe-cfff-5137" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4e87-734a-fe74-aacf" name="Power stabba" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
+            <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
+            <characteristic name="S" typeId="fcc6-35ea-38b6-f4ca">User</characteristic>
+            <characteristic name="AP" typeId="fc0e-2874-184d-9f64">-2</characteristic>
+            <characteristic name="D" typeId="cc1f-e463-c014-2251">1</characteristic>
+            <characteristic name="Abilities" typeId="72cf-5b8f-5b71-79b2">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="1.0"/>
+        <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+        <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f283-dca5-da62-3f8a" name="Specialism" hidden="false" collective="false" import="true">
@@ -3621,19 +3922,19 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-	<selectionEntryGroup id="573e-fb8d-b1cd-1a85" name="Weirdboy Specialism" hidden="false" collective="false" import="true">
-	  <constraints>
-		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0f7-411e-b189-9d8e" type="max"/>
-		<constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0c-12cc-95be-8e3c" type="min"/>
-	  </constraints>
-	  <entryLinks>
-		<entryLink id="dc3b-416f-b796-c252" name="Ferocity" hidden="false" collective="false" import="true" targetId="275f-0c8c-74e6-899f" type="selectionEntry"/>
-		<entryLink id="82c0-e2da-7898-d606" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry"/>
-		<entryLink id="3b11-4036-b444-f014" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
-		<entryLink id="0b49-625c-349f-6b3d" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
-		<entryLink id="89fa-4b6b-a5a8-978b" name="Strength" hidden="false" collective="false" import="true" targetId="4550-6c27-1911-68ae" type="selectionEntry"/>
-	  </entryLinks>
-	</selectionEntryGroup>
+    <selectionEntryGroup id="573e-fb8d-b1cd-1a85" name="Weirdboy Specialism" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0f7-411e-b189-9d8e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0c-12cc-95be-8e3c" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="dc3b-416f-b796-c252" name="Ferocity" hidden="false" collective="false" import="true" targetId="275f-0c8c-74e6-899f" type="selectionEntry"/>
+        <entryLink id="82c0-e2da-7898-d606" name="Fortitude" hidden="false" collective="false" import="true" targetId="88d4-1fdb-1672-18cc" type="selectionEntry"/>
+        <entryLink id="3b11-4036-b444-f014" name="Leadership" hidden="false" collective="false" import="true" targetId="cd3d-2c23-094b-93b8" type="selectionEntry"/>
+        <entryLink id="0b49-625c-349f-6b3d" name="Psyker" hidden="false" collective="false" import="true" targetId="fa4c-5101-4760-038f" type="selectionEntry"/>
+        <entryLink id="89fa-4b6b-a5a8-978b" name="Strength" hidden="false" collective="false" import="true" targetId="4550-6c27-1911-68ae" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
     <selectionEntryGroup id="842a-673e-f031-5ad9" name="Clan" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ece-d436-23c2-ba85">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf82-c1f3-736c-5e14" type="max"/>
@@ -3646,6 +3947,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c942-7b53-5ff0-3be8" name="Bad Moons" hidden="false" collective="false" import="true" type="upgrade">
@@ -3654,6 +3957,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a92a-194b-65fe-74a9" name="Evil Sunz" hidden="false" collective="false" import="true" type="upgrade">
@@ -3662,6 +3967,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0cca-07f3-c92c-4b1b" name="Deathskulls" hidden="false" collective="false" import="true" type="upgrade">
@@ -3670,6 +3977,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0c5d-28b0-4abc-1798" name="Snakebites" hidden="false" collective="false" import="true" type="upgrade">
@@ -3678,6 +3987,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8769-60bf-f58a-db36" name="Blood Axes" hidden="false" collective="false" import="true" type="upgrade">
@@ -3686,6 +3997,8 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ff08-0821-e4e0-783e" name="Freebooterz" hidden="false" collective="false" import="true" type="upgrade">
@@ -3694,11 +4007,15 @@
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5ece-d436-23c2-ba85" name="*No Clan*" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3729,8 +4046,8 @@
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0928-a770-5105-d118" type="max"/>
       </constraints>
       <entryLinks>
-	    <entryLink id="dc83-4c04-a59d-61db" name="Power stabba" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="4987-f5ed-6606-0dd7" type="selectionEntry"/>
-	    <entryLink id="0478-3b14-3437-5526" name="Big Choppa" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="b54c-8a0c-bbff-387d" type="selectionEntry">
+        <entryLink id="dc83-4c04-a59d-61db" name="Power stabba" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="4987-f5ed-6606-0dd7" type="selectionEntry"/>
+        <entryLink id="0478-3b14-3437-5526" name="Big Choppa" publicationId="69e0-b697-c118-d32d" hidden="false" collective="false" import="true" targetId="b54c-8a0c-bbff-387d" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="5291-dc2c-cfa5-a77f" value="2.0"/>
           </modifiers>
@@ -3796,6 +4113,8 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="7.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3852,12 +4171,14 @@
           <profiles>
             <profile id="2548-2dc6-0d3a-432d" name="Eadbanger" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
               <characteristics>
-                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">The Eadbanger has a warp charge value of 7. If manifested, roll a D6 and compare it to the Toughness of the closest visible enemy model within 12&quot; of the psyker. If the result is higher then the model's Toughness, it is suffer 2 mortal wound.</characteristic>
+                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">The Eadbanger has a warp charge value of 7. If manifested, roll a D6 and compare it to the Toughness of the closest visible enemy model within 12&quot; of the psyker. If the result is higher then the model&apos;s Toughness, it is suffer 2 mortal wound.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="efe0-6742-90ea-966e" name="2. Da Jump" hidden="false" collective="false" import="true" type="upgrade">
@@ -3873,6 +4194,8 @@
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e8ab-a4d5-65eb-0298" name="3. Fists of Gork" hidden="false" collective="false" import="true" type="upgrade">
@@ -3882,12 +4205,14 @@
           <profiles>
             <profile id="b174-9d50-06c2-f201" name="Fists of Gork" hidden="false" typeId="7a97-314b-42a0-d52e" typeName="Psychic Power">
               <characteristics>
-                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">The Fists of Gork has a varp charge of 6. If manifested, select another ORK model, excluding gretchin, that is visible to and within 12&quot; of the psyker. Add 2 to that model's Strength and Attacks characteristics until the start of your next Psychic phase.</characteristic>
+                <characteristic name="Psychic Power" typeId="0722-c3c3-3039-c061">The Fists of Gork has a varp charge of 6. If manifested, select another ORK model, excluding gretchin, that is visible to and within 12&quot; of the psyker. Add 2 to that model&apos;s Strength and Attacks characteristics until the start of your next Psychic phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="5291-dc2c-cfa5-a77f" value="0.0"/>
+            <cost name="tr" typeId="1dec-21c4-d896-85d8" value="0.0"/>
+            <cost name="mt" typeId="019e-2abc-c617-9572" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3915,11 +4240,11 @@
         <characteristic name="Description" typeId="b373-019d-503a-1124">Re-roll failed charge rolls for a unit with this ability.</characteristic>
       </characteristics>
     </profile>
-	<profile id="3a49-485e-8ae4-06c4" name="Full Throttle" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
-	  <characteristics>
-		  <characteristic name="Description" typeId="b373-019d-503a-1124">When this model advances you can add 6&quot; to it&apos;s movement rather than rolling a dice. But if you do so, you roll a D6 at the end of the move; for the roll of 1 model suffers 1 mortal wound.</characteristic>
-	  </characteristics>
-	</profile>
+    <profile id="3a49-485e-8ae4-06c4" name="Full Throttle" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="b373-019d-503a-1124">When this model advances you can add 6&quot; to it&apos;s movement rather than rolling a dice. But if you do so, you roll a D6 at the end of the move; for the roll of 1 model suffers 1 mortal wound.</characteristic>
+      </characteristics>
+    </profile>
     <profile id="1d28-b491-023a-8414" name="Sneaky Gits" hidden="false" typeId="1015-f0b1-9137-0060" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="b373-019d-503a-1124">When an enemy player makes a hit roll for a shooting attack that targets this model, and this model is obscurred, that hit roll suffers and additional -1 modifier.</characteristic>
