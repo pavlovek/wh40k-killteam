@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="172b-ef0f-f86e-1837" name="Sisters of Silence" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="172b-ef0f-f86e-1837" name="Sisters of Silence" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9fa6-346c-a8b0-d98d" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0621-0a84-d1db-3c49" name="White Dwarf Issue 454"/>
   </publications>
@@ -1296,13 +1296,13 @@
         <categoryLink id="08b8-0f8c-6aa7-5d9e" name="Imperium" hidden="false" targetId="8d6d-8c4b-f475-e74a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="afd9-5db8-2dce-8e6c" name="Somnus Blade" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="afd9-5db8-2dce-8e6c" name="Executioner greatblade" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a594-eca7-a4fc-d034" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40dc-2d83-c951-9809" type="min"/>
           </constraints>
           <profiles>
-            <profile id="e637-057c-03d4-24ac" name="Somnus Blade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
+            <profile id="e637-057c-03d4-24ac" name="Executioner greatblade" hidden="false" typeId="c067-7929-f4dc-7825" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="5410-0b42-87cc-bbc6">Melee</characteristic>
                 <characteristic name="Type" typeId="38ea-c4e0-d3bb-d1e9">Melee</characteristic>
